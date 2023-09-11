@@ -22,6 +22,7 @@
             flex-direction: row;
             margin: 0.5rem 0 0.3rem 1rem;
             font-size: $font-size-h5;
+            color: $secondary;
 
             span {
                 margin-right: 0.5rem;
@@ -33,25 +34,25 @@
             height: 30vmin;
             display: block;
             position: relative;
+            background: url("../images/kraevedia_catBack.png") 50% 0 no-repeat;
+            background-size: auto 100%;
             transition: all $base-duration;
+        }
 
-            &--choice {
-                background: url("../images/cp_catChoice.png") 50% 0 no-repeat;
-            }
-
-            &--prepare {
-                background: url("../images/cp_catPrepare.png") 50% 0 no-repeat;
-            }
-
-            &--flight {
-                background: url("../images/cp_catFlight.png") 50% 0 no-repeat;
-            }
+        &_title {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $secondary;
+            text-align: center;
         }
 
         &:hover {
 
             .category__main_image {
-                transform: scale(0.95);
+                transform: scale(0.98);
             }
         }
 

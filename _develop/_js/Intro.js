@@ -4,12 +4,16 @@ class Intro {
         const introBlockTop = document.createElement('div');
         introBlockTop.className = 'wrapper__top';
         introBlockTop.innerHTML = `
-            <picture id="introTitle">
-                <img src="assets/games/kraevedia/images/craevedia_title.png" alt="Название игры. Краеведия">
+            <picture id="introTitle" class="wrapper__top_title">
+                <img src="assets/games/kraevedia/images/kraevedia_title.png" alt="Название игры. Краеведия">
             </picture>
         `;
         wrapper.removeChild(container);
         wrapper.appendChild(introBlockTop);
+
+        const introBlockBack = document.createElement('div');
+        introBlockBack.className = 'wrapper__intro';
+        wrapper.appendChild(introBlockBack);
 
         // Кнопки
         const introBlockButtons = document.createElement('div');
@@ -32,17 +36,16 @@ class Intro {
         function introAnim() {
             let tl = gsap.timeline();
             tl
-                // .to(wrapperBack, {
-                //     duration: 0.6,
-                //     delay: '-0.4',
-                //     autoAlpha: 1
-                // })
-                .to(wrapperTop, {
+                .to(wrapperBack, {
                     duration: 0.6,
                     autoAlpha: 1
                 })
+                .to(wrapperTop, {
+                    duration: 0.4,
+                    autoAlpha: 1
+                })
                 .to(wrapperBottom, {
-                    duration: 0.6,
+                    duration: 0.4,
                     delay: '-0.4',
                     autoAlpha: 1
                 })

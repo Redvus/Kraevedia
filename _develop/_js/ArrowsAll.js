@@ -2,30 +2,30 @@ class ArrowsAll {
 
     arrowBack() {
         const containerArrowBack = document.createElement('a');
-        containerArrowBack.className = 'wrapper__game_arrow';
+        containerArrowBack.className = 'wrapper__service_arrow';
         containerArrowBack.id = 'arrowBack';
         containerArrowBack.innerHTML = `
-            <img src="assets/games/cosmicpuzzles/images/cp_arrowBack.png" alt="Стрелка назад">
+            <img src="assets/games/kraevedia/images/kraevedia_arrowBack.png" alt="Стрелка назад">
         `;
         container.appendChild(containerArrowBack);
     }
 
     clearStorage() {
         const containerClear = document.createElement('a');
-        containerClear.className = 'wrapper__game_clear';
+        containerClear.className = 'wrapper__service_clear';
         containerClear.id = 'settingsClick';
         containerClear.innerHTML = `
-            <img src="assets/games/cosmicpuzzles/images/cp_clearButton.png" alt="Настройки">
+            <img src="assets/games/kraevedia/images/kraevedia_settings.png" alt="Настройки">
         `;
         container.appendChild(containerClear);
     }
 
     arrowNext() {
         const containerClear = document.createElement('a');
-        containerClear.className = 'wrapper__game_next';
+        containerClear.className = 'wrapper__service_next';
         containerClear.id = 'answerNext';
         containerClear.innerHTML = `
-            <img src="assets/games/cosmicpuzzles/images/cp_arrowNext.png" alt="Следующий вопрос">
+            <img src="assets/games/kraevedia/images/cp_arrowNext.png" alt="Следующий вопрос">
         `;
         container.appendChild(containerClear);
     }

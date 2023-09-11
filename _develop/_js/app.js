@@ -44,7 +44,7 @@ function introDev() {
         });
         tl
             .to(wrapperTop, {
-                duration: 0.7,
+                duration: 0.4,
                 autoAlpha: 0,
                 y: '-3%'
             })
@@ -60,89 +60,89 @@ function introDev() {
                 autoAlpha: 0,
                 y: '5%'
             })
-            // .to(wrapperBack, {
-            //     duration: 0.7,
-            //     delay: -0.5,
-            //     autoAlpha: 0
-            // })
+            .to(wrapperBack, {
+                duration: 0.7,
+                delay: -0.5,
+                autoAlpha: 0
+            })
         ;
     });
 
-    // clickAuthors.addEventListener('click', () => {
-    //     let tl = gsap.timeline({
-    //         onComplete: () => {
-    //             wrapper.className = 'wrapper';
-    //             wrapper.removeChild(wrapperTop);
-    //             wrapper.removeChild(wrapperTitle);
-    //             wrapper.removeChild(wrapperBottom);
-    //             wrapper.removeChild(wrapperBack);
-    //             wrapper.appendChild(container);
-    //             authorsStart();
-    //         }
-    //     });
-    //     tl
-    //         .to(wrapperTop, {
-    //             duration: 0.7,
-    //             autoAlpha: 0,
-    //             y: '-3%'
-    //         })
+    clickAuthors.addEventListener('click', () => {
+        let tl = gsap.timeline({
+            onComplete: () => {
+                wrapper.className = 'wrapper';
+                wrapper.removeChild(wrapperTop);
+                // wrapper.removeChild(wrapperTitle);
+                wrapper.removeChild(wrapperBottom);
+                wrapper.removeChild(wrapperBack);
+                wrapper.appendChild(container);
+                authorsStart();
+            }
+        });
+        tl
+            .to(wrapperTop, {
+                duration: 0.4,
+                autoAlpha: 0,
+                y: '-3%'
+            })
+            // .to(wrapperTitle, {
+            //     duration: 0.7,
+            //     delay: -0.5,
+            //     autoAlpha: 0,
+            //     y: '5%'
+            // })
+            .to(wrapperBottom, {
+                duration: 0.7,
+                delay: -0.5,
+                autoAlpha: 0,
+                y: '5%'
+            })
+            .to(wrapperBack, {
+                duration: 0.7,
+                delay: -0.5,
+                autoAlpha: 0
+            })
+        ;
+    });
+
+    clickAbout.addEventListener('click', () => {
+        let tl = gsap.timeline({
+            onComplete: () => {
+                wrapper.className = 'wrapper';
+                wrapper.removeChild(wrapperTop);
+                // wrapper.removeChild(wrapperTitle);
+                wrapper.removeChild(wrapperBottom);
+                wrapper.removeChild(wrapperBack);
+                wrapper.appendChild(container);
+                aboutStart();
+            }
+        });
+        tl
+            .to(wrapperTop, {
+                duration: 0.4,
+                autoAlpha: 0,
+                y: '-3%'
+            })
     //         .to(wrapperTitle, {
     //             duration: 0.7,
     //             delay: -0.5,
     //             autoAlpha: 0,
     //             y: '5%'
     //         })
-    //         .to(wrapperBottom, {
-    //             duration: 0.7,
-    //             delay: -0.5,
-    //             autoAlpha: 0,
-    //             y: '5%'
-    //         })
-    //         .to(wrapperBack, {
-    //             duration: 0.7,
-    //             delay: -0.5,
-    //             autoAlpha: 0
-    //         })
-    //     ;
-    // });
-    //
-    // clickAbout.addEventListener('click', () => {
-    //     let tl = gsap.timeline({
-    //         onComplete: () => {
-    //             wrapper.className = 'wrapper';
-    //             wrapper.removeChild(wrapperTop);
-    //             wrapper.removeChild(wrapperTitle);
-    //             wrapper.removeChild(wrapperBottom);
-    //             wrapper.removeChild(wrapperBack);
-    //             wrapper.appendChild(container);
-    //             aboutStart();
-    //         }
-    //     });
-    //     tl
-    //         .to(wrapperTop, {
-    //             duration: 0.7,
-    //             autoAlpha: 0,
-    //             y: '-3%'
-    //         })
-    //         .to(wrapperTitle, {
-    //             duration: 0.7,
-    //             delay: -0.5,
-    //             autoAlpha: 0,
-    //             y: '5%'
-    //         })
-    //         .to(wrapperBottom, {
-    //             duration: 0.7,
-    //             delay: -0.5,
-    //             autoAlpha: 0,
-    //             y: '5%'
-    //         })
-    //         .to(wrapperBack, {
-    //             duration: 0.7,
-    //             delay: -0.5,
-    //             autoAlpha: 0
-    //         })
-    //     ;
-    // });
+            .to(wrapperBottom, {
+                duration: 0.7,
+                delay: -0.5,
+                autoAlpha: 0,
+                y: '5%'
+            })
+            .to(wrapperBack, {
+                duration: 0.7,
+                delay: -0.5,
+                autoAlpha: 0
+            })
+        ;
+    });
 }
 
 /* Запускаем категории */
@@ -152,36 +152,36 @@ function categoryDev() {
         settingsLoad = new Settings()
     ;
     categoryLoad.categoryMain();
-    categoryLoad.categoryProgress('progressChoiceValue', 'progressChoiceAll');
-    categoryLoad.categoryProgress('progressPrepareValue', 'progressPrepareAll');
-    categoryLoad.categoryProgress('progressFlightValue', 'progressFlightAll');
+    categoryLoad.categoryProgress('progressCitizenValue', 'progressCitizenAll');
+    categoryLoad.categoryProgress('progressChicheroneValue', 'progressChicheroneAll');
+    categoryLoad.categoryProgress('progressKraevedValue', 'progressKraevedAll');
 
     const containerCategory = document.querySelector('.container__category'),
-        introAboutBack = document.querySelector('.wrapper__game'),
-        categoryChoice = document.getElementById('categoryChoice'),
-        categoryPrepare = document.getElementById('categoryPrepare'),
-        categoryFlight = document.getElementById('categoryFlight')
+        introAboutBack = document.querySelector('.wrapper__service'),
+        categoryCitizen = document.getElementById('categoryCitizen'),
+        categoryChicherone = document.getElementById('categoryChicherone'),
+        categoryKraeved = document.getElementById('categoryKraeved')
     ;
 
-    let progressChoiceQuestSum = JSON.parse(localStorage.getItem('progressChoiceAll')),
-        progressPrepareQuestSum = JSON.parse(localStorage.getItem('progressPrepareAll')),
-        progressFlightQuestSum = JSON.parse(localStorage.getItem('progressFlightAll'))
+    let progressCitizenQuestSum = JSON.parse(localStorage.getItem('progressCitizenAll')),
+        progressChicheroneQuestSum = JSON.parse(localStorage.getItem('progressChicheroneAll')),
+        progressKraevedQuestSum = JSON.parse(localStorage.getItem('progressKraevedAll'))
     ;
 
-    if (localStorage.getItem('progressChoiceAll') === null ||
-        localStorage.getItem('progressPrepareAll') === null ||
-        localStorage.getItem('progressFlightAll') === null) {
-        localStorage.setItem('progressChoiceAll', JSON.stringify(0));
-        localStorage.setItem('progressPrepareAll', JSON.stringify(0));
-        localStorage.setItem('progressFlightAll', JSON.stringify(0));
+    if (localStorage.getItem('progressCitizenAll') === null ||
+        localStorage.getItem('progressChicheroneAll') === null ||
+        localStorage.getItem('progressKraevedAll') === null) {
+        localStorage.setItem('progressCitizenAll', JSON.stringify(0));
+        localStorage.setItem('progressChicheroneAll', JSON.stringify(0));
+        localStorage.setItem('progressKraevedAll', JSON.stringify(0));
     }
 
     //Settings
     arrowBackLoad.clearStorage();
     const settingButton = document.getElementById('settingsClick'),
-        setProgressChoice = document.getElementById('progressChoiceValue'),
-        setProgressPrepare = document.getElementById('progressPrepareValue'),
-        setProgressFlight = document.getElementById('progressFlightValue')
+        setProgressCitizen = document.getElementById('progressCitizenValue'),
+        setProgressChicherone = document.getElementById('progressChicheroneValue'),
+        setProgressKraeved = document.getElementById('progressKraevedValue')
     ;
     settingButton.addEventListener('click', () => {
         settingsLoad.settingsBlock();
@@ -286,19 +286,19 @@ function categoryDev() {
     });
 
     //Category load
-    categoryChoice.addEventListener('click', () => {
-        soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_categoryLoad.ogg');
+    categoryCitizen.addEventListener('click', () => {
+        // soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_categoryLoad.ogg');
         let tl = gsap.timeline({
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(settingButton);
                 container.removeChild(containerCategory);
                 choiceCategoryDev();
-                lockSubQuestChoice();
+                lockSubQuestCitizen();
             }
         });
         tl
-            .to([categoryChoice, categoryPrepare, categoryFlight], {
+            .to([categoryCitizen, categoryChicherone, categoryKraeved], {
                 autoAlpha: 0,
                 duration: "0.6",
                 delay: "-0.3",
@@ -308,19 +308,19 @@ function categoryDev() {
         ;
     });
 
-    categoryPrepare.addEventListener('click', () => {
-        soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_categoryLoad.ogg');
+    categoryChicherone.addEventListener('click', () => {
+        // soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_categoryLoad.ogg');
         let tl = gsap.timeline({
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(settingButton);
                 container.removeChild(containerCategory);
-                prepareCategory();
-                lockSubQuestPrepare();
+                chicheroneCategory();
+                lockSubQuestChicherone();
             }
         });
         tl
-            .to([categoryChoice, categoryPrepare, categoryFlight], {
+            .to([categoryCitizen, categoryChicherone, categoryKraeved], {
                 autoAlpha: 0,
                 duration: "0.6",
                 delay: "-0.3",
@@ -330,19 +330,19 @@ function categoryDev() {
         ;
     });
 
-    categoryFlight.addEventListener('click', () => {
-        soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_categoryLoad.ogg');
+    categoryKraeved.addEventListener('click', () => {
+        // soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_categoryLoad.ogg');
         let tl = gsap.timeline({
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(settingButton);
                 container.removeChild(containerCategory);
-                flightCategory();
-                lockSubQuestFlight();
+                kraevedCategory();
+                lockSubQuestKraeved();
             }
         });
         tl
-            .to([categoryChoice, categoryPrepare, categoryFlight], {
+            .to([categoryCitizen, categoryChicherone, categoryKraeved], {
                 autoAlpha: 0,
                 duration: "0.6",
                 delay: "-0.3",
@@ -352,16 +352,16 @@ function categoryDev() {
         ;
     });
 
-    if (progressChoiceQuestSum === 24) {
-        categoryChoice.className += ' category__main--hidden';
+    if (progressCitizenQuestSum === 24) {
+        categoryCitizen.className += ' category__main--hidden';
     }
 
-    if (progressPrepareQuestSum === 24) {
-        categoryPrepare.className += ' category__main--hidden';
+    if (progressChicheroneQuestSum === 24) {
+        categoryChicherone.className += ' category__main--hidden';
     }
 
-    if (progressFlightQuestSum === 24) {
-        categoryFlight.className += ' category__main--hidden';
+    if (progressKraevedQuestSum === 24) {
+        categoryKraeved.className += ' category__main--hidden';
     }
 }
 
@@ -373,7 +373,8 @@ function aboutStart() {
     aboutLoad.aboutLibrary('О библиотеке', 'МБУК г.о. Самара «Самарская муниципальная информационно-библиотечная система» была создана в декабре 1986 года. На сегодняшний день в ее составе - Центральная городская библиотека имени Н.К. Крупской и 35 библиотек-филиалов, нашими читателями являются жители всех 9 районов города. Библиотеки системы – это информационные, образователь- ные центры, место культурного отдыха и общения. СМИБС находится в центре мировых событий, активно участвует в общероссийских акциях и в жизни города.', 'В библиотеках системы можно получить информацию и литературу по любой теме, доступ к электронным базам данных, воспользоваться услугами Интернет-залов, Центрами общественного доступа, побывать на презентациях выставок и творческих встречах, а также воспользоваться дополнительными сервисными услугами:<ul><li>ксерокопированием;</li><li>сканированием;</li><li>ламинированием документов;</li><li>распечаткой информации на принтере;</li><li>записью на электронные носители.</li></ul>');
 
     const containerAbout = document.querySelector('.container__wrapper_about'),
-        introAboutBack = document.querySelector('.wrapper__game')
+        introAboutBack = document.querySelector('.wrapper__service'),
+        wrapperTopAbout = document.querySelector('.wrapper__top')
     ;
 
     arrowBackLoad.arrowBack();
@@ -384,11 +385,17 @@ function aboutStart() {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerAbout);
                 wrapper.removeChild(introAboutBack);
+                wrapper.removeChild(wrapperTopAbout);
                 wrapper.className = 'wrapper';
                 introDev();
             }
         });
         tl
+            .to(wrapperTopAbout, {
+                duration: 0.4,
+                autoAlpha: 0,
+                y: '-3%'
+            })
             .to([containerAbout, arrowBackClick], {
                 autoAlpha: 0,
                 delay: '-0.1'
@@ -410,7 +417,8 @@ function authorsStart() {
 
     const containerAbout = document.querySelector('.container__wrapper_about'),
         wrapperAboutBack = document.querySelector('.wrapper__back_about'),
-        introAboutBack = document.querySelector('.wrapper__game')
+        introAboutBack = document.querySelector('.wrapper__service'),
+        wrapperTopAuthors = document.querySelector('.wrapper__top')
     ;
 
     arrowBackLoad.arrowBack();
@@ -422,11 +430,17 @@ function authorsStart() {
                 container.removeChild(containerAbout);
                 wrapper.removeChild(wrapperAboutBack);
                 wrapper.removeChild(introAboutBack);
+                wrapper.removeChild(wrapperTopAuthors);
                 wrapper.className = 'wrapper';
                 introDev();
             }
         });
         tl
+            .to(wrapperTopAuthors, {
+                duration: 0.4,
+                autoAlpha: 0,
+                y: '-3%'
+            })
             .to([containerAbout, arrowBackClick], {
                 autoAlpha: 0,
                 delay: '-0.1'
@@ -453,8 +467,8 @@ function questionBlockDev() {
 }
 
 function init() {
-    // introDev();
-    categoryDev();
+    introDev();
+    // categoryDev();
 }
 
 init();

@@ -2,12 +2,18 @@ class About {
 
     aboutAuthors(peronFirstTitle, peronFirstName, peronSecondTitle, peronSecondName, peronThirdTitle, peronThirdName) {
         const containerWrapper = document.createElement('div'),
-            containerTitle = document.createElement('div')
+            containerTitle = document.createElement('div'),
+            wrapperTitleAuthors = document.createElement('div')
         ;
         containerWrapper.className = 'container__wrapper container__wrapper_about';
         containerTitle.className = 'container__title container__title_category';
+        wrapperTitleAuthors.className = 'wrapper__top';
 
-        containerTitle.innerHTML = `<h1 class="c">Об авторах</h1>`;
+        wrapperTitleAuthors.innerHTML = `
+            <picture id="authorsTitle" class="wrapper__top_title">
+                <img src="assets/games/kraevedia/images/kraevedia_titleAuthors.png" alt="Краеведия. Об авторах">
+            </picture>
+        `;
         containerWrapper.innerHTML = `
             <div class="container__about">
                 <div class="container__about_person">
@@ -24,18 +30,18 @@ class About {
                 </div>
             </div>
         `;
+        wrapper.appendChild(wrapperTitleAuthors);
         container.appendChild(containerWrapper);
-        containerWrapper.appendChild(containerTitle);
 
         const introBlockBack = document.createElement('div');
-        introBlockBack.className = 'wrapper__game';
+        introBlockBack.className = 'wrapper__service';
         wrapper.appendChild(introBlockBack);
 
         const wrapperAboutBack = document.createElement('div');
         wrapperAboutBack.className = 'wrapper__back_about';
         wrapper.appendChild(wrapperAboutBack);
 
-        let containerAboutTitle = document.querySelector('.container__title_category'),
+        let titleAuthors = document.querySelector('.wrapper__top'),
             containerAboutPerson = document.querySelectorAll('.container__about_person'),
             aboutBack = document.querySelector('.wrapper__back_about')
         ;
@@ -53,8 +59,8 @@ class About {
                     duration: 0.4,
                     delay: '-0.4'
                 })
-                .from(containerAboutTitle, {
-                    autoAlpha: 0,
+                .to(titleAuthors, {
+                    autoAlpha: 1,
                     duration: 0.4,
                     delay: '-0.2'
                 })
@@ -72,12 +78,18 @@ class About {
 
     aboutLibrary(libraryTitle, libraryLeftText, libraryRightText) {
         const containerWrapper = document.createElement('div'),
-            containerTitle = document.createElement('div')
+            containerTitle = document.createElement('div'),
+            wrapperTitleAbout = document.createElement('div')
         ;
         containerWrapper.className = 'container__wrapper container__wrapper_about';
         containerTitle.className = 'container__title container__title_category';
+        wrapperTitleAbout.className = 'wrapper__top';
 
-        containerTitle.innerHTML = `<h1 class="c">${libraryTitle}</h1>`;
+        wrapperTitleAbout.innerHTML = `
+            <picture id="aboutTitle" class="wrapper__top_title">
+                <img src="assets/games/kraevedia/images/kraevedia_titleAbout.png" alt="Краеведия. О библиотеке">
+            </picture>
+        `;
         containerWrapper.innerHTML = `
             <div class="container__about container__about_text">
                 <div class="container__about_left">
@@ -88,16 +100,17 @@ class About {
                 </div>
             </div>
         `;
+        wrapper.appendChild(wrapperTitleAbout);
         container.appendChild(containerWrapper);
-        containerWrapper.appendChild(containerTitle);
 
         const introBlockBack = document.createElement('div');
-        introBlockBack.className = 'wrapper__game';
+        introBlockBack.className = 'wrapper__service';
         wrapper.appendChild(introBlockBack);
 
-        let containerAboutTitle = document.querySelector('.container__title_category'),
+        let titleAbout = document.querySelector('.wrapper__top'),
             containerAboutLeft = document.querySelectorAll('.container__about_left'),
-            containerAboutRight = document.querySelectorAll('.container__about_right')
+            containerAboutRight = document.querySelectorAll('.container__about_right'),
+            aboutBack = document.querySelector('.wrapper__back_about')
         ;
 
         function aboutLibraryAnim() {
@@ -108,8 +121,13 @@ class About {
                     autoAlpha: 0,
                     duration: 0.4
                 })
-                .from(containerAboutTitle, {
+                .from(aboutBack, {
                     autoAlpha: 0,
+                    duration: 0.4,
+                    delay: '-0.4'
+                })
+                .to(titleAbout, {
+                    autoAlpha: 1,
                     duration: 0.4,
                     delay: '-0.2'
                 })
