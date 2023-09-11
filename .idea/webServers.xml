@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="558c3709-da7e-4cad-9672-11ea2787353d" name="Kraevedia" url="http://smibs.ru/kraevedia">
+        <fileTransfer rootFolder="/sites/new.smibs.ru/root/assets/games/kraevedia" accessType="SFTP" host="178.21.10.63" port="22" sshConfigId="7bfce415-1809-4eaa-85dd-3ee37f8559e8" sshConfig="root@178.21.10.63:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

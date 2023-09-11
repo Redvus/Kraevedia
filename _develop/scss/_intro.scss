@@ -1,0 +1,11 @@
+#introTitle {
+    width: auto;
+    height: 20vmin;
+    display: block;
+    position: relative;
+    margin-top: 3vh;
+
+    img {
+        @extend %imgCenter;
+    }
+}
