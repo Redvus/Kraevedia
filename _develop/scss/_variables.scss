@@ -36,13 +36,14 @@ $introTitleSymbolWidth: calc(#{$containerWidth} / 11);
 $introTitleSymbolLeft: calc((-#{$containerWidth} / 11) / 5.8);
 
 //Intro Mobile
-$introTopBlockWidthMobile: 95vw;
+$introTopBlockWidthMobile: 100vw;
 $introLetterHeightMobile: 35%;
 $introTextHeightMobile: 7%;
 $introButtonHeightMobile: 25%;
 
 //About
 $containerAboutWidth: 22rem;
+$containerPadding: 6rem;
 
 /*=====  End of Variable  ======*/
 

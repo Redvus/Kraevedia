@@ -8,6 +8,7 @@ class About {
         containerWrapper.className = 'container__wrapper container__wrapper_about';
         containerTitle.className = 'container__title container__title_category';
         wrapperTitleAuthors.className = 'wrapper__top';
+        container.className = 'container container--wide';
 
         wrapperTitleAuthors.innerHTML = `
             <picture id="authorsTitle" class="wrapper__top_title">
@@ -15,7 +16,7 @@ class About {
             </picture>
         `;
         containerWrapper.innerHTML = `
-            <div class="container__about">
+            <div class="container__about container__about_back">
                 <div class="container__about_person">
                     <h4>${peronFirstTitle}</h4>
                     <p>${peronFirstName}</p>
@@ -37,13 +38,14 @@ class About {
         introBlockBack.className = 'wrapper__service';
         wrapper.appendChild(introBlockBack);
 
-        const wrapperAboutBack = document.createElement('div');
-        wrapperAboutBack.className = 'wrapper__back_about';
-        wrapper.appendChild(wrapperAboutBack);
+        // const wrapperAboutBack = document.createElement('div');
+        // wrapperAboutBack.className = 'wrapper__back_about';
+        // wrapper.appendChild(wrapperAboutBack);
 
         let titleAuthors = document.querySelector('.wrapper__top'),
             containerAboutPerson = document.querySelectorAll('.container__about_person'),
-            aboutBack = document.querySelector('.wrapper__back_about')
+            aboutBack = document.querySelector('.wrapper__back_about'),
+            containerAbout = document.querySelector('.container__about')
         ;
 
         function aboutAuthorsAnim() {
@@ -52,17 +54,18 @@ class About {
             tl
                 .from(introBlockBack, {
                     autoAlpha: 0,
-                    duration: 0.4
-                })
-                .from(aboutBack, {
-                    autoAlpha: 0,
                     duration: 0.4,
-                    delay: '-0.4'
+                    scale: 0.98
                 })
                 .to(titleAuthors, {
                     autoAlpha: 1,
                     duration: 0.4,
                     delay: '-0.2'
+                })
+                .from(containerAbout, {
+                    autoAlpha: 0,
+                    duration: 0.4,
+                    delay: '-0.3'
                 })
                 .from(containerAboutPerson, {
                     autoAlpha: 0,
@@ -84,6 +87,7 @@ class About {
         containerWrapper.className = 'container__wrapper container__wrapper_about';
         containerTitle.className = 'container__title container__title_category';
         wrapperTitleAbout.className = 'wrapper__top';
+        container.className = 'container container--wide';
 
         wrapperTitleAbout.innerHTML = `
             <picture id="aboutTitle" class="wrapper__top_title">
@@ -93,10 +97,10 @@ class About {
         containerWrapper.innerHTML = `
             <div class="container__about container__about_text">
                 <div class="container__about_left">
-                    ${libraryLeftText}
+                    <p>${libraryLeftText}</p>
                 </div>
                 <div class="container__about_right">
-                    ${libraryRightText}
+                    <p>${libraryRightText}</p>
                 </div>
             </div>
         `;
@@ -119,7 +123,8 @@ class About {
             tl
                 .from(introBlockBack, {
                     autoAlpha: 0,
-                    duration: 0.4
+                    duration: 0.4,
+                    scale: 0.98
                 })
                 .from(aboutBack, {
                     autoAlpha: 0,

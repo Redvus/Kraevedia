@@ -308,10 +308,15 @@
 	//	}
 	//}
 
-	@include grid-media($Small) {
+	@include grid-media($XSmall) {
 		//height: inherit;
 		//position: fixed;
 		//min-height: 100vh;
+
+		&__intro {
+			background: url("../images/kraevedia_back.jpg") 50% 90% no-repeat;
+			background-size: auto 30%;
+		}
 
 		&__top {
 			width: $introTopBlockWidthMobile;
@@ -327,11 +332,16 @@
 			}
 		}
 
+		&__service {
+			//background: none;
+			opacity: 0.5;
+		}
+
 		&__bottom {
 			width: calc(100% - 2rem);
 			margin: 0 1rem;
+			top: 40vmin;
 			bottom: inherit;
-			top: 65vmin;
 
 			&_menu {
 				width: 100%;
@@ -378,6 +388,15 @@
 				width: calc(80vw - 4rem);
 			}
 		}
+
+		&__service {
+
+			&_arrow {
+				width: 10vmin;
+				left: 1rem;
+				bottom: -7vh;
+			}
+		}
 	}
 }
 
@@ -393,6 +412,10 @@
 	transform: translate(-50%, -50%);
 	//background-color: cornflowerblue;
 	z-index: 1;
+
+	&--wide {
+		width: calc(#{$containerHeight} * 1.6);
+	}
 
 	&__wrapper {
 		width: 100%;
@@ -427,8 +450,7 @@
 		&_about {
 			width: 100%;
 			display: flex;
-			flex-direction: column-reverse;
-			justify-content: space-between;
+			justify-content: flex-start;
 			align-items: center;
 		}
 	}
@@ -492,14 +514,22 @@
 
 	&__about {
 		width: 100%;
-		height: 80%;
+		height: 65%;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		position: relative;
+
+		&_back {
+			background: url("../images/kraevedia_catBack.png") 50% 0 no-repeat;
+			background-size: auto 100%;
+		}
 
 		&_person {
 			text-align: center;
 			margin-top: 2rem;
+			color: $secondary;
 
 			p {
 				margin: 0.5rem 0;
@@ -511,27 +541,53 @@
 
 			&--gone {
 				border: $border_1;
+				border-color: $secondary;
 				padding: calc(#{$paddingBase} / 2);
 				display: inline-block;
 			}
 		}
 
 		&_text {
+			height: 70%;
 			flex-direction: row;
+			color: $secondary;
+			font-size: $font-size-base;
+			margin-top: 7vh;
+
+			ul {
+				li {
+					font-size: $font-size-base;
+				}
+			}
 		}
 
 		&_left {
-			width: calc(50% - 2rem);
-			height: 100%;
-			display: block;
-			margin-right: 2rem;
+			width: calc(50% - #{$containerPadding} - #{$paddingBase});
+			height: calc(100% - (#{$containerPadding} * 2));
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: $paddingBase;
+			padding: $containerPadding;
+			background: url("../images/kraevedia_catBack.png") 50% 0 no-repeat;
+			background-size: auto 100%;
 		}
 
 		&_right {
-			width: calc(50% - 2rem);
-			height: 100%;
-			display: block;
-			margin-left: 2rem;
+			width: calc(50% - #{$containerPadding} - #{$paddingBase});
+			height: calc(100% - (#{$containerPadding} * 2));
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-left: $paddingBase;
+			padding: $containerPadding;
+			background: url("../images/kraevedia_catBack.png") 50% 0 no-repeat;
+			background-size: auto 100%;
+
+			p {
+				margin-bottom: calc(#{$paddingBase} / 2.5);
+			}
 		}
 	}
 
@@ -557,7 +613,7 @@
 	//	height: calc(#{$containerWidth} / 1.57);
 	//}
 
-	@include grid-media($Small) {
+	@include grid-media($XSmall) {
 		width: calc(100% - 2rem);
 		height: calc(100vh - 1rem);
 		min-height: 100vh;
@@ -568,8 +624,14 @@
 		margin-top: 1rem;
 		transform: translate(0, 0);
 
+		&--wide {
+			height: calc(100vh - #{$containerPadding} - (#{$containerPadding} / 1.5));
+			min-height: inherit;
+			margin: $containerPadding 0 (calc(#{$containerPadding} / 1.5)) 0;
+		}
+
 		&__wrapper {
-			height: inherit;
+			//height: inherit;
 			min-height: 50vh;
 			overflow: scroll;
 			//top: 2.5rem;
@@ -601,24 +663,56 @@
 		}
 
 		&__about {
-			height: inherit;
+			//height: inherit;
 			min-height: 50%;
 			top: 0;
+			justify-content: flex-start;
+
+			&_back {
+				background: none;
+			}
 
 			&_text {
+				height: inherit;
 				flex-direction: column;
+				color: $fourth;
+				font-size: $font-size-large;
+				margin-top: 0;
+				overflow: auto;
+
+				ul {
+					li {
+						font-size: $font-size-large;
+					}
+				}
+			}
+
+			&_person {
+				color: $fourth;
+
+				p {
+					font-size: $font-size-large;
+				}
+
+				&--gone {
+					border-color: $fourth;
+				}
 			}
 
 			&_left {
 				width: 100%;
 				height: initial;
 				margin-right: 0;
+				background: none;
+				padding: 0;
 			}
 
 			&_right {
 				width: 100%;
 				height: initial;
 				margin-left: 0;
+				background: none;
+				padding: 0;
 			}
 		}
 	}

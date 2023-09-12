@@ -42,6 +42,7 @@ class Intro {
                 })
                 .to(wrapperTop, {
                     duration: 0.4,
+                    delay: '-0.4',
                     autoAlpha: 1
                 })
                 .to(wrapperBottom, {
