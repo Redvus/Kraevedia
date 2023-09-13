@@ -12,9 +12,8 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin-bottom: 1rem;
-            margin-left: 0;
-            position: relative;
+            position: absolute;
+            bottom: calc(#{$paddingBase} * 3);
         }
 
         &_value {
@@ -31,7 +30,7 @@
 
         &_image {
             width: 100%;
-            height: 30vmin;
+            height: 40vmin;
             display: block;
             position: relative;
             background: url("../images/kraevedia_catBack.png") 50% 0 no-repeat;
@@ -40,13 +39,19 @@
         }
 
         &_title {
-            width: 100%;
-            height: 100%;
+            width: calc(100% - (#{$paddingBase} * 8));
+            height: 70%;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             color: $secondary;
             text-align: center;
+            padding: calc(#{$paddingBase} * 4) calc(#{$paddingBase} * 4) 0;
+
+            p {
+                font-size: $font-size-base;
+            }
         }
 
         &:hover {
@@ -89,11 +94,13 @@
     }
 
     &__element {
-        position: absolute;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         cursor: pointer;
+        padding: 0.3rem;
+        transition: transform $base-duration;
 
         &_stars {
             min-height: 2rem;
@@ -134,38 +141,6 @@
             }
         }
 
-        &_1 {
-            transform: translateY(-23vmin);
-        }
-
-        &_2 {
-            transform: translate(20vmin, -17vmin);
-        }
-
-        &_3 {
-            transform: translate(30vmin, 1vmin);
-        }
-
-        &_4 {
-            transform: translate(20vmin, 19vmin);
-        }
-
-        &_5 {
-            transform: translateY(25vmin);
-        }
-
-        &_6 {
-            transform: translate(-20vmin, 19vmin);
-        }
-
-        &_7 {
-            transform: translate(-30vmin, 1vmin);
-        }
-
-        &_8 {
-            transform: translate(-20vmin, -17vmin);
-        }
-
         &_image {
             width: auto;
             height: 25vmin;
@@ -178,14 +153,6 @@
                 display: block;
                 object-position: center;
                 object-fit: cover;
-                transition: transform $base-duration;
-            }
-
-            &:hover {
-
-                img {
-                    transform: scale(0.95);
-                }
             }
         }
 
@@ -208,7 +175,12 @@
             }
 
             picture {
-                opacity: 0.35;
+                opacity: 0.5;
+            }
+
+            .category__element_title {
+                display: none;
+                visibility: hidden;
             }
         }
 
@@ -229,6 +201,23 @@
                 background-size: auto 100%;
                 z-index: 2;
             }
+        }
+
+        &_title {
+            width: calc(100% - (#{$paddingBase} * 4));
+            position: absolute;
+            color: $secondary;
+            font-size: $font-size-large;
+            text-align: center;
+            padding: 0 calc(#{$paddingBase} * 2);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        &:hover {
+            transform: scale(0.98);
         }
     }
 

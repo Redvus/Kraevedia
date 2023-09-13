@@ -184,7 +184,8 @@ function categoryDev() {
     const settingButton = document.getElementById('settingsClick'),
         setProgressCitizen = document.getElementById('progressCitizenValue'),
         setProgressChicherone = document.getElementById('progressChicheroneValue'),
-        setProgressKraeved = document.getElementById('progressKraevedValue')
+        setProgressKraeved = document.getElementById('progressKraevedValue'),
+        wrapperTopTitle = document.querySelector('.wrapper__top')
     ;
     settingButton.addEventListener('click', () => {
         settingsLoad.settingsBlock();
@@ -199,16 +200,16 @@ function categoryDev() {
 
         settingsClearButton.addEventListener('click', () => {
             localStorage.clear();
-            localStorage.setItem('progressChoiceAll', JSON.stringify(0));
-            localStorage.setItem('progressPrepareAll', JSON.stringify(0));
-            localStorage.setItem('progressFlightAll', JSON.stringify(0));
-            setProgressChoice.textContent = JSON.parse(localStorage.getItem('progressChoiceAll'));
-            setProgressPrepare.textContent = JSON.parse(localStorage.getItem('progressPrepareAll'));
-            setProgressFlight.textContent = JSON.parse(localStorage.getItem('progressFlightAll'));
-            soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_progressClear.ogg');
-            categoryChoice.className = 'category__main';
-            categoryPrepare.className = 'category__main';
-            categoryFlight.className = 'category__main';
+            localStorage.setItem('progressCitizenAll', JSON.stringify(0));
+            localStorage.setItem('progressChicheroneAll', JSON.stringify(0));
+            localStorage.setItem('progressKraevedAll', JSON.stringify(0));
+            setProgressCitizen.textContent = JSON.parse(localStorage.getItem('progressCitizenAll'));
+            setProgressChicherone.textContent = JSON.parse(localStorage.getItem('progressChicheroneAll'));
+            setProgressKraeved.textContent = JSON.parse(localStorage.getItem('progressKraevedAll'));
+            // soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_progressClear.ogg');
+            categoryCitizen.className = 'category__main';
+            categoryChicherone.className = 'category__main';
+            categoryKraeved.className = 'category__main';
         });
 
         settingsClearButton.addEventListener('mouseover', () => {
@@ -266,11 +267,17 @@ function categoryDev() {
                 container.removeChild(settingButton);
                 container.removeChild(containerCategory);
                 wrapper.removeChild(introAboutBack);
+                wrapper.removeChild(wrapperTopTitle);
                 wrapper.className = 'wrapper';
                 introDev();
             }
         });
         tl
+            .to(wrapperTopTitle, {
+                duration: 0.4,
+                autoAlpha: 0,
+                y: '-3%'
+            })
             .to(containerCategory, {
                 autoAlpha: 0,
                 duration: 0.6
@@ -282,8 +289,8 @@ function categoryDev() {
             })
             .to(introAboutBack, {
                 autoAlpha: 0,
-                duration: 0.6,
-                delay: '-0.4'
+                delay: '-0.1',
+                scale: 0.98
             })
         ;
     });
@@ -296,17 +303,29 @@ function categoryDev() {
                 container.removeChild(arrowBackClick);
                 container.removeChild(settingButton);
                 container.removeChild(containerCategory);
-                choiceCategoryDev();
+                wrapper.removeChild(wrapperTopTitle);
+                wrapper.removeChild(introAboutBack);
+                citizenCategoryDev();
                 lockSubQuestCitizen();
             }
         });
         tl
+            .to(wrapperTopTitle, {
+                duration: 0.4,
+                autoAlpha: 0,
+                y: '-3%'
+            })
             .to([categoryCitizen, categoryChicherone, categoryKraeved], {
                 autoAlpha: 0,
                 duration: "0.6",
                 delay: "-0.3",
                 y: "0.5rem",
                 stagger: 0.2
+            })
+            .to(introAboutBack, {
+                autoAlpha: 0,
+                delay: '-0.1',
+                scale: 0.98
             })
         ;
     });
@@ -318,11 +337,18 @@ function categoryDev() {
                 container.removeChild(arrowBackClick);
                 container.removeChild(settingButton);
                 container.removeChild(containerCategory);
+                wrapper.removeChild(wrapperTopTitle);
+                wrapper.removeChild(introAboutBack);
                 chicheroneCategory();
                 lockSubQuestChicherone();
             }
         });
         tl
+            .to(wrapperTopTitle, {
+                duration: 0.4,
+                autoAlpha: 0,
+                y: '-3%'
+            })
             .to([categoryCitizen, categoryChicherone, categoryKraeved], {
                 autoAlpha: 0,
                 duration: "0.6",
@@ -340,11 +366,17 @@ function categoryDev() {
                 container.removeChild(arrowBackClick);
                 container.removeChild(settingButton);
                 container.removeChild(containerCategory);
+                wrapper.removeChild(wrapperTopTitle);
                 kraevedCategory();
                 lockSubQuestKraeved();
             }
         });
         tl
+            .to(wrapperTopTitle, {
+                duration: 0.4,
+                autoAlpha: 0,
+                y: '-3%'
+            })
             .to([categoryCitizen, categoryChicherone, categoryKraeved], {
                 autoAlpha: 0,
                 duration: "0.6",
@@ -355,15 +387,15 @@ function categoryDev() {
         ;
     });
 
-    if (progressCitizenQuestSum === 24) {
+    if (progressCitizenQuestSum === 50) {
         categoryCitizen.className += ' category__main--hidden';
     }
 
-    if (progressChicheroneQuestSum === 24) {
+    if (progressChicheroneQuestSum === 50) {
         categoryChicherone.className += ' category__main--hidden';
     }
 
-    if (progressKraevedQuestSum === 24) {
+    if (progressKraevedQuestSum === 50) {
         categoryKraeved.className += ' category__main--hidden';
     }
 }
@@ -405,7 +437,7 @@ function aboutStart() {
             })
             .to(introAboutBack, {
                 autoAlpha: 0,
-                delay: '-0.3',
+                delay: '-0.1',
                 scale: 0.98
             })
         ;
@@ -448,13 +480,13 @@ function authorsStart() {
                 autoAlpha: 0,
                 delay: '-0.1'
             })
-            .to(wrapperAboutBack, {
-                autoAlpha: 0,
-                delay: '-0.2'
-            })
+            // .to(wrapperAboutBack, {
+            //     autoAlpha: 0,
+            //     delay: '-0.2'
+            // })
             .to(introAboutBack, {
                 autoAlpha: 0,
-                delay: '-0.3',
+                delay: '-0.1',
                 scale: 0.98
             })
         ;
@@ -471,8 +503,10 @@ function questionBlockDev() {
 }
 
 function init() {
-    introDev();
+    // introDev();
     // categoryDev();
+    // citizenCategoryDev();
+    chicheroneCategory();
 }
 
 init();

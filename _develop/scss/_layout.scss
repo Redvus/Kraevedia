@@ -73,6 +73,42 @@
 		}
 	}
 
+	&__citizen {
+		width: 100%;
+		height: 100vh;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url("../images/kraevedia_citizenBack.jpg") 50% 100% no-repeat;
+		background-size: auto 60%;
+		z-index: 0;
+	}
+
+	&__chicherone {
+		width: 100%;
+		height: 100vh;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url("../images/kraevedia_chicheroneBack.jpg") 50% 100% no-repeat;
+		background-size: auto 60%;
+		z-index: 0;
+	}
+
+	&__kraeved {
+		width: 100%;
+		height: 100vh;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url("../images/kraevedia_kraevedBack.jpg") 50% 100% no-repeat;
+		background-size: auto 60%;
+		z-index: 0;
+	}
+
 	&__top {
 		//width: $introTopBlockWidth;
 		//height: auto;
@@ -308,6 +344,20 @@
 	//	}
 	//}
 
+	@include grid-media($XXLarge) {
+
+		&__citizen {
+			background-size: auto 100%;
+		}
+	}
+
+	@include grid-media($XLarge) {
+
+		&__citizen {
+			background-size: auto 100%;
+		}
+	}
+
 	@include grid-media($XSmall) {
 		//height: inherit;
 		//position: fixed;
@@ -414,7 +464,7 @@
 	z-index: 1;
 
 	&--wide {
-		width: calc(#{$containerHeight} * 1.6);
+		width: calc(#{$containerHeight} * 1.8);
 	}
 
 	&__wrapper {
@@ -442,9 +492,11 @@
 		&_subcategory {
 			width: 100%;
 			display: flex;
-			align-items: center;
+			flex-direction: row;
+			flex-wrap: wrap;
 			justify-content: center;
 			position: relative;
+			margin-top: 7vh;
 		}
 
 		&_about {
@@ -514,7 +566,7 @@
 
 	&__about {
 		width: 100%;
-		height: 65%;
+		height: 70%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
