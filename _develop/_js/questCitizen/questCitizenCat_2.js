@@ -1,21 +1,25 @@
-if (localStorage.getItem('progressChoiceQuest_2') === null) {
-    localStorage.setItem('progressChoiceQuest_2', JSON.stringify(0));
+
+if (localStorage.getItem('progressCitizenQuest_2') === null) {
+    localStorage.setItem('progressCitizenQuest_2', JSON.stringify(0));
 }
 
-// Choice. Quest 2
-function questionChoiceCat_2_1() {
-    let questChoiceCatLoad = new Question();
+// Citizen. Quest 2. Самара в зеркале истории
+function questionCitizenCat_2_1() {
+    let questCitizenCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 2;
-    let progressChoiceQuest_2_1 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_1'));
-    let progressChoiceQuest_2_2 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_2'));
-    let progressChoiceQuest_2_3 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_3'));
+    let answerWrightNum = 0;
+    let progressCitizenQuest_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
+        progressCitizenQuest_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
+        progressCitizenQuest_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
+        progressCitizenQuest_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
+        progressCitizenQuest_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    ;
 
-    if (localStorage.getItem('progressChoiceQuest_2_1') === null) {
-        localStorage.setItem('progressChoiceQuest_2_1', JSON.stringify(progressChoiceQuest_2_1));
+    if (localStorage.getItem('progressCitizenQuest_2_1') === null) {
+        localStorage.setItem('progressCitizenQuest_2_1', JSON.stringify(progressCitizenQuest_2_1));
     }
 
-    questChoiceCatLoad.questionBlock('Отбор', 'Первый отряд космонавтов', 'В каком году был создан первый отряд космонавтов?', '1961', '1957', '1960');
+    questCitizenCatLoad.questionBlock('Житель', 'Самара в зеркале истории', 'Покровитель Самары?', 'Митрополит Алексей', 'Митрополит Климент', 'Митрополит Серафим');
 
     let answerVar_2_1_1 = document.getElementById('answerVar_1'),
         answerVar_2_1_2 = document.getElementById('answerVar_2'),
@@ -26,146 +30,249 @@ function questionChoiceCat_2_1() {
 
     questionStars.className = 'wrapper__stars';
     wrapper.appendChild(questionStars);
+    questionStars.innerHTML = `
+        <li id="questionStar_2_1"></li>
+        <li id="questionStar_2_2"></li>
+        <li id="questionStar_2_3"></li>
+        <li id="questionStar_2_4"></li>
+        <li id="questionStar_2_5"></li>
+    `;
 
-    if (progressChoiceQuest_2_1 === 0 &&
-        progressChoiceQuest_2_2 === 1 &&
-        progressChoiceQuest_2_3 === 0) {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1"></li>
-            <li id="questionStar_2_2" class="fill"></li>
-            <li id="questionStar_2_3"></li>
-        `;
-    } else if (progressChoiceQuest_2_1 === 0 &&
-        progressChoiceQuest_2_2 === 0 &&
-        progressChoiceQuest_2_3 === 1) {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1"></li>
-            <li id="questionStar_2_2"></li>
-            <li id="questionStar_2_3" class="fill"></li>
-        `;
-    } else if (progressChoiceQuest_2_1 === 0 &&
-        progressChoiceQuest_2_2 === 1 &&
-        progressChoiceQuest_2_3 === 1) {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1"></li>
-            <li id="questionStar_2_2" class="fill"></li>
-            <li id="questionStar_2_3" class="fill"></li>
-        `;
-    } else {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1"></li>
-            <li id="questionStar_2_2"></li>
-            <li id="questionStar_2_3"></li>
-        `;
+    const questionStar_2_1 = document.getElementById('questionStar_2_1'),
+        questionStar_2_2 = document.getElementById('questionStar_2_2'),
+        questionStar_2_3 = document.getElementById('questionStar_2_3'),
+        questionStar_2_4 = document.getElementById('questionStar_2_4'),
+        questionStar_2_5 = document.getElementById('questionStar_2_5')
+    ;
+
+    function starsView_1() {
+        if (progressCitizenQuest_2_2 === 1) {
+            questionStar_2_2.className += 'fill';
+        }
+        if (progressCitizenQuest_2_3 === 1) {
+            questionStar_2_3.className += 'fill';
+        }
+        if (progressCitizenQuest_2_4 === 1) {
+            questionStar_2_4.className += 'fill';
+        }
+        if (progressCitizenQuest_2_5 === 1) {
+            questionStar_2_5.className += 'fill';
+        }
     }
-
-    const questionStar_2_1 = document.getElementById('questionStar_2_1');
+    starsView_1();
 
     for (let i = 0; i < answerVarRight_2_1.length; i++) {
         if (answerVarRight_2_1[i] === answerVarRight_2_1[answerWrightNum]) {
             answerVarRight_2_1[i].addEventListener('click', () => {
-                let progressChoiceQuest_2 = JSON.parse(localStorage.getItem('progressChoiceQuest_2'));
-                let progressChoiceQuestSum_2_1 = progressChoiceQuest_2_1 + 1;
-                let progressChoiceQuestSum_2 = progressChoiceQuestSum_2_1 + progressChoiceQuest_2;
+                let progressCitizenQuest_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2'));
+                let progressCitizenQuestSum_2_1 = progressCitizenQuest_2_1 + 1;
+                let progressCitizenQuestSum_2 = progressCitizenQuestSum_2_1 + progressCitizenQuest_2;
 
-                localStorage.setItem('progressChoiceQuest_2_1', JSON.stringify(progressChoiceQuestSum_2_1));
-                localStorage.setItem('progressChoiceQuest_2', JSON.stringify(progressChoiceQuestSum_2));
-                if (progressChoiceQuestSum_2_1 === 1) {
+                localStorage.setItem('progressCitizenQuest_2_1', JSON.stringify(progressCitizenQuestSum_2_1));
+                localStorage.setItem('progressCitizenQuest_2', JSON.stringify(progressCitizenQuestSum_2));
+                if (progressCitizenQuestSum_2_1 === 1) {
                     questionStar_2_1.className += 'fill';
                 }
             });
+            console.log(answerVarRight_2_1[answerWrightNum]);
         }
     }
 
-    questChoiceCatLoad.answerBlock(answerWrightNum, 'Первый отряд космонавтов СССР был сформирован в феврале — апреле 1960 года.');
+    questCitizenCatLoad.answerBlock(answerWrightNum, 'Верно! Так держать!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
-        questValue_2_2 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_2')),
-        questValue_2_3 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_3'))
+        questValue_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
+        questValue_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
+        questValue_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
+        questValue_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
     ;
+
+    function starsRemove() {
+        if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 0 &&
+            progressCitizenQuest_2_4 === 0 &&
+            progressCitizenQuest_2_5 === 0) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 1 &&
+            progressCitizenQuest_2_3 === 0 &&
+            progressCitizenQuest_2_4 === 0 &&
+            progressCitizenQuest_2_5 === 0) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 1 &&
+            progressCitizenQuest_2_4 === 0 &&
+            progressCitizenQuest_2_5 === 0) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 0 &&
+            progressCitizenQuest_2_4 === 1 &&
+            progressCitizenQuest_2_5 === 0) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 0 &&
+            progressCitizenQuest_2_4 === 0 &&
+            progressCitizenQuest_2_5 === 1) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 1 &&
+            progressCitizenQuest_2_3 === 1 &&
+            progressCitizenQuest_2_4 === 0 &&
+            progressCitizenQuest_2_5 === 0) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 1 &&
+            progressCitizenQuest_2_3 === 0 &&
+            progressCitizenQuest_2_4 === 1 &&
+            progressCitizenQuest_2_5 === 0) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 1 &&
+            progressCitizenQuest_2_3 === 0 &&
+            progressCitizenQuest_2_4 === 0 &&
+            progressCitizenQuest_2_5 === 1) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 1 &&
+            progressCitizenQuest_2_4 === 1 &&
+            progressCitizenQuest_2_5 === 0) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 1 &&
+            progressCitizenQuest_2_4 === 0 &&
+            progressCitizenQuest_2_5 === 1) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 0 &&
+            progressCitizenQuest_2_4 === 1 &&
+            progressCitizenQuest_2_5 === 1) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 1 &&
+            progressCitizenQuest_2_4 === 1 &&
+            progressCitizenQuest_2_5 === 1) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 1 &&
+            progressCitizenQuest_2_3 === 1 &&
+            progressCitizenQuest_2_4 === 1 &&
+            progressCitizenQuest_2_5 === 0) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 1 &&
+            progressCitizenQuest_2_3 === 0 &&
+            progressCitizenQuest_2_4 === 1 &&
+            progressCitizenQuest_2_5 === 1) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 1 &&
+            progressCitizenQuest_2_3 === 1 &&
+            progressCitizenQuest_2_4 === 0 &&
+            progressCitizenQuest_2_5 === 1) {
+            wrapper.removeChild(questionStars);
+        }
+    }
+
     arrowNextClick.addEventListener('click', () => {
         gsap.to(containerWrapperCategory, {
             autoAlpha: 0,
             onComplete: () => {
-                if (progressChoiceQuest_2_1 === 0 &&
-                    progressChoiceQuest_2_2 === 0 &&
-                    progressChoiceQuest_2_3 === 0) {
-                    wrapper.removeChild(questionStars);
-                } else if (progressChoiceQuest_2_1 === 0 &&
-                    progressChoiceQuest_2_2 === 1 &&
-                    progressChoiceQuest_2_3 === 0) {
-                    wrapper.removeChild(questionStars);
-                } else if (progressChoiceQuest_2_1 === 0 &&
-                    progressChoiceQuest_2_2 === 0 &&
-                    progressChoiceQuest_2_3 === 1) {
-                    wrapper.removeChild(questionStars);
-                }
+                // starsRemove();
+                wrapper.removeChild(questionStars);
                 container.removeChild(arrowBackClick);
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_2_2 === 1 && questValue_2_3 === 1) {
-                    choiceCategoryDev();
+                if (questValue_2_2 === 1 &&
+                    questValue_2_3 === 1 &&
+                    questValue_2_4 === 1 &&
+                    questValue_2_5 === 1) {
+                    citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_2_2 === 0) {
-                    questionChoiceCat_2_2();
+                    questionCitizenCat_2_2();
                 } else if (questValue_2_2 === 1 && questValue_2_3 === 0) {
-                    questionChoiceCat_2_3();
+                    questionCitizenCat_2_3();
+                } else if (questValue_2_3 === 1 && questValue_2_4 === 0) {
+                    questionCitizenCat_2_4();
+                } else if (questValue_2_4 === 1 && questValue_2_5 === 0) {
+                    questionCitizenCat_2_5();
                 }
             }
         });
-        if (progressChoiceQuest_2_1 === 0 &&
-            progressChoiceQuest_2_2 === 1 &&
-            progressChoiceQuest_2_3 === 1) {
-            gsap.to(questionStars, {
+        // if (progressCitizenQuest_2_1 === 0 &&
+        //     progressCitizenQuest_2_2 === 1 &&
+        //     progressCitizenQuest_2_3 === 1 &&
+        //     progressCitizenQuest_2_4 === 1 &&
+        //     progressCitizenQuest_2_5 === 1) {
+        //     gsap.to(questionStars, {
+        //         autoAlpha: 0,
+        //         delay: '-0.3',
+        //         onComplete: () => {
+        //             wrapper.removeChild(questionStars);
+        //         }
+        //     });
+        // }
+    });
+
+    questArrowBack.arrowBack();
+    const arrowBackClick = document.getElementById('arrowBack'),
+        containerWrapperCategory = document.querySelector('.container__wrapper_category'),
+        wrapperTopTitle = document.querySelector('.wrapper__top');
+    arrowBackClick.addEventListener('click', () => {
+        let tl = gsap.timeline( {
+            autoAlpha: 0,
+            onComplete: () => {
+                container.removeChild(arrowBackClick);
+                container.removeChild(arrowNextClick);
+                container.removeChild(containerWrapperCategory);
+                wrapper.className = 'wrapper';
+                wrapper.removeChild(wrapperTopTitle);
+                citizenCategoryDev();
+                lockSubQuestCitizen();
+            }
+        });
+        tl
+            .to([containerWrapperCategory, wrapperTopTitle], {
+                duration: 0.4,
+                autoAlpha: 0
+            })
+            .to(questionStars, {
                 autoAlpha: 0,
                 delay: '-0.3',
                 onComplete: () => {
                     wrapper.removeChild(questionStars);
                 }
-            });
-        }
-    });
-
-    questArrowBack.arrowBack();
-    const arrowBackClick = document.getElementById('arrowBack'),
-        containerWrapperCategory = document.querySelector('.container__wrapper_category');
-    arrowBackClick.addEventListener('click', () => {
-        gsap.to(containerWrapperCategory, {
-            autoAlpha: 0,
-            onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
-                container.removeChild(containerWrapperCategory);
-                wrapper.className = 'wrapper';
-                choiceCategoryDev();
-                lockSubQuestCitizen();
-            }
-        });
-        gsap.to(questionStars, {
-            autoAlpha: 0,
-            delay: '-0.3',
-            onComplete: () => {
-                wrapper.removeChild(questionStars);
-            }
-        });
+            })
+        ;
     });
 }
 
-function questionChoiceCat_2_2() {
-    let questChoiceCatLoad = new Question();
+function questionCitizenCat_2_2() {
+    let questCitizenCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 1;
-    let progressChoiceQuest_2_1 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_1'));
-    let progressChoiceQuest_2_2 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_2'));
-    let progressChoiceQuest_2_3 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_3'));
+    let answerWrightNum = 2;
+    let progressCitizenQuest_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
+        progressCitizenQuest_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
+        progressCitizenQuest_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
+        progressCitizenQuest_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
+        progressCitizenQuest_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    ;
 
-    if (localStorage.getItem('progressChoiceQuest_2_2') === null) {
-        localStorage.setItem('progressChoiceQuest_2_2', JSON.stringify(progressChoiceQuest_2_2));
+    if (localStorage.getItem('progressCitizenQuest_2_2') === null) {
+        localStorage.setItem('progressCitizenQuest_2_2', JSON.stringify(progressCitizenQuest_2_2));
     }
 
-    questChoiceCatLoad.questionBlock('Отбор', 'Первый отряд космонавтов', 'Какие требования предъявлялись к кандидатам в космонавты?', 'Российское гражданство', 'Определённый рост, вес, крепкое здоровье', 'Оплата налогов');
+    questCitizenCatLoad.questionBlock('Житель', 'Самара в зеркале истории', 'На какой площади находилась крепость Samar?', 'Площадь Революции', 'Площадь Куйбышева', 'Площадь Хлебная');
 
     let answerVar_2_2_1 = document.getElementById('answerVar_1'),
         answerVar_2_2_2 = document.getElementById('answerVar_2'),
@@ -176,143 +283,198 @@ function questionChoiceCat_2_2() {
 
     questionStars.className = 'wrapper__stars';
     wrapper.appendChild(questionStars);
+    questionStars.innerHTML = `
+        <li id="questionStar_2_1"></li>
+        <li id="questionStar_2_2"></li>
+        <li id="questionStar_2_3"></li>
+        <li id="questionStar_2_4"></li>
+        <li id="questionStar_2_5"></li>
+    `;
 
-    if (progressChoiceQuest_2_1 === 1 &&
-        progressChoiceQuest_2_2 === 0 &&
-        progressChoiceQuest_2_3 === 0) {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1" class="fill"></li>
-            <li id="questionStar_2_2"></li>
-            <li id="questionStar_2_3"></li>
-        `;
-    } else if (progressChoiceQuest_2_1 === 0 &&
-        progressChoiceQuest_2_2 === 0 &&
-        progressChoiceQuest_2_3 === 1) {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1"></li>
-            <li id="questionStar_2_2"></li>
-            <li id="questionStar_2_3" class="fill"></li>
-        `;
-    } else if (progressChoiceQuest_2_1 === 1 &&
-        progressChoiceQuest_2_2 === 0 &&
-        progressChoiceQuest_2_3 === 1) {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1" class="fill"></li>
-            <li id="questionStar_2_2"></li>
-            <li id="questionStar_2_3" class="fill"></li>
-        `;
-    } else {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1"></li>
-            <li id="questionStar_2_2"></li>
-            <li id="questionStar_2_3"></li>
-        `;
+    const questionStar_2_1 = document.getElementById('questionStar_2_1'),
+        questionStar_2_2 = document.getElementById('questionStar_2_2'),
+        questionStar_2_3 = document.getElementById('questionStar_2_3'),
+        questionStar_2_4 = document.getElementById('questionStar_2_4'),
+        questionStar_2_5 = document.getElementById('questionStar_2_5')
+    ;
+
+    function starsView_2() {
+        if (progressCitizenQuest_2_1 === 1) {
+            questionStar_2_1.className += 'fill';
+        }
+        if (progressCitizenQuest_2_3 === 1) {
+            questionStar_2_3.className += 'fill';
+        }
+        if (progressCitizenQuest_2_4 === 1) {
+            questionStar_2_4.className += 'fill';
+        }
+        if (progressCitizenQuest_2_5 === 1) {
+            questionStar_2_5.className += 'fill';
+        }
     }
-
-    const questionStar_2_2 = document.getElementById('questionStar_2_2');
+    starsView_2();
 
     for (let i = 0; i < answerVarRight_2_2.length; i++) {
         if (answerVarRight_2_2[i] === answerVarRight_2_2[answerWrightNum]) {
             answerVarRight_2_2[i].addEventListener('click', () => {
-                let progressChoiceQuest_2 = JSON.parse(localStorage.getItem('progressChoiceQuest_2'));
-                let progressChoiceQuestSum_2_2 = progressChoiceQuest_2_2 + 1;
-                let progressChoiceQuestSum_2 = progressChoiceQuestSum_2_2 + progressChoiceQuest_2;
+                let progressCitizenQuest_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2'));
+                let progressCitizenQuestSum_2_2 = progressCitizenQuest_2_2 + 1;
+                let progressCitizenQuestSum_2 = progressCitizenQuestSum_2_2 + progressCitizenQuest_2;
 
-                localStorage.setItem('progressChoiceQuest_2_2', JSON.stringify(progressChoiceQuestSum_2_2));
-                localStorage.setItem('progressChoiceQuest_2', JSON.stringify(progressChoiceQuestSum_2));
-                if (progressChoiceQuestSum_2_2 === 1) {
+                localStorage.setItem('progressCitizenQuest_2_2', JSON.stringify(progressCitizenQuestSum_2_2));
+                localStorage.setItem('progressCitizenQuest_2', JSON.stringify(progressCitizenQuestSum_2));
+                if (progressCitizenQuestSum_2_2 === 1) {
                     questionStar_2_2.className += 'fill';
                 }
             });
         }
     }
 
-    questChoiceCatLoad.answerBlock(answerWrightNum, '59 лет назад космонавт должен был состоять в партии, быть опытным военным летчиком не выше 170 см и не старше 30 лет, обладать безупречным здоровьем и физической подготовкой на уровне мастера спорта.');
+    questCitizenCatLoad.answerBlock(answerWrightNum, 'Правильно!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
-        questValue_2_3 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_3'))
+        questValue_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
+        questValue_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
+        questValue_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
+        questValue_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
+        questValue_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
     ;
+
+    function starsRemove_2() {
+        if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 1 &&
+            progressCitizenQuest_2_4 === 0 &&
+            progressCitizenQuest_2_5 === 0) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 0 &&
+            progressCitizenQuest_2_4 === 1 &&
+            progressCitizenQuest_2_5 === 0) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 0 &&
+            progressCitizenQuest_2_4 === 0 &&
+            progressCitizenQuest_2_5 === 1) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 1 &&
+            progressCitizenQuest_2_4 === 1 &&
+            progressCitizenQuest_2_5 === 0) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 1 &&
+            progressCitizenQuest_2_4 === 0 &&
+            progressCitizenQuest_2_5 === 1) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 0 &&
+            progressCitizenQuest_2_4 === 1 &&
+            progressCitizenQuest_2_5 === 1) {
+            wrapper.removeChild(questionStars);
+        } else if (progressCitizenQuest_2_1 === 0 &&
+            progressCitizenQuest_2_2 === 0 &&
+            progressCitizenQuest_2_3 === 1 &&
+            progressCitizenQuest_2_4 === 1 &&
+            progressCitizenQuest_2_5 === 1) {
+            wrapper.removeChild(questionStars);
+        }
+    }
+    starsRemove_2();
+
     arrowNextClick.addEventListener('click', () => {
         gsap.to(containerWrapperCategory, {
             autoAlpha: 0,
             onComplete: () => {
-                if (progressChoiceQuest_2_1 === 0 &&
-                    progressChoiceQuest_2_2 === 0 &&
-                    progressChoiceQuest_2_3 === 0) {
-                    wrapper.removeChild(questionStars);
-                } else if (progressChoiceQuest_2_1 === 1 &&
-                    progressChoiceQuest_2_2 === 0 &&
-                    progressChoiceQuest_2_3 === 0) {
-                    wrapper.removeChild(questionStars);
-                } else if (progressChoiceQuest_2_1 === 0 &&
-                    progressChoiceQuest_2_2 === 0 &&
-                    progressChoiceQuest_2_3 === 1) {
-                    wrapper.removeChild(questionStars);
-                }
+                wrapper.removeChild(questionStars);
                 container.removeChild(arrowBackClick);
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_2_3 === 1) {
-                    choiceCategoryDev();
+                if (questValue_2_1 === 1 &&
+                    questValue_2_3 === 1 &&
+                    questValue_2_4 === 1 &&
+                    questValue_2_5 === 1) {
+                    citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_2_3 === 0) {
-                    questionChoiceCat_2_3();
+                    questionCitizenCat_2_3();
+                } else if (questValue_2_3 === 1 && questValue_2_4 === 0) {
+                    questionCitizenCat_2_4();
+                } else if (questValue_2_4 === 1 && questValue_2_5 === 0) {
+                    questionCitizenCat_2_5();
                 }
             }
         });
-        if (progressChoiceQuest_2_1 === 0 &&
-            progressChoiceQuest_2_2 === 1 &&
-            progressChoiceQuest_2_3 === 1) {
-            gsap.to(questionStars, {
+        // if (progressCitizenQuest_2_2 === 0 &&
+        //     progressCitizenQuest_2_3 === 1 &&
+        //     progressCitizenQuest_2_4 === 1 &&
+        //     progressCitizenQuest_2_5 === 1) {
+        //     gsap.to(questionStars, {
+        //         autoAlpha: 0,
+        //         delay: '-0.3',
+        //         onComplete: () => {
+        //             wrapper.removeChild(questionStars);
+        //         }
+        //     });
+        // }
+    });
+
+    questArrowBack.arrowBack();
+    const arrowBackClick = document.getElementById('arrowBack'),
+        containerWrapperCategory = document.querySelector('.container__wrapper_category'),
+        wrapperTopTitle = document.querySelector('.wrapper__top');
+    arrowBackClick.addEventListener('click', () => {
+        let tl = gsap.timeline( {
+            autoAlpha: 0,
+            onComplete: () => {
+                container.removeChild(arrowBackClick);
+                container.removeChild(arrowNextClick);
+                container.removeChild(containerWrapperCategory);
+                wrapper.className = 'wrapper';
+                wrapper.removeChild(wrapperTopTitle);
+                citizenCategoryDev();
+                lockSubQuestCitizen();
+            }
+        });
+        tl
+            .to([containerWrapperCategory, wrapperTopTitle], {
+                duration: 0.4,
+                autoAlpha: 0
+            })
+            .to(questionStars, {
                 autoAlpha: 0,
                 delay: '-0.3',
                 onComplete: () => {
                     wrapper.removeChild(questionStars);
                 }
-            });
-        }
-    });
-
-    questArrowBack.arrowBack();
-    const arrowBackClick = document.getElementById('arrowBack'),
-        containerWrapperCategory = document.querySelector('.container__wrapper_category');
-    arrowBackClick.addEventListener('click', () => {
-        gsap.to(containerWrapperCategory, {
-            autoAlpha: 0,
-            onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
-                container.removeChild(containerWrapperCategory);
-                wrapper.className = 'wrapper';
-                choiceCategoryDev();
-                lockSubQuestCitizen();
-            }
-        });
-        gsap.to(questionStars, {
-            autoAlpha: 0,
-            delay: '-0.3',
-            onComplete: () => {
-                wrapper.removeChild(questionStars);
-            }
-        });
+            })
+        ;
     });
 }
 
-function questionChoiceCat_2_3() {
-    let questChoiceCatLoad = new Question();
+function questionCitizenCat_2_3() {
+    let questCitizenCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 2;
-    let progressChoiceQuest_2_1 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_1'));
-    let progressChoiceQuest_2_2 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_2'));
-    let progressChoiceQuest_2_3 = JSON.parse(localStorage.getItem('progressChoiceQuest_2_3'));
+    let answerWrightNum = 1;
+    let progressCitizenQuest_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
+        progressCitizenQuest_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
+        progressCitizenQuest_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
+        progressCitizenQuest_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
+        progressCitizenQuest_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    ;
 
-    if (localStorage.getItem('progressChoiceQuest_2_3') === null) {
-        localStorage.setItem('progressChoiceQuest_2_3', JSON.stringify(progressChoiceQuest_2_3));
+    if (localStorage.getItem('progressCitizenQuest_2_3') === null) {
+        localStorage.setItem('progressCitizenQuest_2_3', JSON.stringify(progressCitizenQuest_2_3));
     }
 
-    questChoiceCatLoad.questionBlock('Отбор', 'Первый отряд космонавтов', 'Сколько человек из первого отряда космонавтов покорили космическое пространство?', 'Пятнадцать человек', 'Двадцать человек', 'Двенадцать человек');
+    questCitizenCatLoad.questionBlock('Житель', 'Самара в зеркале истории','Какое имя носит Самарский краеведческий музей?', 'Михаил Дмитриевич Челышев', 'Петра Алексеевича Алабина', 'Григория Засекина');
 
     let answerVar_2_3_1 = document.getElementById('answerVar_1'),
         answerVar_2_3_2 = document.getElementById('answerVar_2'),
@@ -323,59 +485,332 @@ function questionChoiceCat_2_3() {
 
     questionStars.className = 'wrapper__stars';
     wrapper.appendChild(questionStars);
+    questionStars.innerHTML = `
+        <li id="questionStar_2_1"></li>
+        <li id="questionStar_2_2"></li>
+        <li id="questionStar_2_3"></li>
+        <li id="questionStar_2_4"></li>
+        <li id="questionStar_2_5"></li>
+    `;
 
-    if (progressChoiceQuest_2_1 === 1 &&
-        progressChoiceQuest_2_2 === 1 &&
-        progressChoiceQuest_2_3 === 0) {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1" class="fill"></li>
-            <li id="questionStar_2_2" class="fill"></li>
-            <li id="questionStar_2_3"></li>
-        `;
-    } else if (progressChoiceQuest_2_1 === 0 &&
-        progressChoiceQuest_2_2 === 0 &&
-        progressChoiceQuest_2_3 === 1) {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1"></li>
-            <li id="questionStar_2_2"></li>
-            <li id="questionStar_2_3" class="fill"></li>
-        `;
-    } else if (progressChoiceQuest_2_1 === 0 &&
-        progressChoiceQuest_2_2 === 1 &&
-        progressChoiceQuest_2_3 === 0) {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1"></li>
-            <li id="questionStar_2_2" class="fill"></li>
-            <li id="questionStar_2_3"></li>
-        `;
-    } else {
-        questionStars.innerHTML = `
-            <li id="questionStar_2_1"></li>
-            <li id="questionStar_2_2"></li>
-            <li id="questionStar_2_3"></li>
-        `;
+    const questionStar_2_1 = document.getElementById('questionStar_2_1'),
+        questionStar_2_2 = document.getElementById('questionStar_2_2'),
+        questionStar_2_3 = document.getElementById('questionStar_2_3'),
+        questionStar_2_4 = document.getElementById('questionStar_2_4'),
+        questionStar_2_5 = document.getElementById('questionStar_2_5')
+    ;
+
+    function starsView_3() {
+        if (progressCitizenQuest_2_1 === 1) {
+            questionStar_2_1.className += 'fill';
+        }
+        if (progressCitizenQuest_2_2 === 1) {
+            questionStar_2_2.className += 'fill';
+        }
+        if (progressCitizenQuest_2_4 === 1) {
+            questionStar_2_4.className += 'fill';
+        }
+        if (progressCitizenQuest_2_5 === 1) {
+            questionStar_2_5.className += 'fill';
+        }
     }
-
-    const questionStar_2_3 = document.getElementById('questionStar_2_3');
+    starsView_3();
 
     for (let i = 0; i < answerVarRight_2_3.length; i++) {
         if (answerVarRight_2_3[i] === answerVarRight_2_3[answerWrightNum]) {
             answerVarRight_2_3[i].addEventListener('click', () => {
-                let progressChoiceQuest_2 = JSON.parse(localStorage.getItem('progressChoiceQuest_2'));
-                let progressChoiceQuestSum_2_3 = progressChoiceQuest_2_3 + 1;
-                let progressChoiceQuestSum_2 = progressChoiceQuestSum_2_3 + progressChoiceQuest_2;
+                let progressCitizenQuest_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2'));
+                let progressCitizenQuestSum_2_3 = progressCitizenQuest_2_3 + 1;
+                let progressCitizenQuestSum_2 = progressCitizenQuestSum_2_3 + progressCitizenQuest_2;
 
-                localStorage.setItem('progressChoiceQuest_2_3', JSON.stringify(progressChoiceQuestSum_2_3));
-                localStorage.setItem('progressChoiceQuest_2', JSON.stringify(progressChoiceQuestSum_2));
-                localStorage.setItem('progressChoiceAll', JSON.stringify(progressChoiceQuestSum_2));
-                if (progressChoiceQuestSum_2_3 === 1) {
+                localStorage.setItem('progressCitizenQuest_2_3', JSON.stringify(progressCitizenQuestSum_2_3));
+                localStorage.setItem('progressCitizenQuest_2', JSON.stringify(progressCitizenQuestSum_2));
+                if (progressCitizenQuestSum_2_3 === 1) {
                     questionStar_2_3.className += 'fill';
                 }
             });
         }
     }
 
-    questChoiceCatLoad.answerBlock(answerWrightNum, '12 первого отряда космонавтов побывали в космосе. И некоторые из них стали участниками и других космических программ — «Восход» и «Союз».');
+    questCitizenCatLoad.answerBlock(answerWrightNum, 'Именно так!');
+
+    questArrowBack.arrowNext();
+    const arrowNextClick = document.getElementById('answerNext'),
+        questValue_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
+        questValue_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
+        questValue_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
+        questValue_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
+        questValue_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    ;
+    arrowNextClick.addEventListener('click', () => {
+        gsap.to(containerWrapperCategory, {
+            autoAlpha: 0,
+            onComplete: () => {
+                wrapper.removeChild(questionStars);
+                container.removeChild(arrowBackClick);
+                container.removeChild(arrowNextClick);
+                container.removeChild(containerWrapperCategory);
+                wrapper.className = 'wrapper';
+                if (questValue_2_1 === 1 &&
+                    questValue_2_2 === 1 &&
+                    questValue_2_4 === 1 &&
+                    questValue_2_5 === 1) {
+                    citizenCategoryDev();
+                    lockSubQuestCitizen();
+                } else if (questValue_2_4 === 0) {
+                    questionCitizenCat_2_4();
+                } else if (questValue_2_4 === 1 && questValue_2_5 === 0) {
+                    questionCitizenCat_2_5();
+                }
+            }
+        });
+    });
+
+    questArrowBack.arrowBack();
+    const arrowBackClick = document.getElementById('arrowBack'),
+        containerWrapperCategory = document.querySelector('.container__wrapper_category'),
+        wrapperTopTitle = document.querySelector('.wrapper__top');
+    arrowBackClick.addEventListener('click', () => {
+        let tl = gsap.timeline( {
+            autoAlpha: 0,
+            onComplete: () => {
+                container.removeChild(arrowBackClick);
+                container.removeChild(arrowNextClick);
+                container.removeChild(containerWrapperCategory);
+                wrapper.className = 'wrapper';
+                wrapper.removeChild(wrapperTopTitle);
+                citizenCategoryDev();
+                lockSubQuestCitizen();
+            }
+        });
+        tl
+            .to([containerWrapperCategory, wrapperTopTitle], {
+                duration: 0.4,
+                autoAlpha: 0
+            })
+            .to(questionStars, {
+                autoAlpha: 0,
+                delay: '-0.3',
+                onComplete: () => {
+                    wrapper.removeChild(questionStars);
+                }
+            })
+        ;
+    });
+}
+
+function questionCitizenCat_2_4() {
+    let questCitizenCatLoad = new Question();
+    let questArrowBack = new ArrowsAll();
+    let answerWrightNum = 2;
+    let progressCitizenQuest_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
+        progressCitizenQuest_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
+        progressCitizenQuest_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
+        progressCitizenQuest_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
+        progressCitizenQuest_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    ;
+
+    if (localStorage.getItem('progressCitizenQuest_2_4') === null) {
+        localStorage.setItem('progressCitizenQuest_2_4', JSON.stringify(progressCitizenQuest_2_4));
+    }
+
+    questCitizenCatLoad.questionBlock('Житель', 'Самара в зеркале истории','Кто основатель крепости Самара?', 'Петр Алексеевич Алабин', 'Митрополит Алексий', 'Григорий Засекин');
+
+    let answerVar_2_4_1 = document.getElementById('answerVar_1'),
+        answerVar_2_4_2 = document.getElementById('answerVar_2'),
+        answerVar_2_4_3 = document.getElementById('answerVar_3'),
+        answerVarRight_2_4 = [answerVar_2_4_1, answerVar_2_4_2, answerVar_2_4_3],
+        questionStars = document.createElement('ul')
+    ;
+
+    questionStars.className = 'wrapper__stars';
+    wrapper.appendChild(questionStars);
+    questionStars.innerHTML = `
+        <li id="questionStar_2_1"></li>
+        <li id="questionStar_2_2"></li>
+        <li id="questionStar_2_3"></li>
+        <li id="questionStar_2_4"></li>
+        <li id="questionStar_2_5"></li>
+    `;
+
+    const questionStar_2_1 = document.getElementById('questionStar_2_1'),
+        questionStar_2_2 = document.getElementById('questionStar_2_2'),
+        questionStar_2_3 = document.getElementById('questionStar_2_3'),
+        questionStar_2_4 = document.getElementById('questionStar_2_4'),
+        questionStar_2_5 = document.getElementById('questionStar_2_5')
+    ;
+
+    function starsView_4() {
+        if (progressCitizenQuest_2_1 === 1) {
+            questionStar_2_1.className += 'fill';
+        }
+        if (progressCitizenQuest_2_2 === 1) {
+            questionStar_2_2.className += 'fill';
+        }
+        if (progressCitizenQuest_2_3 === 1) {
+            questionStar_2_3.className += 'fill';
+        }
+        if (progressCitizenQuest_2_5 === 1) {
+            questionStar_2_5.className += 'fill';
+        }
+    }
+    starsView_4();
+
+    for (let i = 0; i < answerVarRight_2_4.length; i++) {
+        if (answerVarRight_2_4[i] === answerVarRight_2_4[answerWrightNum]) {
+            answerVarRight_2_4[i].addEventListener('click', () => {
+                let progressCitizenQuest_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2'));
+                let progressCitizenQuestSum_2_4 = progressCitizenQuest_2_4 + 1;
+                let progressCitizenQuestSum_2 = progressCitizenQuestSum_2_4 + progressCitizenQuest_2;
+
+                localStorage.setItem('progressCitizenQuest_2_4', JSON.stringify(progressCitizenQuestSum_2_4));
+                localStorage.setItem('progressCitizenQuest_2', JSON.stringify(progressCitizenQuestSum_2));
+                if (progressCitizenQuestSum_2_4 === 1) {
+                    questionStar_2_4.className += 'fill';
+                }
+            });
+        }
+    }
+
+    questCitizenCatLoad.answerBlock(answerWrightNum, 'Правильно!');
+
+    questArrowBack.arrowNext();
+    const arrowNextClick = document.getElementById('answerNext'),
+        questValue_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
+        questValue_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
+        questValue_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
+        questValue_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
+        questValue_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    ;
+    arrowNextClick.addEventListener('click', () => {
+        gsap.to(containerWrapperCategory, {
+            autoAlpha: 0,
+            onComplete: () => {
+                wrapper.removeChild(questionStars);
+                container.removeChild(arrowBackClick);
+                container.removeChild(arrowNextClick);
+                container.removeChild(containerWrapperCategory);
+                wrapper.className = 'wrapper';
+                if (questValue_2_1 === 1 &&
+                    questValue_2_2 === 1 &&
+                    questValue_2_3 === 1 &&
+                    questValue_2_5 === 1) {
+                    citizenCategoryDev();
+                    lockSubQuestCitizen();
+                } else if (questValue_2_5 === 0) {
+                    questionCitizenCat_2_5();
+                }
+            }
+        });
+    });
+
+    questArrowBack.arrowBack();
+    const arrowBackClick = document.getElementById('arrowBack'),
+        containerWrapperCategory = document.querySelector('.container__wrapper_category'),
+        wrapperTopTitle = document.querySelector('.wrapper__top');
+    arrowBackClick.addEventListener('click', () => {
+        let tl = gsap.timeline( {
+            autoAlpha: 0,
+            onComplete: () => {
+                container.removeChild(arrowBackClick);
+                container.removeChild(arrowNextClick);
+                container.removeChild(containerWrapperCategory);
+                wrapper.className = 'wrapper';
+                wrapper.removeChild(wrapperTopTitle);
+                citizenCategoryDev();
+                lockSubQuestCitizen();
+            }
+        });
+        tl
+            .to([containerWrapperCategory, wrapperTopTitle], {
+                duration: 0.4,
+                autoAlpha: 0
+            })
+            .to(questionStars, {
+                autoAlpha: 0,
+                delay: '-0.3',
+                onComplete: () => {
+                    wrapper.removeChild(questionStars);
+                }
+            })
+        ;
+    });
+}
+
+function questionCitizenCat_2_5() {
+    let questCitizenCatLoad = new Question();
+    let questArrowBack = new ArrowsAll();
+    let answerWrightNum = 0;
+    let progressCitizenQuest_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
+        progressCitizenQuest_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
+        progressCitizenQuest_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
+        progressCitizenQuest_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
+        progressCitizenQuest_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    ;
+
+    if (localStorage.getItem('progressCitizenQuest_2_4') === null) {
+        localStorage.setItem('progressCitizenQuest_2_4', JSON.stringify(progressCitizenQuest_2_4));
+    }
+
+    questCitizenCatLoad.questionBlock('Житель', 'Самара в зеркале истории','В 1850 году это событие почти стерло с лица Земли разрушило большую часть города?', 'Пожар', 'Наводнение', 'Землетрясение');
+
+    let answerVar_2_5_1 = document.getElementById('answerVar_1'),
+        answerVar_2_5_2 = document.getElementById('answerVar_2'),
+        answerVar_2_5_3 = document.getElementById('answerVar_3'),
+        answerVarRight_2_5 = [answerVar_2_5_1, answerVar_2_5_2, answerVar_2_5_3],
+        questionStars = document.createElement('ul')
+    ;
+
+    questionStars.className = 'wrapper__stars';
+    wrapper.appendChild(questionStars);
+    questionStars.innerHTML = `
+        <li id="questionStar_2_1"></li>
+        <li id="questionStar_2_2"></li>
+        <li id="questionStar_2_3"></li>
+        <li id="questionStar_2_4"></li>
+        <li id="questionStar_2_5"></li>
+    `;
+
+    const questionStar_2_1 = document.getElementById('questionStar_2_1'),
+        questionStar_2_2 = document.getElementById('questionStar_2_2'),
+        questionStar_2_3 = document.getElementById('questionStar_2_3'),
+        questionStar_2_4 = document.getElementById('questionStar_2_4'),
+        questionStar_2_5 = document.getElementById('questionStar_2_5')
+    ;
+
+    function starsView_5() {
+        if (progressCitizenQuest_2_1 === 1) {
+            questionStar_2_1.className += 'fill';
+        }
+        if (progressCitizenQuest_2_2 === 1) {
+            questionStar_2_2.className += 'fill';
+        }
+        if (progressCitizenQuest_2_3 === 1) {
+            questionStar_2_3.className += 'fill';
+        }
+        if (progressCitizenQuest_2_4 === 1) {
+            questionStar_2_4.className += 'fill';
+        }
+    }
+    starsView_5();
+
+    for (let i = 0; i < answerVarRight_2_5.length; i++) {
+        if (answerVarRight_2_5[i] === answerVarRight_2_5[answerWrightNum]) {
+            answerVarRight_2_5[i].addEventListener('click', () => {
+                let progressCitizenQuest_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2'));
+                let progressCitizenQuestSum_2_5 = progressCitizenQuest_2_5 + 1;
+                let progressCitizenQuestSum_2 = progressCitizenQuestSum_2_5 + progressCitizenQuest_2;
+
+                localStorage.setItem('progressCitizenQuest_2_5', JSON.stringify(progressCitizenQuestSum_2_5));
+                localStorage.setItem('progressCitizenQuest_2', JSON.stringify(progressCitizenQuestSum_2));
+                if (progressCitizenQuestSum_2_5 === 1) {
+                    questionStar_2_5.className += 'fill';
+                }
+            });
+        }
+    }
+
+    questCitizenCatLoad.answerBlock(answerWrightNum, 'Ну конечно же!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext');
@@ -383,44 +818,46 @@ function questionChoiceCat_2_3() {
         gsap.to(containerWrapperCategory, {
             autoAlpha: 0,
             onComplete: () => {
+                wrapper.removeChild(questionStars);
                 container.removeChild(arrowBackClick);
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                choiceCategoryDev();
+                citizenCategoryDev();
                 lockSubQuestCitizen();
-            }
-        });
-        gsap.to(questionStars, {
-            autoAlpha: 0,
-            delay: '-0.3',
-            onComplete: () => {
-                wrapper.removeChild(questionStars);
             }
         });
     });
 
     questArrowBack.arrowBack();
     const arrowBackClick = document.getElementById('arrowBack'),
-        containerWrapperCategory = document.querySelector('.container__wrapper_category');
+        containerWrapperCategory = document.querySelector('.container__wrapper_category'),
+        wrapperTopTitle = document.querySelector('.wrapper__top');
     arrowBackClick.addEventListener('click', () => {
-        gsap.to(containerWrapperCategory, {
+        let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                choiceCategoryDev();
+                wrapper.removeChild(wrapperTopTitle);
+                citizenCategoryDev();
                 lockSubQuestCitizen();
             }
         });
-        gsap.to(questionStars, {
-            autoAlpha: 0,
-            delay: '-0.3',
-            onComplete: () => {
-                wrapper.removeChild(questionStars);
-            }
-        });
+        tl
+            .to([containerWrapperCategory, wrapperTopTitle], {
+                duration: 0.4,
+                autoAlpha: 0
+            })
+            .to(questionStars, {
+                autoAlpha: 0,
+                delay: '-0.3',
+                onComplete: () => {
+                    wrapper.removeChild(questionStars);
+                }
+            })
+        ;
     });
 }

@@ -25,7 +25,7 @@ class ArrowsAll {
         containerClear.className = 'wrapper__service_next';
         containerClear.id = 'answerNext';
         containerClear.innerHTML = `
-            <img src="assets/games/kraevedia/images/cp_arrowNext.png" alt="Следующий вопрос">
+            <img src="assets/games/kraevedia/images/kraevedia_arrowNext.png" alt="Следующий вопрос">
         `;
         container.appendChild(containerClear);
     }
