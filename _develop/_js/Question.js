@@ -18,14 +18,12 @@ class Question {
         containerWrapper.className = 'container__wrapper container__wrapper_category';
         questionCategoryTitle.className = 'container__title container__title_category';
         questionCategoryStars.className = 'wrapper__stars';
-        questionCategoryTitle.innerHTML = `<h1>${questionTitleCategory}</h1>`;
         containerWrapper.innerHTML = `
             <div class="question__block">
                 <div class="question__block_imageblock">
-                    <h4>${questionTitle}</h4>
                     <div class="question__block_image">
                         <p>${questionQuest}</p>
-                        <img src="assets/games/cosmicpuzzles/images/cp_questImageBack_1.png" alt="Изображение по вопросом">
+                        <img src="assets/games/kraevedia/images/kraevedia_catBack.png" alt="Изображение по вопросом">
                     </div>
                 </div>
                 <ul class="question__block_list">
@@ -36,7 +34,7 @@ class Question {
             </div>
         `;
         container.appendChild(containerWrapper);
-        containerWrapper.appendChild(questionCategoryTitle);
+        // containerWrapper.appendChild(questionCategoryTitle);
         // wrapper.appendChild(questionCategoryStars);
 
         const questButtonLi_1 = document.getElementById('answerVar_1'),
@@ -156,11 +154,9 @@ class Question {
 
         questionBlockText.innerHTML = `
             <div class="question__block_text-inside" id="answerWright"><p>${answerTextRight}</p></div>
-<!--            <a href="javascript:void(0);" class="question__block_next">Следующий вопрос</a>-->
         `;
         questionBlockWrongText.innerHTML = `
             <div class="question__block_text-inside" id="answerWrong"><p>${answerWrongVarView}</p></div>
-<!--            <a href="javascript:void(0);" class="question__block_next">Следующий вопрос</a>-->
         `;
 
         let answerVar_1 = document.getElementById('answerVar_1'),
@@ -183,7 +179,7 @@ class Question {
                             let tl = gsap.timeline();
                             let answerBlockText = document.getElementById('answerWright');
                             answerLiRight[i].className += 'question__block_list--right';
-                            soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_rightAnswer.ogg');
+                            // soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_rightAnswer.ogg');
                             tl
                                 .to(el, {
                                     top: 0,

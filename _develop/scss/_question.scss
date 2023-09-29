@@ -1,11 +1,12 @@
 .question {
 
     &__block {
-        width: 100%;
+        width: calc(100% - (#{$paddingBase} * 6));
         height: 80%;
         display: flex;
         flex-direction: row;
         position: relative;
+        padding: 0 calc(#{$paddingBase} * 3);
 
         &_imageblock {
             width: 40%;
@@ -46,7 +47,7 @@
 
             p {
                 position: absolute;
-                margin: 0 2.8rem;
+                margin: 0 calc($paddingBase * 4);
                 text-align: center;
                 color: $secondary;
                 font-size: $font-size-h6;
@@ -54,25 +55,26 @@
                 z-index: 3;
             }
 
-            &:after {
-                content: "";
-                width: 80%;
-                height: 80%;
-                display: block;
-                position: absolute;
-                background: rgba($fourth, 0.45);
-                border-radius: 50%;
-                z-index: 2;
-            }
+            //&:after {
+            //    content: "";
+            //    width: 80%;
+            //    height: 80%;
+            //    display: block;
+            //    position: absolute;
+            //    background: rgba($fourth, 0.45);
+            //    border-radius: 50%;
+            //    z-index: 2;
+            //}
         }
 
         &_list {
-            width: calc(60% - (#{$containerPadding} * 2));
+            width: calc(60% - (#{$paddingBase} * 6));
             //display: flex;
             //flex-direction: column;
             display: block;
             //margin-left: 0;
-            margin-left: calc(#{$containerPadding} * 2);
+            margin-left: calc(#{$paddingBase} * 6);
+            margin-bottom: calc(#{$paddingBase} * 3);
             position: relative;
 
             li {
@@ -84,24 +86,25 @@
 
                 a {
                     width: calc(100% - 2rem);
-                    height: 70%;
+                    height: 60%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background: linear-gradient(lighten($five, 35%), $five);
-                    border-radius: 0.3rem;
+                    background: linear-gradient(lighten($primary, 15%), $primary);
+                    border-radius: 1rem;
+                    border: 0.3rem solid $secondary;
                     color: $secondary;
                     font-size: $font-size-h6;
                     text-align: center;
-                    padding: 0 1rem;
+                    padding: 0 $paddingBase;
                     //font-family: $heading-font;
                 }
 
                 &:hover {
 
                     a {
-                        color: lighten($secondary, 15%);
-                        background: linear-gradient(lighten($five, 45%), lighten($five, 10%));
+                        //color: lighten($secondary, 15%);
+                        background: linear-gradient(lighten($primary, 10%), $primary);
                     }
                 }
 
@@ -112,11 +115,11 @@
             }
 
             &--right {
-                background: linear-gradient(lighten($six, 35%), $six) !important;
+                background: linear-gradient(#d1f3a9, #7a9a4c) !important;
             }
 
             &--wrong {
-                background: linear-gradient(lighten($seven, 35%), $seven) !important;
+                background: linear-gradient(#fcd8b7, #c45d3c) !important;
             }
         }
 
@@ -133,9 +136,11 @@
                 width: 100%;
                 height: 100%;
                 display: block;
+                //color: $secondary;
 
                 p {
                     margin-top: 0;
+                    //border: 0.1rem solid $third;
                 }
             }
         }

@@ -35,7 +35,7 @@
 		top: 0;
 		background: url("../images/kraevedia_backService.jpg") 50% 0 no-repeat;
 		background-size: auto 100%;
-		z-index: 0;
+		z-index: 1;
 
 		&_arrow {
 			width: 6vmin;
@@ -119,7 +119,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 		//margin: 0 calc((100% - #{$introTopBlockWidth}) / 2);
-		z-index: 2;
+		z-index: 10;
 		opacity: 0;
 
 		&_title {
@@ -333,6 +333,48 @@
 		}
 	}
 
+	&__stars {
+		height: 3rem;
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		position: absolute;
+		top: 12vmin;
+		left: 50%;
+		margin: 1rem 0 0;
+		transform: translateX(-50%);
+
+		li {
+			width: 5vmin;
+			height: 5vmin;
+			margin-right: 0.5rem;
+			background-image: url("../images/cp_stars_empty.png");
+			background-position: 0 0;
+			background-size: auto 100%;
+
+			&.fill {
+				background-image: url("../images/cp_stars_fill.png");
+			}
+
+			picture {
+				width: 100%;
+				height: 100%;
+				display: block;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-position: center;
+					object-fit: cover;
+				}
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
 	//@include grid-media($Medium) {
 	//	//padding: 6rem 1rem 0;
 	//}
@@ -461,7 +503,7 @@
 	margin-top: -3.5vh;
 	transform: translate(-50%, -50%);
 	//background-color: cornflowerblue;
-	z-index: 1;
+	z-index: 5;
 
 	&--wide {
 		width: calc(#{$containerHeight} * 1.8);

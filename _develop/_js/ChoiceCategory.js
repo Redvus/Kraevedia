@@ -104,7 +104,7 @@ class ChoiceCategory {
         `;
 
         container.appendChild(containerWrapper);
-        wrapper.appendChild(wrapperCategoryBack);
+
         wrapper.appendChild(wrapperTopTitle);
         containerWrapper.appendChild(containerWrapperSubcategory);
         containerWrapperSubcategory.appendChild(choiceCategoryTitle);
@@ -131,12 +131,12 @@ class ChoiceCategory {
                     autoAlpha: 0,
                     duration: "0.6",
                 })
-                .from(wrapperCategoryBack, {
-                    autoAlpha: 0,
-                    duration: 0.4,
-                    delay: '-0.2',
-                    scale: '0.98'
-                })
+                // .from(wrapperCategoryBack, {
+                //     autoAlpha: 0,
+                //     duration: 0.4,
+                //     delay: '-0.2'
+                //     // scale: '0.98'
+                // })
                 .to(wrapperTopTitle, {
                     autoAlpha: 1,
                     duration: 0.4,

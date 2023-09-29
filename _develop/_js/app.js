@@ -161,6 +161,7 @@ function categoryDev() {
 
     const containerCategory = document.querySelector('.container__category'),
         introAboutBack = document.querySelector('.wrapper__service'),
+        wrapperBackCitizen = document.createElement('div'),
         categoryCitizen = document.getElementById('categoryCitizen'),
         categoryChicherone = document.getElementById('categoryChicherone'),
         categoryKraeved = document.getElementById('categoryKraeved')
@@ -170,6 +171,8 @@ function categoryDev() {
         progressChicheroneQuestSum = JSON.parse(localStorage.getItem('progressChicheroneAll')),
         progressKraevedQuestSum = JSON.parse(localStorage.getItem('progressKraevedAll'))
     ;
+
+    wrapperBackCitizen.className = 'wrapper__citizen';
 
     if (localStorage.getItem('progressCitizenAll') === null ||
         localStorage.getItem('progressChicheroneAll') === null ||
@@ -305,6 +308,7 @@ function categoryDev() {
                 container.removeChild(containerCategory);
                 wrapper.removeChild(wrapperTopTitle);
                 wrapper.removeChild(introAboutBack);
+                wrapper.appendChild(wrapperBackCitizen);
                 citizenCategoryDev();
                 lockSubQuestCitizen();
             }
@@ -326,6 +330,10 @@ function categoryDev() {
                 autoAlpha: 0,
                 delay: '-0.1',
                 scale: 0.98
+            })
+            .to(wrapperBackCitizen, {
+                autoAlpha: 1,
+                duration: 0.4
             })
         ;
     });
@@ -504,9 +512,10 @@ function questionBlockDev() {
 
 function init() {
     // introDev();
-    // categoryDev();
+    categoryDev();
     // citizenCategoryDev();
-    chicheroneCategory();
+    // chicheroneCategory();
+    // loadQuestReady_1();
 }
 
 init();
