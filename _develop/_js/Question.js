@@ -179,7 +179,7 @@ class Question {
                             let tl = gsap.timeline();
                             let answerBlockText = document.getElementById('answerWright');
                             answerLiRight[i].className += 'question__block_list--right';
-                            // soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_rightAnswer.ogg');
+                            soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_rightAnswer.ogg');
                             tl
                                 .to(el, {
                                     top: 0,

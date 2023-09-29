@@ -1,52 +1,64 @@
 /* Блокируем подкатегории при всех ответах */
 function lockSubQuestKraeved() {
-    let progressFlightQuest_1 = JSON.parse(localStorage.getItem('progressFlightQuest_1')),
-        categorySubFlight_1 = document.getElementById('categorySubFlight_1'),
-        progressFlightQuest_2 = JSON.parse(localStorage.getItem('progressFlightQuest_2')),
-        categorySubFlight_2 = document.getElementById('categorySubFlight_2'),
-        progressFlightQuest_3 = JSON.parse(localStorage.getItem('progressFlightQuest_3')),
-        categorySubFlight_3 = document.getElementById('categorySubFlight_3'),
-        progressFlightQuest_4 = JSON.parse(localStorage.getItem('progressFlightQuest_4')),
-        categorySubFlight_4 = document.getElementById('categorySubFlight_4'),
-        progressFlightQuest_5 = JSON.parse(localStorage.getItem('progressFlightQuest_5')),
-        categorySubFlight_5 = document.getElementById('categorySubFlight_5'),
-        progressFlightQuest_6 = JSON.parse(localStorage.getItem('progressFlightQuest_6')),
-        categorySubFlight_6 = document.getElementById('categorySubFlight_6'),
-        progressFlightQuest_7 = JSON.parse(localStorage.getItem('progressFlightQuest_7')),
-        categorySubFlight_7 = document.getElementById('categorySubFlight_7'),
-        progressFlightQuest_8 = JSON.parse(localStorage.getItem('progressFlightQuest_8')),
-        categorySubFlight_8 = document.getElementById('categorySubFlight_8')
+    let progressKraevedQuest_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_1')),
+        categorySubKraeved_1 = document.getElementById('categorySubKraeved_1'),
+        progressKraevedQuest_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2')),
+        categorySubKraeved_2 = document.getElementById('categorySubKraeved_2'),
+        progressKraevedQuest_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_3')),
+        categorySubKraeved_3 = document.getElementById('categorySubKraeved_3'),
+        progressKraevedQuest_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_4')),
+        categorySubKraeved_4 = document.getElementById('categorySubKraeved_4'),
+        progressKraevedQuest_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_5')),
+        categorySubKraeved_5 = document.getElementById('categorySubKraeved_5'),
+        progressKraevedQuest_6 = JSON.parse(localStorage.getItem('progressKraevedQuest_6')),
+        categorySubKraeved_6 = document.getElementById('categorySubKraeved_6'),
+        progressKraevedQuest_7 = JSON.parse(localStorage.getItem('progressKraevedQuest_7')),
+        categorySubKraeved_7 = document.getElementById('categorySubKraeved_7'),
+        progressKraevedQuest_8 = JSON.parse(localStorage.getItem('progressKraevedQuest_8')),
+        categorySubKraeved_8 = document.getElementById('categorySubKraeved_8'),
+        progressKraevedQuest_9 = JSON.parse(localStorage.getItem('progressKraevedQuest_9')),
+        categorySubKraeved_9 = document.getElementById('categorySubKraeved_9'),
+        progressKraevedQuest_10 = JSON.parse(localStorage.getItem('progressKraevedQuest_10')),
+        categorySubKraeved_10 = document.getElementById('categorySubKraeved_10')
     ;
 
-    if (progressFlightQuest_1 === 3) {
-        categorySubFlight_1.className = 'category__element category__element_1 category__element--lock';
+    if (progressKraevedQuest_1 === 5) {
+        categorySubKraeved_1.className = 'category__element category__element_1 category__element--lock';
     }
 
-    if (progressFlightQuest_2 === 3) {
-        categorySubFlight_2.className = 'category__element category__element_2 category__element--lock';
+    if (progressKraevedQuest_2 === 5) {
+        categorySubKraeved_2.className = 'category__element category__element_2 category__element--lock';
     }
 
-    if (progressFlightQuest_3 === 3) {
-        categorySubFlight_3.className = 'category__element category__element_3 category__element--lock';
+    if (progressKraevedQuest_3 === 5) {
+        categorySubKraeved_3.className = 'category__element category__element_3 category__element--lock';
     }
 
-    if (progressFlightQuest_4 === 3) {
-        categorySubFlight_4.className = 'category__element category__element_4 category__element--lock';
+    if (progressKraevedQuest_4 === 5) {
+        categorySubKraeved_4.className = 'category__element category__element_4 category__element--lock';
     }
 
-    if (progressFlightQuest_5 === 3) {
-        categorySubFlight_5.className = 'category__element category__element_5 category__element--lock';
+    if (progressKraevedQuest_5 === 5) {
+        categorySubKraeved_5.className = 'category__element category__element_5 category__element--lock';
     }
 
-    if (progressFlightQuest_6 === 3) {
-        categorySubFlight_6.className = 'category__element category__element_6 category__element--lock';
+    if (progressKraevedQuest_6 === 5) {
+        categorySubKraeved_6.className = 'category__element category__element_6 category__element--lock';
     }
 
-    if (progressFlightQuest_7 === 3) {
-        categorySubFlight_7.className = 'category__element category__element_7 category__element--lock';
+    if (progressKraevedQuest_7 === 5) {
+        categorySubKraeved_7.className = 'category__element category__element_7 category__element--lock';
     }
 
-    if (progressFlightQuest_8 === 3) {
-        categorySubFlight_8.className = 'category__element category__element_8 category__element--lock';
+    if (progressKraevedQuest_8 === 5) {
+        categorySubKraeved_8.className = 'category__element category__element_8 category__element--lock';
+    }
+
+    if (progressKraevedQuest_9 === 5) {
+        categorySubKraeved_9.className = 'category__element category__element_9 category__element--lock';
+    }
+
+    if (progressKraevedQuest_10 === 5) {
+        categorySubKraeved_10.className = 'category__element category__element_10 category__element--lock';
     }
 }

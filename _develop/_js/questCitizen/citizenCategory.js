@@ -59,343 +59,39 @@ function citizenCategoryDev() {
         ;
 
         categoryElementStars_1.id = 'categoryElementStars_1';
+        categoryElementStars_1.innerHTML = `
+            <li id="categoryElementStars_1_1"></li>
+            <li id="categoryElementStars_1_2"></li>
+            <li id="categoryElementStars_1_3"></li>
+            <li id="categoryElementStars_1_4"></li>
+            <li id="categoryElementStars_1_5"></li>
+        `;
 
-        if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 0 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 0) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 0 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 0 &&
-            progressCitizenQuest1_3 === 1 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest1_1 === 1 &&
-            progressCitizenQuest1_2 === 1 &&
-            progressCitizenQuest1_3 === 0 &&
-            progressCitizenQuest1_4 === 1 &&
-            progressCitizenQuest1_5 === 1) {
-            categoryElementStars_1.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
+        const categoryElementStars_1_1 = document.getElementById('categoryElementStars_1_1'),
+            categoryElementStars_1_2 = document.getElementById('categoryElementStars_1_2'),
+            categoryElementStars_1_3 = document.getElementById('categoryElementStars_1_3'),
+            categoryElementStars_1_4 = document.getElementById('categoryElementStars_1_4'),
+            categoryElementStars_1_5 = document.getElementById('categoryElementStars_1_5')
+        ;
+
+        if (progressCitizenQuest1_1 === 1) {
+            categoryElementStars_1_1.className += 'fill';
+        }
+
+        if (progressCitizenQuest1_2 === 1) {
+            categoryElementStars_1_2.className += 'fill';
+        }
+
+        if (progressCitizenQuest1_3 === 1) {
+            categoryElementStars_1_3.className += 'fill';
+        }
+
+        if (progressCitizenQuest1_4 === 1) {
+            categoryElementStars_1_4.className += 'fill';
+        }
+
+        if (progressCitizenQuest1_5 === 1) {
+            categoryElementStars_1_5.className += 'fill';
         }
 
         if (progressCitizenQuest1 >= 1) {
@@ -428,342 +124,40 @@ function citizenCategoryDev() {
             categorySubQuest_3 = document.getElementById('categorySubCitizen_3')
         ;
 
-        if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        categoryElementStars_2.id = 'categoryElementStars_2';
+        categoryElementStars_2.innerHTML = `
+            <li id="categoryElementStars_2_1"></li>
+            <li id="categoryElementStars_2_2"></li>
+            <li id="categoryElementStars_2_3"></li>
+            <li id="categoryElementStars_2_4"></li>
+            <li id="categoryElementStars_2_5"></li>
         `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 0 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 0) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 0 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 0 &&
-            progressCitizenQuest2_3 === 1 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest2_1 === 1 &&
-            progressCitizenQuest2_2 === 1 &&
-            progressCitizenQuest2_3 === 0 &&
-            progressCitizenQuest2_4 === 1 &&
-            progressCitizenQuest2_5 === 1) {
-            categoryElementStars_2.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
+
+        const categoryElementStars_2_1 = document.getElementById('categoryElementStars_2_1'),
+            categoryElementStars_2_2 = document.getElementById('categoryElementStars_2_2'),
+            categoryElementStars_2_3 = document.getElementById('categoryElementStars_2_3'),
+            categoryElementStars_2_4 = document.getElementById('categoryElementStars_2_4'),
+            categoryElementStars_2_5 = document.getElementById('categoryElementStars_2_5')
+        ;
+
+        if (progressCitizenQuest2_1 === 1) {
+            categoryElementStars_2_1.className += 'fill';
+        }
+
+        if (progressCitizenQuest2_2 === 1) {
+            categoryElementStars_2_2.className += 'fill';
+        }
+
+        if (progressCitizenQuest2_3 === 1) {
+            categoryElementStars_2_3.className += 'fill';
+        }
+
+        if (progressCitizenQuest2_4 === 1) {
+            categoryElementStars_2_4.className += 'fill';
+        }
+
+        if (progressCitizenQuest2_5 === 1) {
+            categoryElementStars_2_5.className += 'fill';
         }
 
         if (progressCitizenQuest2 >= 1) {
@@ -796,342 +190,40 @@ function citizenCategoryDev() {
             categorySubQuest_4 = document.getElementById('categorySubCitizen_4')
         ;
 
-        if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        categoryElementStars_3.id = 'categoryElementStars_3';
+        categoryElementStars_3.innerHTML = `
+            <li id="categoryElementStars_3_1"></li>
+            <li id="categoryElementStars_3_2"></li>
+            <li id="categoryElementStars_3_3"></li>
+            <li id="categoryElementStars_3_4"></li>
+            <li id="categoryElementStars_3_5"></li>
         `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 0 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 0) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 0 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 0 &&
-            progressCitizenQuest3_3 === 1 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest3_1 === 1 &&
-            progressCitizenQuest3_2 === 1 &&
-            progressCitizenQuest3_3 === 0 &&
-            progressCitizenQuest3_4 === 1 &&
-            progressCitizenQuest3_5 === 1) {
-            categoryElementStars_3.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
+
+        const categoryElementStars_3_1 = document.getElementById('categoryElementStars_3_1'),
+            categoryElementStars_3_2 = document.getElementById('categoryElementStars_3_2'),
+            categoryElementStars_3_3 = document.getElementById('categoryElementStars_3_3'),
+            categoryElementStars_3_4 = document.getElementById('categoryElementStars_3_4'),
+            categoryElementStars_3_5 = document.getElementById('categoryElementStars_3_5')
+        ;
+
+        if (progressCitizenQuest3_1 === 1) {
+            categoryElementStars_3_1.className += 'fill';
+        }
+
+        if (progressCitizenQuest3_2 === 1) {
+            categoryElementStars_3_2.className += 'fill';
+        }
+
+        if (progressCitizenQuest3_3 === 1) {
+            categoryElementStars_3_3.className += 'fill';
+        }
+
+        if (progressCitizenQuest3_4 === 1) {
+            categoryElementStars_3_4.className += 'fill';
+        }
+
+        if (progressCitizenQuest3_5 === 1) {
+            categoryElementStars_3_5.className += 'fill';
         }
 
         if (progressCitizenQuest3 >= 1) {
@@ -1164,342 +256,40 @@ function citizenCategoryDev() {
             categorySubQuest_5 = document.getElementById('categorySubCitizen_5')
         ;
 
-        if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        categoryElementStars_4.id = 'categoryElementStars_4';
+        categoryElementStars_4.innerHTML = `
+            <li id="categoryElementStars_4_1"></li>
+            <li id="categoryElementStars_4_2"></li>
+            <li id="categoryElementStars_4_3"></li>
+            <li id="categoryElementStars_4_4"></li>
+            <li id="categoryElementStars_4_5"></li>
         `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 0 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 0) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 0 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 0 &&
-            progressCitizenQuest4_3 === 1 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest4_1 === 1 &&
-            progressCitizenQuest4_2 === 1 &&
-            progressCitizenQuest4_3 === 0 &&
-            progressCitizenQuest4_4 === 1 &&
-            progressCitizenQuest4_5 === 1) {
-            categoryElementStars_4.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
+
+        const categoryElementStars_4_1 = document.getElementById('categoryElementStars_4_1'),
+            categoryElementStars_4_2 = document.getElementById('categoryElementStars_4_2'),
+            categoryElementStars_4_3 = document.getElementById('categoryElementStars_4_3'),
+            categoryElementStars_4_4 = document.getElementById('categoryElementStars_4_4'),
+            categoryElementStars_4_5 = document.getElementById('categoryElementStars_4_5')
+        ;
+
+        if (progressCitizenQuest4_1 === 1) {
+            categoryElementStars_4_1.className += 'fill';
+        }
+
+        if (progressCitizenQuest4_2 === 1) {
+            categoryElementStars_4_2.className += 'fill';
+        }
+
+        if (progressCitizenQuest4_3 === 1) {
+            categoryElementStars_4_3.className += 'fill';
+        }
+
+        if (progressCitizenQuest4_4 === 1) {
+            categoryElementStars_4_4.className += 'fill';
+        }
+
+        if (progressCitizenQuest4_5 === 1) {
+            categoryElementStars_4_5.className += 'fill';
         }
 
         if (progressCitizenQuest4 >= 1) {
@@ -1532,342 +322,40 @@ function citizenCategoryDev() {
             categorySubQuest_6 = document.getElementById('categorySubCitizen_6')
         ;
 
-        if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        categoryElementStars_5.id = 'categoryElementStars_5';
+        categoryElementStars_5.innerHTML = `
+            <li id="categoryElementStars_5_1"></li>
+            <li id="categoryElementStars_5_2"></li>
+            <li id="categoryElementStars_5_3"></li>
+            <li id="categoryElementStars_5_4"></li>
+            <li id="categoryElementStars_5_5"></li>
         `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 0 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 0) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 0 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 0 &&
-            progressCitizenQuest5_3 === 1 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest5_1 === 1 &&
-            progressCitizenQuest5_2 === 1 &&
-            progressCitizenQuest5_3 === 0 &&
-            progressCitizenQuest5_4 === 1 &&
-            progressCitizenQuest5_5 === 1) {
-            categoryElementStars_5.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
+
+        const categoryElementStars_5_1 = document.getElementById('categoryElementStars_5_1'),
+            categoryElementStars_5_2 = document.getElementById('categoryElementStars_5_2'),
+            categoryElementStars_5_3 = document.getElementById('categoryElementStars_5_3'),
+            categoryElementStars_5_4 = document.getElementById('categoryElementStars_5_4'),
+            categoryElementStars_5_5 = document.getElementById('categoryElementStars_5_5')
+        ;
+
+        if (progressCitizenQuest5_1 === 1) {
+            categoryElementStars_5_1.className += 'fill';
+        }
+
+        if (progressCitizenQuest5_2 === 1) {
+            categoryElementStars_5_2.className += 'fill';
+        }
+
+        if (progressCitizenQuest5_3 === 1) {
+            categoryElementStars_5_3.className += 'fill';
+        }
+
+        if (progressCitizenQuest5_4 === 1) {
+            categoryElementStars_5_4.className += 'fill';
+        }
+
+        if (progressCitizenQuest5_5 === 1) {
+            categoryElementStars_5_5.className += 'fill';
         }
 
         if (progressCitizenQuest5 >= 1) {
@@ -1900,342 +388,40 @@ function citizenCategoryDev() {
             categorySubQuest_7 = document.getElementById('categorySubCitizen_7')
         ;
 
-        if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        categoryElementStars_6.id = 'categoryElementStars_6';
+        categoryElementStars_6.innerHTML = `
+            <li id="categoryElementStars_6_1"></li>
+            <li id="categoryElementStars_6_2"></li>
+            <li id="categoryElementStars_6_3"></li>
+            <li id="categoryElementStars_6_4"></li>
+            <li id="categoryElementStars_6_5"></li>
         `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 0 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 0) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 0 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 0 &&
-            progressCitizenQuest6_3 === 1 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest6_1 === 1 &&
-            progressCitizenQuest6_2 === 1 &&
-            progressCitizenQuest6_3 === 0 &&
-            progressCitizenQuest6_4 === 1 &&
-            progressCitizenQuest6_5 === 1) {
-            categoryElementStars_6.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
+
+        const categoryElementStars_6_1 = document.getElementById('categoryElementStars_6_1'),
+            categoryElementStars_6_2 = document.getElementById('categoryElementStars_6_2'),
+            categoryElementStars_6_3 = document.getElementById('categoryElementStars_6_3'),
+            categoryElementStars_6_4 = document.getElementById('categoryElementStars_6_4'),
+            categoryElementStars_6_5 = document.getElementById('categoryElementStars_6_5')
+        ;
+
+        if (progressCitizenQuest6_1 === 1) {
+            categoryElementStars_6_1.className += 'fill';
+        }
+
+        if (progressCitizenQuest6_2 === 1) {
+            categoryElementStars_6_2.className += 'fill';
+        }
+
+        if (progressCitizenQuest6_3 === 1) {
+            categoryElementStars_6_3.className += 'fill';
+        }
+
+        if (progressCitizenQuest6_4 === 1) {
+            categoryElementStars_6_4.className += 'fill';
+        }
+
+        if (progressCitizenQuest6_5 === 1) {
+            categoryElementStars_6_5.className += 'fill';
         }
 
         if (progressCitizenQuest6 >= 1) {
@@ -2268,342 +454,40 @@ function citizenCategoryDev() {
             categorySubQuest_8 = document.getElementById('categorySubCitizen_8')
         ;
 
-        if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        categoryElementStars_7.id = 'categoryElementStars_7';
+        categoryElementStars_7.innerHTML = `
+            <li id="categoryElementStars_7_1"></li>
+            <li id="categoryElementStars_7_2"></li>
+            <li id="categoryElementStars_7_3"></li>
+            <li id="categoryElementStars_7_4"></li>
+            <li id="categoryElementStars_7_5"></li>
         `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 0 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 0) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 0 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 0 &&
-            progressCitizenQuest7_3 === 1 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest7_1 === 1 &&
-            progressCitizenQuest7_2 === 1 &&
-            progressCitizenQuest7_3 === 0 &&
-            progressCitizenQuest7_4 === 1 &&
-            progressCitizenQuest7_5 === 1) {
-            categoryElementStars_7.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
+
+        const categoryElementStars_7_1 = document.getElementById('categoryElementStars_7_1'),
+            categoryElementStars_7_2 = document.getElementById('categoryElementStars_7_2'),
+            categoryElementStars_7_3 = document.getElementById('categoryElementStars_7_3'),
+            categoryElementStars_7_4 = document.getElementById('categoryElementStars_7_4'),
+            categoryElementStars_7_5 = document.getElementById('categoryElementStars_7_5')
+        ;
+
+        if (progressCitizenQuest7_1 === 1) {
+            categoryElementStars_7_1.className += 'fill';
+        }
+
+        if (progressCitizenQuest7_2 === 1) {
+            categoryElementStars_7_2.className += 'fill';
+        }
+
+        if (progressCitizenQuest7_3 === 1) {
+            categoryElementStars_7_3.className += 'fill';
+        }
+
+        if (progressCitizenQuest7_4 === 1) {
+            categoryElementStars_7_4.className += 'fill';
+        }
+
+        if (progressCitizenQuest7_5 === 1) {
+            categoryElementStars_7_5.className += 'fill';
         }
 
         if (progressCitizenQuest7 >= 1) {
@@ -2636,342 +520,40 @@ function citizenCategoryDev() {
             categorySubQuest_9 = document.getElementById('categorySubCitizen_9')
         ;
 
-        if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        categoryElementStars_8.id = 'categoryElementStars_8';
+        categoryElementStars_8.innerHTML = `
+            <li id="categoryElementStars_8_1"></li>
+            <li id="categoryElementStars_8_2"></li>
+            <li id="categoryElementStars_8_3"></li>
+            <li id="categoryElementStars_8_4"></li>
+            <li id="categoryElementStars_8_5"></li>
         `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 0 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 0) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 0 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 0 &&
-            progressCitizenQuest8_3 === 1 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest8_1 === 1 &&
-            progressCitizenQuest8_2 === 1 &&
-            progressCitizenQuest8_3 === 0 &&
-            progressCitizenQuest8_4 === 1 &&
-            progressCitizenQuest8_5 === 1) {
-            categoryElementStars_8.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
+
+        const categoryElementStars_8_1 = document.getElementById('categoryElementStars_8_1'),
+            categoryElementStars_8_2 = document.getElementById('categoryElementStars_8_2'),
+            categoryElementStars_8_3 = document.getElementById('categoryElementStars_8_3'),
+            categoryElementStars_8_4 = document.getElementById('categoryElementStars_8_4'),
+            categoryElementStars_8_5 = document.getElementById('categoryElementStars_8_5')
+        ;
+
+        if (progressCitizenQuest8_1 === 1) {
+            categoryElementStars_8_1.className += 'fill';
+        }
+
+        if (progressCitizenQuest8_2 === 1) {
+            categoryElementStars_8_2.className += 'fill';
+        }
+
+        if (progressCitizenQuest8_3 === 1) {
+            categoryElementStars_8_3.className += 'fill';
+        }
+
+        if (progressCitizenQuest8_4 === 1) {
+            categoryElementStars_8_4.className += 'fill';
+        }
+
+        if (progressCitizenQuest8_5 === 1) {
+            categoryElementStars_8_5.className += 'fill';
         }
 
         if (progressCitizenQuest8 >= 1) {
@@ -3004,342 +586,40 @@ function citizenCategoryDev() {
             categorySubQuest_10 = document.getElementById('categorySubCitizen_10')
         ;
 
-        if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        categoryElementStars_9.id = 'categoryElementStars_9';
+        categoryElementStars_9.innerHTML = `
+            <li id="categoryElementStars_9_1"></li>
+            <li id="categoryElementStars_9_2"></li>
+            <li id="categoryElementStars_9_3"></li>
+            <li id="categoryElementStars_9_4"></li>
+            <li id="categoryElementStars_9_5"></li>
         `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 0 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 0) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 0 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 0 &&
-            progressCitizenQuest9_3 === 1 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest9_1 === 1 &&
-            progressCitizenQuest9_2 === 1 &&
-            progressCitizenQuest9_3 === 0 &&
-            progressCitizenQuest9_4 === 1 &&
-            progressCitizenQuest9_5 === 1) {
-            categoryElementStars_9.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
+
+        const categoryElementStars_9_1 = document.getElementById('categoryElementStars_9_1'),
+            categoryElementStars_9_2 = document.getElementById('categoryElementStars_9_2'),
+            categoryElementStars_9_3 = document.getElementById('categoryElementStars_9_3'),
+            categoryElementStars_9_4 = document.getElementById('categoryElementStars_9_4'),
+            categoryElementStars_9_5 = document.getElementById('categoryElementStars_9_5')
+        ;
+
+        if (progressCitizenQuest9_1 === 1) {
+            categoryElementStars_9_1.className += 'fill';
+        }
+
+        if (progressCitizenQuest9_2 === 1) {
+            categoryElementStars_9_2.className += 'fill';
+        }
+
+        if (progressCitizenQuest9_3 === 1) {
+            categoryElementStars_9_3.className += 'fill';
+        }
+
+        if (progressCitizenQuest9_4 === 1) {
+            categoryElementStars_9_4.className += 'fill';
+        }
+
+        if (progressCitizenQuest9_5 === 1) {
+            categoryElementStars_9_5.className += 'fill';
         }
 
         if (progressCitizenQuest9 >= 1) {
@@ -3372,347 +652,41 @@ function citizenCategoryDev() {
             categorySubQuest_10 = document.getElementById('categorySubCitizen_10')
         ;
 
-        if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        categoryElementStars_10.id = 'categoryElementStars_10';
+        categoryElementStars_10.innerHTML = `
+            <li id="categoryElementStars_10_1"></li>
+            <li id="categoryElementStars_10_2"></li>
+            <li id="categoryElementStars_10_3"></li>
+            <li id="categoryElementStars_10_4"></li>
+            <li id="categoryElementStars_10_5"></li>
         `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 0 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 0) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 0 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 0 &&
-            progressCitizenQuest10_3 === 1 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
-        } else if (progressCitizenQuest10_1 === 1 &&
-            progressCitizenQuest10_2 === 1 &&
-            progressCitizenQuest10_3 === 0 &&
-            progressCitizenQuest10_4 === 1 &&
-            progressCitizenQuest10_5 === 1) {
-            categoryElementStars_10.innerHTML = `
-            <li class="fill"></li>
-            <li class="fill"></li>
-            <li></li>
-            <li class="fill"></li>
-            <li class="fill"></li>
-        `;
+
+        const categoryElementStars_10_1 = document.getElementById('categoryElementStars_10_1'),
+            categoryElementStars_10_2 = document.getElementById('categoryElementStars_10_2'),
+            categoryElementStars_10_3 = document.getElementById('categoryElementStars_10_3'),
+            categoryElementStars_10_4 = document.getElementById('categoryElementStars_10_4'),
+            categoryElementStars_10_5 = document.getElementById('categoryElementStars_10_5')
+        ;
+
+        if (progressCitizenQuest10_1 === 1) {
+            categoryElementStars_10_1.className += 'fill';
         }
 
-        // if (progressCitizenQuest10 >= 1) {
-        //     categorySubQuest_10.className = 'category__element category__element_10';
-        // }
+        if (progressCitizenQuest10_2 === 1) {
+            categoryElementStars_10_2.className += 'fill';
+        }
+
+        if (progressCitizenQuest10_3 === 1) {
+            categoryElementStars_10_3.className += 'fill';
+        }
+
+        if (progressCitizenQuest10_4 === 1) {
+            categoryElementStars_10_4.className += 'fill';
+        }
+
+        if (progressCitizenQuest10_5 === 1) {
+            categoryElementStars_10_5.className += 'fill';
+        }
     }
     citizenQuest_10();
 
@@ -3753,7 +727,7 @@ function citizenCategoryDev() {
         if (categorySubCitizenAll[i].className !== 'category__element--hidden') {
             categorySubCitizenAll[i].addEventListener('click', () => {
                 if (categorySubCitizenAll[i].className !== 'category__element--hidden') {
-                    // soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_subCategoryQuest.ogg');
+                    soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_subCategoryQuest.ogg');
                 }
             });
         }
@@ -3921,6 +895,6 @@ function citizenCategoryDev() {
 
     let progressCitizenQuestSum = JSON.parse(localStorage.getItem('progressCitizenAll'));
     if (progressCitizenQuestSum === 50) {
-        // soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_categoryAllRight.ogg');
+        soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_categoryAllRight.ogg');
     }
 }

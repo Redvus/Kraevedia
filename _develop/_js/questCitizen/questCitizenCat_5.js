@@ -341,53 +341,6 @@ function questionCitizenCat_5_2() {
         questValue_5_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_5_5'))
     ;
 
-    function starsRemove_2() {
-        if (progressCitizenQuest_5_1 === 0 &&
-            progressCitizenQuest_5_2 === 0 &&
-            progressCitizenQuest_5_3 === 1 &&
-            progressCitizenQuest_5_4 === 0 &&
-            progressCitizenQuest_5_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_5_1 === 0 &&
-            progressCitizenQuest_5_2 === 0 &&
-            progressCitizenQuest_5_3 === 0 &&
-            progressCitizenQuest_5_4 === 1 &&
-            progressCitizenQuest_5_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_5_1 === 0 &&
-            progressCitizenQuest_5_2 === 0 &&
-            progressCitizenQuest_5_3 === 0 &&
-            progressCitizenQuest_5_4 === 0 &&
-            progressCitizenQuest_5_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_5_1 === 0 &&
-            progressCitizenQuest_5_2 === 0 &&
-            progressCitizenQuest_5_3 === 1 &&
-            progressCitizenQuest_5_4 === 1 &&
-            progressCitizenQuest_5_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_5_1 === 0 &&
-            progressCitizenQuest_5_2 === 0 &&
-            progressCitizenQuest_5_3 === 1 &&
-            progressCitizenQuest_5_4 === 0 &&
-            progressCitizenQuest_5_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_5_1 === 0 &&
-            progressCitizenQuest_5_2 === 0 &&
-            progressCitizenQuest_5_3 === 0 &&
-            progressCitizenQuest_5_4 === 1 &&
-            progressCitizenQuest_5_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_5_1 === 0 &&
-            progressCitizenQuest_5_2 === 0 &&
-            progressCitizenQuest_5_3 === 1 &&
-            progressCitizenQuest_5_4 === 1 &&
-            progressCitizenQuest_5_5 === 1) {
-            wrapper.removeChild(questionStars);
-        }
-    }
-    starsRemove_2();
-
     arrowNextClick.addEventListener('click', () => {
         gsap.to(containerWrapperCategory, {
             autoAlpha: 0,

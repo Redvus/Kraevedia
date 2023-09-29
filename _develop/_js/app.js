@@ -21,11 +21,11 @@ function introDev() {
     ;
 
     clickLoadGame.addEventListener('click', () => {
-        // soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_progressClear.ogg');
+        soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_progressClear.ogg');
 
         // Music Background
         // if (backgroundMusicID === null) {
-        //     soundsLoad.backgroundMusicLoad('assets/games/cosmicpuzzles/sounds/cp_ambientSpace.ogg');
+        //     soundsLoad.backgroundMusicLoad('assets/games/kraevedia/sounds/cp_ambientSpace.ogg');
         //     localStorage.setItem('backgroundMusic', JSON.stringify(1));
         // } else if (backgroundMusicID.paused || localStorage.getItem('backgroundMusic') === '0') {
         //     backgroundMusicID.pause();
@@ -162,6 +162,8 @@ function categoryDev() {
     const containerCategory = document.querySelector('.container__category'),
         introAboutBack = document.querySelector('.wrapper__service'),
         wrapperBackCitizen = document.createElement('div'),
+        wrapperBackChicherone = document.createElement('div'),
+        wrapperBackKraeved = document.createElement('div'),
         categoryCitizen = document.getElementById('categoryCitizen'),
         categoryChicherone = document.getElementById('categoryChicherone'),
         categoryKraeved = document.getElementById('categoryKraeved')
@@ -173,6 +175,8 @@ function categoryDev() {
     ;
 
     wrapperBackCitizen.className = 'wrapper__citizen';
+    wrapperBackChicherone.className = 'wrapper__chicherone';
+    wrapperBackKraeved.className = 'wrapper__kraeved';
 
     if (localStorage.getItem('progressCitizenAll') === null ||
         localStorage.getItem('progressChicheroneAll') === null ||
@@ -209,7 +213,7 @@ function categoryDev() {
             setProgressCitizen.textContent = JSON.parse(localStorage.getItem('progressCitizenAll'));
             setProgressChicherone.textContent = JSON.parse(localStorage.getItem('progressChicheroneAll'));
             setProgressKraeved.textContent = JSON.parse(localStorage.getItem('progressKraevedAll'));
-            // soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_progressClear.ogg');
+            soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_progressClear.ogg');
             categoryCitizen.className = 'category__main';
             categoryChicherone.className = 'category__main';
             categoryKraeved.className = 'category__main';
@@ -300,7 +304,7 @@ function categoryDev() {
 
     //Category load
     categoryCitizen.addEventListener('click', () => {
-        // soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_categoryLoad.ogg');
+        soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_categoryLoad.ogg');
         let tl = gsap.timeline({
             onComplete: () => {
                 container.removeChild(arrowBackClick);
@@ -339,7 +343,7 @@ function categoryDev() {
     });
 
     categoryChicherone.addEventListener('click', () => {
-        // soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_categoryLoad.ogg');
+        soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_categoryLoad.ogg');
         let tl = gsap.timeline({
             onComplete: () => {
                 container.removeChild(arrowBackClick);
@@ -347,7 +351,8 @@ function categoryDev() {
                 container.removeChild(containerCategory);
                 wrapper.removeChild(wrapperTopTitle);
                 wrapper.removeChild(introAboutBack);
-                chicheroneCategory();
+                wrapper.appendChild(wrapperBackChicherone);
+                chicheroneCategoryDev();
                 lockSubQuestChicherone();
             }
         });
@@ -368,14 +373,16 @@ function categoryDev() {
     });
 
     categoryKraeved.addEventListener('click', () => {
-        // soundsLoad.rightAnswer('assets/games/cosmicpuzzles/sounds/cp_categoryLoad.ogg');
+        soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_categoryLoad.ogg');
         let tl = gsap.timeline({
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(settingButton);
                 container.removeChild(containerCategory);
                 wrapper.removeChild(wrapperTopTitle);
-                kraevedCategory();
+                wrapper.removeChild(introAboutBack);
+                wrapper.appendChild(wrapperBackKraeved);
+                kraevedCategoryDev();
                 lockSubQuestKraeved();
             }
         });
@@ -499,15 +506,6 @@ function authorsStart() {
             })
         ;
     });
-}
-
-function questionBlockDev() {
-    const question = new Question();
-
-    question.questionBlock('Отбор', 'Белка, Стрелка и ...', 'Кто первым из животных побывал в космосе?', 'Белка', 'Стрелка', 'Тузик');
-
-    question.answerBlock(1, 'Конечно же стрелка, потому как это только и это есть правильный ответ, а не другой');
-
 }
 
 function init() {
