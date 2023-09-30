@@ -90,13 +90,15 @@ gulp.task('app-js', function(){
         path.src.js + 'questKraeved/loadQuestKraeved.js',
         path.src.js + 'questKraeved/lockSubQuestKraeved.js',
         path.src.js + 'questKraeved/questKraevedCat_1.js',
-        // path.src.js + 'questKraeved/questKraevedCat_2.js',
-        // path.src.js + 'questKraeved/questKraevedCat_3.js',
-        // path.src.js + 'questKraeved/questKraevedCat_4.js',
-        // path.src.js + 'questKraeved/questKraevedCat_5.js',
-        // path.src.js + 'questKraeved/questKraevedCat_6.js',
-        // path.src.js + 'questKraeved/questKraevedCat_7.js',
-        // path.src.js + 'questKraeved/questKraevedCat_8.js',
+        path.src.js + 'questKraeved/questKraevedCat_2.js',
+        path.src.js + 'questKraeved/questKraevedCat_3.js',
+        path.src.js + 'questKraeved/questKraevedCat_4.js',
+        path.src.js + 'questKraeved/questKraevedCat_5.js',
+        path.src.js + 'questKraeved/questKraevedCat_6.js',
+        path.src.js + 'questKraeved/questKraevedCat_7.js',
+        path.src.js + 'questKraeved/questKraevedCat_8.js',
+        path.src.js + 'questKraeved/questKraevedCat_9.js',
+        path.src.js + 'questKraeved/questKraevedCat_10.js',
         path.src.js + 'app.js'
     ])
         .pipe(concat('app.js'))
@@ -169,13 +171,16 @@ gulp.task('watch', function() {
         path.watch.js + 'questKraeved/loadQuestKraeved.js',
         path.watch.js + 'questKraeved/lockSubQuestKraeved.js',
         path.watch.js + 'questKraeved/questKraevedCat_1.js',
-        // path.watch.js + 'questKraeved/questKraevedCat_2.js',
-        // path.watch.js + 'questKraeved/questKraevedCat_3.js',
-        // path.watch.js + 'questKraeved/questKraevedCat_4.js',
-        // path.watch.js + 'questKraeved/questKraevedCat_5.js',
-        // path.watch.js + 'questKraeved/questKraevedCat_6.js',
-        // path.watch.js + 'questKraeved/questKraevedCat_7.js',
-        path.watch.js + 'questKraeved/questKraevedCat_8.js'], gulp.series('app-js'));
+        path.watch.js + 'questKraeved/questKraevedCat_2.js',
+        path.watch.js + 'questKraeved/questKraevedCat_3.js',
+        path.watch.js + 'questKraeved/questKraevedCat_4.js',
+        path.watch.js + 'questKraeved/questKraevedCat_5.js',
+        path.watch.js + 'questKraeved/questKraevedCat_6.js',
+        path.watch.js + 'questKraeved/questKraevedCat_7.js',
+        path.watch.js + 'questKraeved/questKraevedCat_8.js',
+        path.watch.js + 'questKraeved/questKraevedCat_9.js',
+        path.watch.js + 'questKraeved/questKraevedCat_10.js'
+    ], gulp.series('app-js'));
     // gulp.watch(path.watch.js + 'jgrowl.js', gulp.series('jgrowl-js'));
 
     // gulp.watch(path.dest.css + '/js/**/*.js', browserSync.reload);

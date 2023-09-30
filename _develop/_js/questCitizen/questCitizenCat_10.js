@@ -88,105 +88,10 @@ function questionCitizenCat_10_1() {
         questValue_10_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_10_5'))
     ;
 
-    function starsRemove() {
-        if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 0 &&
-            progressCitizenQuest_10_3 === 0 &&
-            progressCitizenQuest_10_4 === 0 &&
-            progressCitizenQuest_10_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 1 &&
-            progressCitizenQuest_10_3 === 0 &&
-            progressCitizenQuest_10_4 === 0 &&
-            progressCitizenQuest_10_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 0 &&
-            progressCitizenQuest_10_3 === 1 &&
-            progressCitizenQuest_10_4 === 0 &&
-            progressCitizenQuest_10_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 0 &&
-            progressCitizenQuest_10_3 === 0 &&
-            progressCitizenQuest_10_4 === 1 &&
-            progressCitizenQuest_10_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 0 &&
-            progressCitizenQuest_10_3 === 0 &&
-            progressCitizenQuest_10_4 === 0 &&
-            progressCitizenQuest_10_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 1 &&
-            progressCitizenQuest_10_3 === 1 &&
-            progressCitizenQuest_10_4 === 0 &&
-            progressCitizenQuest_10_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 1 &&
-            progressCitizenQuest_10_3 === 0 &&
-            progressCitizenQuest_10_4 === 1 &&
-            progressCitizenQuest_10_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 1 &&
-            progressCitizenQuest_10_3 === 0 &&
-            progressCitizenQuest_10_4 === 0 &&
-            progressCitizenQuest_10_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 0 &&
-            progressCitizenQuest_10_3 === 1 &&
-            progressCitizenQuest_10_4 === 1 &&
-            progressCitizenQuest_10_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 0 &&
-            progressCitizenQuest_10_3 === 1 &&
-            progressCitizenQuest_10_4 === 0 &&
-            progressCitizenQuest_10_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 0 &&
-            progressCitizenQuest_10_3 === 0 &&
-            progressCitizenQuest_10_4 === 1 &&
-            progressCitizenQuest_10_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 0 &&
-            progressCitizenQuest_10_3 === 1 &&
-            progressCitizenQuest_10_4 === 1 &&
-            progressCitizenQuest_10_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 1 &&
-            progressCitizenQuest_10_3 === 1 &&
-            progressCitizenQuest_10_4 === 1 &&
-            progressCitizenQuest_10_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 1 &&
-            progressCitizenQuest_10_3 === 0 &&
-            progressCitizenQuest_10_4 === 1 &&
-            progressCitizenQuest_10_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_10_1 === 0 &&
-            progressCitizenQuest_10_2 === 1 &&
-            progressCitizenQuest_10_3 === 1 &&
-            progressCitizenQuest_10_4 === 0 &&
-            progressCitizenQuest_10_5 === 1) {
-            wrapper.removeChild(questionStars);
-        }
-    }
-
     arrowNextClick.addEventListener('click', () => {
         gsap.to(containerWrapperCategory, {
             autoAlpha: 0,
             onComplete: () => {
-                // starsRemove();
                 wrapper.removeChild(questionStars);
                 container.removeChild(arrowBackClick);
                 container.removeChild(arrowNextClick);
@@ -196,6 +101,7 @@ function questionCitizenCat_10_1() {
                     questValue_10_3 === 1 &&
                     questValue_10_4 === 1 &&
                     questValue_10_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_10_2 === 0) {
@@ -350,10 +256,10 @@ function questionCitizenCat_10_2() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_10_1 === 1 &&
-                    questValue_10_3 === 1 &&
+                if (questValue_10_3 === 1 &&
                     questValue_10_4 === 1 &&
                     questValue_10_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_10_3 === 0) {
@@ -504,10 +410,9 @@ function questionCitizenCat_10_3() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_10_1 === 1 &&
-                    questValue_10_2 === 1 &&
-                    questValue_10_4 === 1 &&
+                if (questValue_10_4 === 1 &&
                     questValue_10_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_10_4 === 0) {
@@ -644,10 +549,8 @@ function questionCitizenCat_10_4() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_10_1 === 1 &&
-                    questValue_10_2 === 1 &&
-                    questValue_10_3 === 1 &&
-                    questValue_10_5 === 1) {
+                if (questValue_10_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_10_5 === 0) {
@@ -776,6 +679,7 @@ function questionCitizenCat_10_5() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
+                wrapper.removeChild(wrapperTopTitle);
                 citizenCategoryDev();
                 lockSubQuestCitizen();
             }

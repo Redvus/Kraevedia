@@ -509,8 +509,8 @@ function authorsStart() {
 }
 
 function init() {
-    // introDev();
-    categoryDev();
+    introDev();
+    // categoryDev();
     // citizenCategoryDev();
     // chicheroneCategory();
     // loadQuestReady_1();

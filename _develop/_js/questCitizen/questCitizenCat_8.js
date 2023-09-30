@@ -88,100 +88,6 @@ function questionCitizenCat_8_1() {
         questValue_8_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_8_5'))
     ;
 
-    function starsRemove() {
-        if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 0 &&
-            progressCitizenQuest_8_3 === 0 &&
-            progressCitizenQuest_8_4 === 0 &&
-            progressCitizenQuest_8_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 1 &&
-            progressCitizenQuest_8_3 === 0 &&
-            progressCitizenQuest_8_4 === 0 &&
-            progressCitizenQuest_8_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 0 &&
-            progressCitizenQuest_8_3 === 1 &&
-            progressCitizenQuest_8_4 === 0 &&
-            progressCitizenQuest_8_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 0 &&
-            progressCitizenQuest_8_3 === 0 &&
-            progressCitizenQuest_8_4 === 1 &&
-            progressCitizenQuest_8_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 0 &&
-            progressCitizenQuest_8_3 === 0 &&
-            progressCitizenQuest_8_4 === 0 &&
-            progressCitizenQuest_8_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 1 &&
-            progressCitizenQuest_8_3 === 1 &&
-            progressCitizenQuest_8_4 === 0 &&
-            progressCitizenQuest_8_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 1 &&
-            progressCitizenQuest_8_3 === 0 &&
-            progressCitizenQuest_8_4 === 1 &&
-            progressCitizenQuest_8_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 1 &&
-            progressCitizenQuest_8_3 === 0 &&
-            progressCitizenQuest_8_4 === 0 &&
-            progressCitizenQuest_8_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 0 &&
-            progressCitizenQuest_8_3 === 1 &&
-            progressCitizenQuest_8_4 === 1 &&
-            progressCitizenQuest_8_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 0 &&
-            progressCitizenQuest_8_3 === 1 &&
-            progressCitizenQuest_8_4 === 0 &&
-            progressCitizenQuest_8_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 0 &&
-            progressCitizenQuest_8_3 === 0 &&
-            progressCitizenQuest_8_4 === 1 &&
-            progressCitizenQuest_8_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 0 &&
-            progressCitizenQuest_8_3 === 1 &&
-            progressCitizenQuest_8_4 === 1 &&
-            progressCitizenQuest_8_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 1 &&
-            progressCitizenQuest_8_3 === 1 &&
-            progressCitizenQuest_8_4 === 1 &&
-            progressCitizenQuest_8_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 1 &&
-            progressCitizenQuest_8_3 === 0 &&
-            progressCitizenQuest_8_4 === 1 &&
-            progressCitizenQuest_8_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressCitizenQuest_8_1 === 0 &&
-            progressCitizenQuest_8_2 === 1 &&
-            progressCitizenQuest_8_3 === 1 &&
-            progressCitizenQuest_8_4 === 0 &&
-            progressCitizenQuest_8_5 === 1) {
-            wrapper.removeChild(questionStars);
-        }
-    }
-
     arrowNextClick.addEventListener('click', () => {
         gsap.to(containerWrapperCategory, {
             autoAlpha: 0,
@@ -196,6 +102,7 @@ function questionCitizenCat_8_1() {
                     questValue_8_3 === 1 &&
                     questValue_8_4 === 1 &&
                     questValue_8_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_8_2 === 0) {
@@ -272,7 +179,7 @@ function questionCitizenCat_8_2() {
         localStorage.setItem('progressCitizenQuest_8_2', JSON.stringify(progressCitizenQuest_8_2));
     }
 
-    questCitizenCatLoad.questionBlock('Житель', 'Под мягким светом лампы и шелестом страниц', '1 января 1860 года в Самаре открылась библиотека на 800 томов', 'Самарская Публичная библиотека', 'Самарская областная универсальная научная библиотека ', 'Центральная городская библиотека имени Н. К. Крупской');
+    questCitizenCatLoad.questionBlock('Житель', 'Под мягким светом лампы и шелестом страниц', '1 января 1860 года в Самаре открылась библиотека на 800 томов', 'Самарская Публичная библиотека', 'Самарская областная универсальная научная библиотека', 'Центральная городская библиотека имени Н. К. Крупской');
 
     let answerVar_8_2_1 = document.getElementById('answerVar_1'),
         answerVar_8_2_2 = document.getElementById('answerVar_2'),
@@ -350,10 +257,10 @@ function questionCitizenCat_8_2() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_8_1 === 1 &&
-                    questValue_8_3 === 1 &&
+                if (questValue_8_3 === 1 &&
                     questValue_8_4 === 1 &&
                     questValue_8_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_8_3 === 0) {
@@ -504,10 +411,9 @@ function questionCitizenCat_8_3() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_8_1 === 1 &&
-                    questValue_8_2 === 1 &&
-                    questValue_8_4 === 1 &&
+                if (questValue_8_4 === 1 &&
                     questValue_8_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_8_4 === 0) {
@@ -644,10 +550,8 @@ function questionCitizenCat_8_4() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_8_1 === 1 &&
-                    questValue_8_2 === 1 &&
-                    questValue_8_3 === 1 &&
-                    questValue_8_5 === 1) {
+                if (questValue_8_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_8_5 === 0) {
@@ -776,6 +680,7 @@ function questionCitizenCat_8_5() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
+                wrapper.removeChild(wrapperTopTitle);
                 citizenCategoryDev();
                 lockSubQuestCitizen();
             }

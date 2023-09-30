@@ -102,6 +102,7 @@ function questionCitizenCat_1_1() {
                     questValue_1_3 === 1 &&
                     questValue_1_4 === 1 &&
                     questValue_1_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_1_2 === 0) {
@@ -256,10 +257,10 @@ function questionCitizenCat_1_2() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_1_1 === 1 &&
-                    questValue_1_3 === 1 &&
+                if (questValue_1_3 === 1 &&
                     questValue_1_4 === 1 &&
                     questValue_1_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_1_3 === 0) {
@@ -410,10 +411,9 @@ function questionCitizenCat_1_3() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_1_1 === 1 &&
-                    questValue_1_2 === 1 &&
-                    questValue_1_4 === 1 &&
+                if (questValue_1_4 === 1 &&
                     questValue_1_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_1_4 === 0) {
@@ -550,10 +550,8 @@ function questionCitizenCat_1_4() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_1_1 === 1 &&
-                    questValue_1_2 === 1 &&
-                    questValue_1_3 === 1 &&
-                    questValue_1_5 === 1) {
+                if (questValue_1_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
                     citizenCategoryDev();
                     lockSubQuestCitizen();
                 } else if (questValue_1_5 === 0) {
@@ -682,6 +680,7 @@ function questionCitizenCat_1_5() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
+                wrapper.removeChild(wrapperTopTitle);
                 citizenCategoryDev();
                 lockSubQuestCitizen();
             }

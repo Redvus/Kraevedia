@@ -3,7 +3,7 @@
 function chicheroneCategoryDev() {
     const chicheroneCatLoad = new ChoiceCategory(),
         arrowBackLoad = new ArrowsAll();
-    chicheroneCatLoad.choiceCategory('Чичероне', 'chicherone', 'Chicherone', 'Самарская Лука', 'Самара в зеркале истории', 'Районы, кварталы...', 'Вот дом, который построил...', 'Самара в лицах', 'Создано в Самаре', 'Культурная столица', 'Под мягким светом лампы и шелестом страниц', 'Литературная Самара', 'Очарованные странники');
+    chicheroneCatLoad.choiceCategory('Чичероне', 'chicherone', 'Chicherone', 'Самарская Лука', 'Самара в зеркале истории', 'Районы, кварталы...', 'Вот дом, который построил...', 'Самара в лицах', 'Создано в Самаре', 'Культурная столица', 'Под мягким светом лампы и шелестом страниц', 'Литературная Самара', 'Очарованная Самара');
 
     const containerWrapper = document.querySelector('.container__wrapper'),
         introAboutBack = document.querySelector('.wrapper__chicherone'),

@@ -7,7 +7,7 @@ if (localStorage.getItem('progressKraevedQuest_1') === null) {
 function questionKraevedCat_1_1() {
     let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 2;
+    let answerWrightNum = 1;
     let progressKraevedQuest_1_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_1_1')),
         progressKraevedQuest_1_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_1_2')),
         progressKraevedQuest_1_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_1_3')),
@@ -19,7 +19,7 @@ function questionKraevedCat_1_1() {
         localStorage.setItem('progressKraevedQuest_1_1', JSON.stringify(progressKraevedQuest_1_1));
     }
 
-    questKraevedCatLoad.questionBlock('Житель', 'Самарская лука', 'От чего город Самара получил свое название?', 'От названия предыдущего поселения', 'От названия птицы', 'От названия реки');
+    questKraevedCatLoad.questionBlock('Краевед', 'Самарская лука', 'Самое узкое место на Самарской Луке?', 'Село Ширяево', 'Село Переволоки', 'Село Усолье');
 
     let answerVar_1_1_1 = document.getElementById('answerVar_1'),
         answerVar_1_1_2 = document.getElementById('answerVar_2'),
@@ -78,7 +78,7 @@ function questionKraevedCat_1_1() {
         }
     }
 
-    questKraevedCatLoad.answerBlock(answerWrightNum, 'Верно! Река Волга протекала тогда на 2 км. западнее');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Верно!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
@@ -88,105 +88,10 @@ function questionKraevedCat_1_1() {
         questValue_1_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_1_5'))
     ;
 
-    function starsRemove() {
-        if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 0 &&
-            progressKraevedQuest_1_3 === 0 &&
-            progressKraevedQuest_1_4 === 0 &&
-            progressKraevedQuest_1_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 1 &&
-            progressKraevedQuest_1_3 === 0 &&
-            progressKraevedQuest_1_4 === 0 &&
-            progressKraevedQuest_1_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 0 &&
-            progressKraevedQuest_1_3 === 1 &&
-            progressKraevedQuest_1_4 === 0 &&
-            progressKraevedQuest_1_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 0 &&
-            progressKraevedQuest_1_3 === 0 &&
-            progressKraevedQuest_1_4 === 1 &&
-            progressKraevedQuest_1_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 0 &&
-            progressKraevedQuest_1_3 === 0 &&
-            progressKraevedQuest_1_4 === 0 &&
-            progressKraevedQuest_1_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 1 &&
-            progressKraevedQuest_1_3 === 1 &&
-            progressKraevedQuest_1_4 === 0 &&
-            progressKraevedQuest_1_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 1 &&
-            progressKraevedQuest_1_3 === 0 &&
-            progressKraevedQuest_1_4 === 1 &&
-            progressKraevedQuest_1_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 1 &&
-            progressKraevedQuest_1_3 === 0 &&
-            progressKraevedQuest_1_4 === 0 &&
-            progressKraevedQuest_1_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 0 &&
-            progressKraevedQuest_1_3 === 1 &&
-            progressKraevedQuest_1_4 === 1 &&
-            progressKraevedQuest_1_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 0 &&
-            progressKraevedQuest_1_3 === 1 &&
-            progressKraevedQuest_1_4 === 0 &&
-            progressKraevedQuest_1_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 0 &&
-            progressKraevedQuest_1_3 === 0 &&
-            progressKraevedQuest_1_4 === 1 &&
-            progressKraevedQuest_1_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 0 &&
-            progressKraevedQuest_1_3 === 1 &&
-            progressKraevedQuest_1_4 === 1 &&
-            progressKraevedQuest_1_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 1 &&
-            progressKraevedQuest_1_3 === 1 &&
-            progressKraevedQuest_1_4 === 1 &&
-            progressKraevedQuest_1_5 === 0) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 1 &&
-            progressKraevedQuest_1_3 === 0 &&
-            progressKraevedQuest_1_4 === 1 &&
-            progressKraevedQuest_1_5 === 1) {
-            wrapper.removeChild(questionStars);
-        } else if (progressKraevedQuest_1_1 === 0 &&
-            progressKraevedQuest_1_2 === 1 &&
-            progressKraevedQuest_1_3 === 1 &&
-            progressKraevedQuest_1_4 === 0 &&
-            progressKraevedQuest_1_5 === 1) {
-            wrapper.removeChild(questionStars);
-        }
-    }
-
     arrowNextClick.addEventListener('click', () => {
         gsap.to(containerWrapperCategory, {
             autoAlpha: 0,
             onComplete: () => {
-                // starsRemove();
                 wrapper.removeChild(questionStars);
                 container.removeChild(arrowBackClick);
                 container.removeChild(arrowNextClick);
@@ -196,8 +101,9 @@ function questionKraevedCat_1_1() {
                     questValue_1_3 === 1 &&
                     questValue_1_4 === 1 &&
                     questValue_1_5 === 1) {
-                    citizenCategoryDev();
-                    lockSubQuestKraeved();
+                    wrapper.removeChild(wrapperTopTitle);
+                    kraevedCategoryDev();
+                    lockSubQuestCitizen();
                 } else if (questValue_1_2 === 0) {
                     questionKraevedCat_1_2();
                 } else if (questValue_1_2 === 1 && questValue_1_3 === 0) {
@@ -237,8 +143,8 @@ function questionKraevedCat_1_1() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                citizenCategoryDev();
-                lockSubQuestKraeved();
+                kraevedCategoryDev();
+                lockSubQuestCitizen();
             }
         });
         tl
@@ -272,7 +178,7 @@ function questionKraevedCat_1_2() {
         localStorage.setItem('progressKraevedQuest_1_2', JSON.stringify(progressKraevedQuest_1_2));
     }
 
-    questKraevedCatLoad.questionBlock('Житель', 'Самарская лука', 'Что является символом национального парка «Самарская Лука»?', 'Коза', 'Лиса', 'Волк');
+    questKraevedCatLoad.questionBlock('Краевед', 'Самарская лука', 'Караульный бугор или...', 'Гора Лепешка', 'Гора Светелка', 'Гора Верблюжья');
 
     let answerVar_1_2_1 = document.getElementById('answerVar_1'),
         answerVar_1_2_2 = document.getElementById('answerVar_2'),
@@ -330,7 +236,7 @@ function questionKraevedCat_1_2() {
         }
     }
 
-    questKraevedCatLoad.answerBlock(answerWrightNum, '22 июня 1951 года собаки «Дезик и Цыган» стали первыми живыми существами, осуществившими полёт на баллистической ракете З – 1В в верхние слои атмосферы до условной границы с космосом.');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Так держать!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
@@ -350,12 +256,12 @@ function questionKraevedCat_1_2() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_1_1 === 1 &&
-                    questValue_1_3 === 1 &&
+                if (questValue_1_3 === 1 &&
                     questValue_1_4 === 1 &&
                     questValue_1_5 === 1) {
-                    citizenCategoryDev();
-                    lockSubQuestKraeved();
+                    wrapper.removeChild(wrapperTopTitle);
+                    kraevedCategoryDev();
+                    lockSubQuestCitizen();
                 } else if (questValue_1_3 === 0) {
                     questionKraevedCat_1_3();
                 } else if (questValue_1_3 === 1 && questValue_1_4 === 0) {
@@ -392,8 +298,8 @@ function questionKraevedCat_1_2() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                citizenCategoryDev();
-                lockSubQuestKraeved();
+                kraevedCategoryDev();
+                lockSubQuestCitizen();
             }
         });
         tl
@@ -427,7 +333,7 @@ function questionKraevedCat_1_3() {
         localStorage.setItem('progressKraevedQuest_1_3', JSON.stringify(progressKraevedQuest_1_3));
     }
 
-    questKraevedCatLoad.questionBlock('Житель', 'Самарская лука','Самое распространённое дерево в Самарском крае?', 'Береза', 'Дуб', 'Ива');
+    questKraevedCatLoad.questionBlock('Краевед', 'Самарская лука','Этот вид летучих мышей зимует в Ширяевских штольнях', 'Вечерница', 'Северный кожанок', 'Вампир обыкновенный');
 
     let answerVar_1_3_1 = document.getElementById('answerVar_1'),
         answerVar_1_3_2 = document.getElementById('answerVar_2'),
@@ -485,7 +391,7 @@ function questionKraevedCat_1_3() {
         }
     }
 
-    questKraevedCatLoad.answerBlock(answerWrightNum, '22 июня 1951 года собаки «Дезик и Цыган» стали первыми живыми существами, осуществившими полёт на баллистической ракете З – 1В в верхние слои атмосферы до условной границы с космосом.');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Да, точно!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
@@ -504,12 +410,11 @@ function questionKraevedCat_1_3() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_1_1 === 1 &&
-                    questValue_1_2 === 1 &&
-                    questValue_1_4 === 1 &&
+                if (questValue_1_4 === 1 &&
                     questValue_1_5 === 1) {
-                    citizenCategoryDev();
-                    lockSubQuestKraeved();
+                    wrapper.removeChild(wrapperTopTitle);
+                    kraevedCategoryDev();
+                    lockSubQuestCitizen();
                 } else if (questValue_1_4 === 0) {
                     questionKraevedCat_1_4();
                 } else if (questValue_1_4 === 1 && questValue_1_5 === 0) {
@@ -532,8 +437,8 @@ function questionKraevedCat_1_3() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                citizenCategoryDev();
-                lockSubQuestKraeved();
+                kraevedCategoryDev();
+                lockSubQuestCitizen();
             }
         });
         tl
@@ -567,7 +472,7 @@ function questionKraevedCat_1_4() {
         localStorage.setItem('progressKraevedQuest_1_4', JSON.stringify(progressKraevedQuest_1_4));
     }
 
-    questKraevedCatLoad.questionBlock('Житель', 'Самарская лука','Речной зверек отряда грызунов с ценным мехом?', 'Бобер', 'Выдра', 'Ондатра');
+    questKraevedCatLoad.questionBlock('Краевед', 'Самарская лука','Это водное животное является индикатором чистоты воды в нашем крае', 'Рак речной', 'Рыба плотва', 'Водяной уж');
 
     let answerVar_1_4_1 = document.getElementById('answerVar_1'),
         answerVar_1_4_2 = document.getElementById('answerVar_2'),
@@ -644,12 +549,10 @@ function questionKraevedCat_1_4() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_1_1 === 1 &&
-                    questValue_1_2 === 1 &&
-                    questValue_1_3 === 1 &&
-                    questValue_1_5 === 1) {
-                    citizenCategoryDev();
-                    lockSubQuestKraeved();
+                if (questValue_1_5 === 1) {
+                    wrapper.removeChild(wrapperTopTitle);
+                    kraevedCategoryDev();
+                    lockSubQuestCitizen();
                 } else if (questValue_1_5 === 0) {
                     questionKraevedCat_1_5();
                 }
@@ -670,8 +573,8 @@ function questionKraevedCat_1_4() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                citizenCategoryDev();
-                lockSubQuestKraeved();
+                kraevedCategoryDev();
+                lockSubQuestCitizen();
             }
         });
         tl
@@ -693,7 +596,7 @@ function questionKraevedCat_1_4() {
 function questionKraevedCat_1_5() {
     let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 2;
+    let answerWrightNum = 1;
     let progressKraevedQuest_1_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_1_1')),
         progressKraevedQuest_1_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_1_2')),
         progressKraevedQuest_1_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_1_3')),
@@ -705,7 +608,7 @@ function questionKraevedCat_1_5() {
         localStorage.setItem('progressKraevedQuest_1_4', JSON.stringify(progressKraevedQuest_1_4));
     }
 
-    questKraevedCatLoad.questionBlock('Житель', 'Самарская лука','Самый многоводный приток Волги в нашем крае?', 'Иргиз', 'Сок', 'Самара');
+    questKraevedCatLoad.questionBlock('Краевед', 'Самарская лука','Памятник природы регионального значения в Сергиевском районе, недалеко от села Старое Якушкино. Озеро, которое никогда не замерзает, сохраняя постоянную температуру в +7', 'Мертвое озеро', 'Голубое озеро', 'Боровое озеро');
 
     let answerVar_1_5_1 = document.getElementById('answerVar_1'),
         answerVar_1_5_2 = document.getElementById('answerVar_2'),
@@ -776,8 +679,9 @@ function questionKraevedCat_1_5() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                citizenCategoryDev();
-                lockSubQuestKraeved();
+                wrapper.removeChild(wrapperTopTitle);
+                kraevedCategoryDev();
+                lockSubQuestCitizen();
             }
         });
     });
@@ -795,8 +699,8 @@ function questionKraevedCat_1_5() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                citizenCategoryDev();
-                lockSubQuestKraeved();
+                kraevedCategoryDev();
+                lockSubQuestCitizen();
             }
         });
         tl

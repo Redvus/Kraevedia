@@ -1,9 +1,9 @@
 /* Запускаем вопросы в квтегории Краевед */
 
 function kraevedCategoryDev() {
-    const choiceCatLoad = new ChoiceCategory(),
+    const kraevedCatLoad = new ChoiceCategory(),
         arrowBackLoad = new ArrowsAll();
-    choiceCatLoad.choiceCategory('Краевед', 'kraeved', 'Kraeved', 'Самарская Лука', 'Самара в зеркале истории', 'Районы, кварталы...', 'Вот дом, который построил...', 'Самара в лицах', 'Создано в Самаре', 'Культурная столица', 'Под мягким светом лампы и шелестом страниц', 'Литературная Самара', 'Очарованные странники');
+    kraevedCatLoad.choiceCategory('Краевед', 'kraeved', 'Kraeved', 'Самарская Лука', 'Самара в зеркале истории', 'Районы, кварталы...', 'Вот дом, который построил...', 'Самара в лицах', 'Создано в Самаре', 'Культурная столица', 'Под мягким светом лампы и шелестом страниц', 'Литературная Самара', 'Очарованные странники');
 
     const containerWrapper = document.querySelector('.container__wrapper'),
         introAboutBack = document.querySelector('.wrapper__kraeved'),
@@ -739,7 +739,7 @@ function kraevedCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_1();
+                loadKraevedReady_1();
             }
         });
 
@@ -755,7 +755,7 @@ function kraevedCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_2();
+                loadKraevedReady_2();
             }
         });
 
@@ -771,7 +771,7 @@ function kraevedCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_3();
+                loadKraevedReady_3();
             }
         });
 
@@ -787,7 +787,7 @@ function kraevedCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_4();
+                loadKraevedReady_4();
             }
         });
 
@@ -803,7 +803,7 @@ function kraevedCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_5();
+                loadKraevedReady_5();
             }
         });
 
@@ -819,7 +819,7 @@ function kraevedCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_6();
+                loadKraevedReady_6();
             }
         });
 
@@ -835,7 +835,7 @@ function kraevedCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_7();
+                loadKraevedReady_7();
             }
         });
 
@@ -851,7 +851,7 @@ function kraevedCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_8();
+                loadKraevedReady_8();
             }
         });
 
@@ -867,7 +867,7 @@ function kraevedCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_9();
+                loadKraevedReady_9();
             }
         });
 
@@ -883,7 +883,7 @@ function kraevedCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_10();
+                loadKraevedReady_10();
             }
         });
 

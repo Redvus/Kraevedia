@@ -1,25 +1,25 @@
 
-if (localStorage.getItem('progressCitizenQuest_2') === null) {
-    localStorage.setItem('progressCitizenQuest_2', JSON.stringify(0));
+if (localStorage.getItem('progressKraevedQuest_2') === null) {
+    localStorage.setItem('progressKraevedQuest_2', JSON.stringify(0));
 }
 
-// Citizen. Quest 2. Самара в зеркале истории
-function questionCitizenCat_2_1() {
-    let questCitizenCatLoad = new Question();
+// Kraeved. Quest 2
+function questionKraevedCat_2_1() {
+    let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
     let answerWrightNum = 0;
-    let progressCitizenQuest_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
-        progressCitizenQuest_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
-        progressCitizenQuest_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
-        progressCitizenQuest_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
-        progressCitizenQuest_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    let progressKraevedQuest_2_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_1')),
+        progressKraevedQuest_2_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_2')),
+        progressKraevedQuest_2_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_3')),
+        progressKraevedQuest_2_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_4')),
+        progressKraevedQuest_2_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_5'))
     ;
 
-    if (localStorage.getItem('progressCitizenQuest_2_1') === null) {
-        localStorage.setItem('progressCitizenQuest_2_1', JSON.stringify(progressCitizenQuest_2_1));
+    if (localStorage.getItem('progressKraevedQuest_2_1') === null) {
+        localStorage.setItem('progressKraevedQuest_2_1', JSON.stringify(progressKraevedQuest_2_1));
     }
 
-    questCitizenCatLoad.questionBlock('Житель', 'Самара в зеркале истории', 'Покровитель Самары?', 'Митрополит Алексей', 'Митрополит Климент', 'Митрополит Серафим');
+    questKraevedCatLoad.questionBlock('Краевед', 'Самарская лука', 'Река Кондурча знаменита тем, что на ней...', 'Произошла битва Тамерлана и Тохтамыша', 'Проходила сьемка фильма «Тимур и его команда»', 'Расположен знаменитый детский лагерь Циолковский');
 
     let answerVar_2_1_1 = document.getElementById('answerVar_1'),
         answerVar_2_1_2 = document.getElementById('answerVar_2'),
@@ -46,16 +46,16 @@ function questionCitizenCat_2_1() {
     ;
 
     function starsView_1() {
-        if (progressCitizenQuest_2_2 === 1) {
+        if (progressKraevedQuest_2_2 === 1) {
             questionStar_2_2.className += 'fill';
         }
-        if (progressCitizenQuest_2_3 === 1) {
+        if (progressKraevedQuest_2_3 === 1) {
             questionStar_2_3.className += 'fill';
         }
-        if (progressCitizenQuest_2_4 === 1) {
+        if (progressKraevedQuest_2_4 === 1) {
             questionStar_2_4.className += 'fill';
         }
-        if (progressCitizenQuest_2_5 === 1) {
+        if (progressKraevedQuest_2_5 === 1) {
             questionStar_2_5.className += 'fill';
         }
     }
@@ -64,13 +64,13 @@ function questionCitizenCat_2_1() {
     for (let i = 0; i < answerVarRight_2_1.length; i++) {
         if (answerVarRight_2_1[i] === answerVarRight_2_1[answerWrightNum]) {
             answerVarRight_2_1[i].addEventListener('click', () => {
-                let progressCitizenQuest_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2'));
-                let progressCitizenQuestSum_2_1 = progressCitizenQuest_2_1 + 1;
-                let progressCitizenQuestSum_2 = progressCitizenQuestSum_2_1 + progressCitizenQuest_2;
+                let progressKraevedQuest_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2'));
+                let progressKraevedQuestSum_2_1 = progressKraevedQuest_2_1 + 1;
+                let progressKraevedQuestSum_2 = progressKraevedQuestSum_2_1 + progressKraevedQuest_2;
 
-                localStorage.setItem('progressCitizenQuest_2_1', JSON.stringify(progressCitizenQuestSum_2_1));
-                localStorage.setItem('progressCitizenQuest_2', JSON.stringify(progressCitizenQuestSum_2));
-                if (progressCitizenQuestSum_2_1 === 1) {
+                localStorage.setItem('progressKraevedQuest_2_1', JSON.stringify(progressKraevedQuestSum_2_1));
+                localStorage.setItem('progressKraevedQuest_2', JSON.stringify(progressKraevedQuestSum_2));
+                if (progressKraevedQuestSum_2_1 === 1) {
                     questionStar_2_1.className += 'fill';
                 }
             });
@@ -78,57 +78,43 @@ function questionCitizenCat_2_1() {
         }
     }
 
-    questCitizenCatLoad.answerBlock(answerWrightNum, 'Верно! Так держать!');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Крупное сражение, состоявшееся 18 июня 1391 года между войсками Тимура и золотоордынской армией хана Тохтамыша на берегу реки Кондурча. Сражение завершилось полным разгромом Тохтамыша и его бегством за Волгу, а затем в Литву');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
-        questValue_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
-        questValue_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
-        questValue_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
-        questValue_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+        questValue_1_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_2')),
+        questValue_1_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_3')),
+        questValue_1_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_4')),
+        questValue_1_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_5'))
     ;
 
     arrowNextClick.addEventListener('click', () => {
         gsap.to(containerWrapperCategory, {
             autoAlpha: 0,
             onComplete: () => {
-                // starsRemove();
                 wrapper.removeChild(questionStars);
                 container.removeChild(arrowBackClick);
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_2_2 === 1 &&
-                    questValue_2_3 === 1 &&
-                    questValue_2_4 === 1 &&
-                    questValue_2_5 === 1) {
+                if (questValue_1_2 === 1 &&
+                    questValue_1_3 === 1 &&
+                    questValue_1_4 === 1 &&
+                    questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
-                    citizenCategoryDev();
-                    lockSubQuestCitizen();
-                } else if (questValue_2_2 === 0) {
-                    questionCitizenCat_2_2();
-                } else if (questValue_2_2 === 1 && questValue_2_3 === 0) {
-                    questionCitizenCat_2_3();
-                } else if (questValue_2_3 === 1 && questValue_2_4 === 0) {
-                    questionCitizenCat_2_4();
-                } else if (questValue_2_4 === 1 && questValue_2_5 === 0) {
-                    questionCitizenCat_2_5();
+                    kraevedCategoryDev();
+                    lockSubQuestKraeved();
+                } else if (questValue_1_2 === 0) {
+                    questionKraevedCat_2_2();
+                } else if (questValue_1_2 === 1 && questValue_1_3 === 0) {
+                    questionKraevedCat_2_3();
+                } else if (questValue_1_3 === 1 && questValue_1_4 === 0) {
+                    questionKraevedCat_2_4();
+                } else if (questValue_1_4 === 1 && questValue_1_5 === 0) {
+                    questionKraevedCat_2_5();
                 }
             }
         });
-        // if (progressCitizenQuest_2_1 === 0 &&
-        //     progressCitizenQuest_2_2 === 1 &&
-        //     progressCitizenQuest_2_3 === 1 &&
-        //     progressCitizenQuest_2_4 === 1 &&
-        //     progressCitizenQuest_2_5 === 1) {
-        //     gsap.to(questionStars, {
-        //         autoAlpha: 0,
-        //         delay: '-0.3',
-        //         onComplete: () => {
-        //             wrapper.removeChild(questionStars);
-        //         }
-        //     });
-        // }
     });
 
     questArrowBack.arrowBack();
@@ -144,8 +130,8 @@ function questionCitizenCat_2_1() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                citizenCategoryDev();
-                lockSubQuestCitizen();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -164,22 +150,22 @@ function questionCitizenCat_2_1() {
     });
 }
 
-function questionCitizenCat_2_2() {
-    let questCitizenCatLoad = new Question();
+function questionKraevedCat_2_2() {
+    let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 2;
-    let progressCitizenQuest_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
-        progressCitizenQuest_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
-        progressCitizenQuest_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
-        progressCitizenQuest_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
-        progressCitizenQuest_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    let answerWrightNum = 0;
+    let progressKraevedQuest_2_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_1')),
+        progressKraevedQuest_2_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_2')),
+        progressKraevedQuest_2_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_3')),
+        progressKraevedQuest_2_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_4')),
+        progressKraevedQuest_2_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_5'))
     ;
 
-    if (localStorage.getItem('progressCitizenQuest_2_2') === null) {
-        localStorage.setItem('progressCitizenQuest_2_2', JSON.stringify(progressCitizenQuest_2_2));
+    if (localStorage.getItem('progressKraevedQuest_2_2') === null) {
+        localStorage.setItem('progressKraevedQuest_2_2', JSON.stringify(progressKraevedQuest_2_2));
     }
 
-    questCitizenCatLoad.questionBlock('Житель', 'Самара в зеркале истории', 'На какой площади находилась крепость Samar?', 'Площадь Революции', 'Площадь Куйбышева', 'Площадь Хлебная');
+    questKraevedCatLoad.questionBlock('Краевед', 'Самарская лука', 'Этот император посещал Самару', 'Петр I', 'Павел I', 'Михаил II');
 
     let answerVar_2_2_1 = document.getElementById('answerVar_1'),
         answerVar_2_2_2 = document.getElementById('answerVar_2'),
@@ -206,16 +192,16 @@ function questionCitizenCat_2_2() {
     ;
 
     function starsView_2() {
-        if (progressCitizenQuest_2_1 === 1) {
+        if (progressKraevedQuest_2_1 === 1) {
             questionStar_2_1.className += 'fill';
         }
-        if (progressCitizenQuest_2_3 === 1) {
+        if (progressKraevedQuest_2_3 === 1) {
             questionStar_2_3.className += 'fill';
         }
-        if (progressCitizenQuest_2_4 === 1) {
+        if (progressKraevedQuest_2_4 === 1) {
             questionStar_2_4.className += 'fill';
         }
-        if (progressCitizenQuest_2_5 === 1) {
+        if (progressKraevedQuest_2_5 === 1) {
             questionStar_2_5.className += 'fill';
         }
     }
@@ -224,28 +210,28 @@ function questionCitizenCat_2_2() {
     for (let i = 0; i < answerVarRight_2_2.length; i++) {
         if (answerVarRight_2_2[i] === answerVarRight_2_2[answerWrightNum]) {
             answerVarRight_2_2[i].addEventListener('click', () => {
-                let progressCitizenQuest_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2'));
-                let progressCitizenQuestSum_2_2 = progressCitizenQuest_2_2 + 1;
-                let progressCitizenQuestSum_2 = progressCitizenQuestSum_2_2 + progressCitizenQuest_2;
+                let progressKraevedQuest_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2'));
+                let progressKraevedQuestSum_2_2 = progressKraevedQuest_2_2 + 1;
+                let progressKraevedQuestSum_2 = progressKraevedQuestSum_2_2 + progressKraevedQuest_2;
 
-                localStorage.setItem('progressCitizenQuest_2_2', JSON.stringify(progressCitizenQuestSum_2_2));
-                localStorage.setItem('progressCitizenQuest_2', JSON.stringify(progressCitizenQuestSum_2));
-                if (progressCitizenQuestSum_2_2 === 1) {
+                localStorage.setItem('progressKraevedQuest_2_2', JSON.stringify(progressKraevedQuestSum_2_2));
+                localStorage.setItem('progressKraevedQuest_2', JSON.stringify(progressKraevedQuestSum_2));
+                if (progressKraevedQuestSum_2_2 === 1) {
                     questionStar_2_2.className += 'fill';
                 }
             });
         }
     }
 
-    questCitizenCatLoad.answerBlock(answerWrightNum, 'Правильно!');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Совершенно верно!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
-        questValue_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
-        questValue_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
-        questValue_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
-        questValue_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
-        questValue_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+        questValue_1_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_1')),
+        questValue_1_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_2')),
+        questValue_1_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_3')),
+        questValue_1_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_4')),
+        questValue_1_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_5'))
     ;
 
     arrowNextClick.addEventListener('click', () => {
@@ -257,25 +243,25 @@ function questionCitizenCat_2_2() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_2_3 === 1 &&
-                    questValue_2_4 === 1 &&
-                    questValue_2_5 === 1) {
+                if (questValue_1_3 === 1 &&
+                    questValue_1_4 === 1 &&
+                    questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
-                    citizenCategoryDev();
-                    lockSubQuestCitizen();
-                } else if (questValue_2_3 === 0) {
-                    questionCitizenCat_2_3();
-                } else if (questValue_2_3 === 1 && questValue_2_4 === 0) {
-                    questionCitizenCat_2_4();
-                } else if (questValue_2_4 === 1 && questValue_2_5 === 0) {
-                    questionCitizenCat_2_5();
+                    kraevedCategoryDev();
+                    lockSubQuestKraeved();
+                } else if (questValue_1_3 === 0) {
+                    questionKraevedCat_2_3();
+                } else if (questValue_1_3 === 1 && questValue_1_4 === 0) {
+                    questionKraevedCat_2_4();
+                } else if (questValue_1_4 === 1 && questValue_1_5 === 0) {
+                    questionKraevedCat_2_5();
                 }
             }
         });
-        // if (progressCitizenQuest_2_2 === 0 &&
-        //     progressCitizenQuest_2_3 === 1 &&
-        //     progressCitizenQuest_2_4 === 1 &&
-        //     progressCitizenQuest_2_5 === 1) {
+        // if (progressKraevedQuest_2_2 === 0 &&
+        //     progressKraevedQuest_2_3 === 1 &&
+        //     progressKraevedQuest_2_4 === 1 &&
+        //     progressKraevedQuest_2_5 === 1) {
         //     gsap.to(questionStars, {
         //         autoAlpha: 0,
         //         delay: '-0.3',
@@ -299,8 +285,8 @@ function questionCitizenCat_2_2() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                citizenCategoryDev();
-                lockSubQuestCitizen();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -319,22 +305,22 @@ function questionCitizenCat_2_2() {
     });
 }
 
-function questionCitizenCat_2_3() {
-    let questCitizenCatLoad = new Question();
+function questionKraevedCat_2_3() {
+    let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
     let answerWrightNum = 1;
-    let progressCitizenQuest_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
-        progressCitizenQuest_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
-        progressCitizenQuest_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
-        progressCitizenQuest_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
-        progressCitizenQuest_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    let progressKraevedQuest_2_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_1')),
+        progressKraevedQuest_2_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_2')),
+        progressKraevedQuest_2_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_3')),
+        progressKraevedQuest_2_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_4')),
+        progressKraevedQuest_2_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_5'))
     ;
 
-    if (localStorage.getItem('progressCitizenQuest_2_3') === null) {
-        localStorage.setItem('progressCitizenQuest_2_3', JSON.stringify(progressCitizenQuest_2_3));
+    if (localStorage.getItem('progressKraevedQuest_2_3') === null) {
+        localStorage.setItem('progressKraevedQuest_2_3', JSON.stringify(progressKraevedQuest_2_3));
     }
 
-    questCitizenCatLoad.questionBlock('Житель', 'Самара в зеркале истории','Какое имя носит Самарский краеведческий музей?', 'Михаил Дмитриевич Челышев', 'Петра Алексеевича Алабина', 'Григория Засекина');
+    questKraevedCatLoad.questionBlock('Краевед', 'Самарская лука','Самара – Куйбышев – Самара', '1586 – 1917 - 1980', '1586 – 1935 - 1991', '1586 – 1940 – 2000');
 
     let answerVar_2_3_1 = document.getElementById('answerVar_1'),
         answerVar_2_3_2 = document.getElementById('answerVar_2'),
@@ -361,16 +347,16 @@ function questionCitizenCat_2_3() {
     ;
 
     function starsView_3() {
-        if (progressCitizenQuest_2_1 === 1) {
+        if (progressKraevedQuest_2_1 === 1) {
             questionStar_2_1.className += 'fill';
         }
-        if (progressCitizenQuest_2_2 === 1) {
+        if (progressKraevedQuest_2_2 === 1) {
             questionStar_2_2.className += 'fill';
         }
-        if (progressCitizenQuest_2_4 === 1) {
+        if (progressKraevedQuest_2_4 === 1) {
             questionStar_2_4.className += 'fill';
         }
-        if (progressCitizenQuest_2_5 === 1) {
+        if (progressKraevedQuest_2_5 === 1) {
             questionStar_2_5.className += 'fill';
         }
     }
@@ -379,28 +365,28 @@ function questionCitizenCat_2_3() {
     for (let i = 0; i < answerVarRight_2_3.length; i++) {
         if (answerVarRight_2_3[i] === answerVarRight_2_3[answerWrightNum]) {
             answerVarRight_2_3[i].addEventListener('click', () => {
-                let progressCitizenQuest_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2'));
-                let progressCitizenQuestSum_2_3 = progressCitizenQuest_2_3 + 1;
-                let progressCitizenQuestSum_2 = progressCitizenQuestSum_2_3 + progressCitizenQuest_2;
+                let progressKraevedQuest_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2'));
+                let progressKraevedQuestSum_2_3 = progressKraevedQuest_2_3 + 1;
+                let progressKraevedQuestSum_2 = progressKraevedQuestSum_2_3 + progressKraevedQuest_2;
 
-                localStorage.setItem('progressCitizenQuest_2_3', JSON.stringify(progressCitizenQuestSum_2_3));
-                localStorage.setItem('progressCitizenQuest_2', JSON.stringify(progressCitizenQuestSum_2));
-                if (progressCitizenQuestSum_2_3 === 1) {
+                localStorage.setItem('progressKraevedQuest_2_3', JSON.stringify(progressKraevedQuestSum_2_3));
+                localStorage.setItem('progressKraevedQuest_2', JSON.stringify(progressKraevedQuestSum_2));
+                if (progressKraevedQuestSum_2_3 === 1) {
                     questionStar_2_3.className += 'fill';
                 }
             });
         }
     }
 
-    questCitizenCatLoad.answerBlock(answerWrightNum, 'Именно так!');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Правильно!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
-        questValue_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
-        questValue_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
-        questValue_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
-        questValue_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
-        questValue_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+        questValue_1_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_1')),
+        questValue_1_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_2')),
+        questValue_1_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_3')),
+        questValue_1_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_4')),
+        questValue_1_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_5'))
     ;
     arrowNextClick.addEventListener('click', () => {
         gsap.to(containerWrapperCategory, {
@@ -411,15 +397,15 @@ function questionCitizenCat_2_3() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_2_4 === 1 &&
-                    questValue_2_5 === 1) {
+                if (questValue_1_4 === 1 &&
+                    questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
-                    citizenCategoryDev();
-                    lockSubQuestCitizen();
-                } else if (questValue_2_4 === 0) {
-                    questionCitizenCat_2_4();
-                } else if (questValue_2_4 === 1 && questValue_2_5 === 0) {
-                    questionCitizenCat_2_5();
+                    kraevedCategoryDev();
+                    lockSubQuestKraeved();
+                } else if (questValue_1_4 === 0) {
+                    questionKraevedCat_2_4();
+                } else if (questValue_1_4 === 1 && questValue_1_5 === 0) {
+                    questionKraevedCat_2_5();
                 }
             }
         });
@@ -438,8 +424,8 @@ function questionCitizenCat_2_3() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                citizenCategoryDev();
-                lockSubQuestCitizen();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -458,22 +444,22 @@ function questionCitizenCat_2_3() {
     });
 }
 
-function questionCitizenCat_2_4() {
-    let questCitizenCatLoad = new Question();
+function questionKraevedCat_2_4() {
+    let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 2;
-    let progressCitizenQuest_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
-        progressCitizenQuest_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
-        progressCitizenQuest_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
-        progressCitizenQuest_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
-        progressCitizenQuest_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    let answerWrightNum = 0;
+    let progressKraevedQuest_2_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_1')),
+        progressKraevedQuest_2_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_2')),
+        progressKraevedQuest_2_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_3')),
+        progressKraevedQuest_2_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_4')),
+        progressKraevedQuest_2_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_5'))
     ;
 
-    if (localStorage.getItem('progressCitizenQuest_2_4') === null) {
-        localStorage.setItem('progressCitizenQuest_2_4', JSON.stringify(progressCitizenQuest_2_4));
+    if (localStorage.getItem('progressKraevedQuest_2_4') === null) {
+        localStorage.setItem('progressKraevedQuest_2_4', JSON.stringify(progressKraevedQuest_2_4));
     }
 
-    questCitizenCatLoad.questionBlock('Житель', 'Самара в зеркале истории','Кто основатель крепости Самара?', 'Петр Алексеевич Алабин', 'Митрополит Алексий', 'Григорий Засекин');
+    questKraevedCatLoad.questionBlock('Краевед', 'Самарская лука','Самара два раза становилась временной столицей России, в годы Великой отечественной войны и в ... году.', '1918', '1990', '1668');
 
     let answerVar_2_4_1 = document.getElementById('answerVar_1'),
         answerVar_2_4_2 = document.getElementById('answerVar_2'),
@@ -500,16 +486,16 @@ function questionCitizenCat_2_4() {
     ;
 
     function starsView_4() {
-        if (progressCitizenQuest_2_1 === 1) {
+        if (progressKraevedQuest_2_1 === 1) {
             questionStar_2_1.className += 'fill';
         }
-        if (progressCitizenQuest_2_2 === 1) {
+        if (progressKraevedQuest_2_2 === 1) {
             questionStar_2_2.className += 'fill';
         }
-        if (progressCitizenQuest_2_3 === 1) {
+        if (progressKraevedQuest_2_3 === 1) {
             questionStar_2_3.className += 'fill';
         }
-        if (progressCitizenQuest_2_5 === 1) {
+        if (progressKraevedQuest_2_5 === 1) {
             questionStar_2_5.className += 'fill';
         }
     }
@@ -518,28 +504,28 @@ function questionCitizenCat_2_4() {
     for (let i = 0; i < answerVarRight_2_4.length; i++) {
         if (answerVarRight_2_4[i] === answerVarRight_2_4[answerWrightNum]) {
             answerVarRight_2_4[i].addEventListener('click', () => {
-                let progressCitizenQuest_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2'));
-                let progressCitizenQuestSum_2_4 = progressCitizenQuest_2_4 + 1;
-                let progressCitizenQuestSum_2 = progressCitizenQuestSum_2_4 + progressCitizenQuest_2;
+                let progressKraevedQuest_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2'));
+                let progressKraevedQuestSum_2_4 = progressKraevedQuest_2_4 + 1;
+                let progressKraevedQuestSum_2 = progressKraevedQuestSum_2_4 + progressKraevedQuest_2;
 
-                localStorage.setItem('progressCitizenQuest_2_4', JSON.stringify(progressCitizenQuestSum_2_4));
-                localStorage.setItem('progressCitizenQuest_2', JSON.stringify(progressCitizenQuestSum_2));
-                if (progressCitizenQuestSum_2_4 === 1) {
+                localStorage.setItem('progressKraevedQuest_2_4', JSON.stringify(progressKraevedQuestSum_2_4));
+                localStorage.setItem('progressKraevedQuest_2', JSON.stringify(progressKraevedQuestSum_2));
+                if (progressKraevedQuestSum_2_4 === 1) {
                     questionStar_2_4.className += 'fill';
                 }
             });
         }
     }
 
-    questCitizenCatLoad.answerBlock(answerWrightNum, 'Правильно!');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'В июне 1918 года советская власть в Самаре была свергнута соединенными усилиями городских повстанцев и Чехословацкого корпуса. Образован из Комитет членов Учредительного собрания (КОМУЧ) из нескольких губерний, занятых чехами, и Самара стала ее столицей');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
-        questValue_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
-        questValue_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
-        questValue_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
-        questValue_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
-        questValue_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+        questValue_1_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_1')),
+        questValue_1_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_2')),
+        questValue_1_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_3')),
+        questValue_1_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_4')),
+        questValue_1_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_5'))
     ;
     arrowNextClick.addEventListener('click', () => {
         gsap.to(containerWrapperCategory, {
@@ -550,12 +536,12 @@ function questionCitizenCat_2_4() {
                 container.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
-                if (questValue_2_5 === 1) {
+                if (questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
-                    citizenCategoryDev();
-                    lockSubQuestCitizen();
-                } else if (questValue_2_5 === 0) {
-                    questionCitizenCat_2_5();
+                    kraevedCategoryDev();
+                    lockSubQuestKraeved();
+                } else if (questValue_1_5 === 0) {
+                    questionKraevedCat_2_5();
                 }
             }
         });
@@ -574,8 +560,8 @@ function questionCitizenCat_2_4() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                citizenCategoryDev();
-                lockSubQuestCitizen();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -594,22 +580,22 @@ function questionCitizenCat_2_4() {
     });
 }
 
-function questionCitizenCat_2_5() {
-    let questCitizenCatLoad = new Question();
+function questionKraevedCat_2_5() {
+    let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 0;
-    let progressCitizenQuest_2_1 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_1')),
-        progressCitizenQuest_2_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_2')),
-        progressCitizenQuest_2_3 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_3')),
-        progressCitizenQuest_2_4 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_4')),
-        progressCitizenQuest_2_5 = JSON.parse(localStorage.getItem('progressCitizenQuest_2_5'))
+    let answerWrightNum = 1;
+    let progressKraevedQuest_2_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_1')),
+        progressKraevedQuest_2_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_2')),
+        progressKraevedQuest_2_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_3')),
+        progressKraevedQuest_2_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_4')),
+        progressKraevedQuest_2_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_2_5'))
     ;
 
-    if (localStorage.getItem('progressCitizenQuest_2_4') === null) {
-        localStorage.setItem('progressCitizenQuest_2_4', JSON.stringify(progressCitizenQuest_2_4));
+    if (localStorage.getItem('progressKraevedQuest_2_4') === null) {
+        localStorage.setItem('progressKraevedQuest_2_4', JSON.stringify(progressKraevedQuest_2_4));
     }
 
-    questCitizenCatLoad.questionBlock('Житель', 'Самара в зеркале истории','В 1850 году это событие почти стерло с лица Земли разрушило большую часть города?', 'Пожар', 'Наводнение', 'Землетрясение');
+    questKraevedCatLoad.questionBlock('Краевед', 'Самарская лука','В марте 1994 года состоялись первые выборы во вновь созданную городскую думу Самары. Всеобщим голосованием был избран первый глава города', 'Дмитрий Игоревич Азаров', 'Олег Николаевич Сысуев', 'Елена Владимировна Лапушкина');
 
     let answerVar_2_5_1 = document.getElementById('answerVar_1'),
         answerVar_2_5_2 = document.getElementById('answerVar_2'),
@@ -636,16 +622,16 @@ function questionCitizenCat_2_5() {
     ;
 
     function starsView_5() {
-        if (progressCitizenQuest_2_1 === 1) {
+        if (progressKraevedQuest_2_1 === 1) {
             questionStar_2_1.className += 'fill';
         }
-        if (progressCitizenQuest_2_2 === 1) {
+        if (progressKraevedQuest_2_2 === 1) {
             questionStar_2_2.className += 'fill';
         }
-        if (progressCitizenQuest_2_3 === 1) {
+        if (progressKraevedQuest_2_3 === 1) {
             questionStar_2_3.className += 'fill';
         }
-        if (progressCitizenQuest_2_4 === 1) {
+        if (progressKraevedQuest_2_4 === 1) {
             questionStar_2_4.className += 'fill';
         }
     }
@@ -654,20 +640,20 @@ function questionCitizenCat_2_5() {
     for (let i = 0; i < answerVarRight_2_5.length; i++) {
         if (answerVarRight_2_5[i] === answerVarRight_2_5[answerWrightNum]) {
             answerVarRight_2_5[i].addEventListener('click', () => {
-                let progressCitizenQuest_2 = JSON.parse(localStorage.getItem('progressCitizenQuest_2'));
-                let progressCitizenQuestSum_2_5 = progressCitizenQuest_2_5 + 1;
-                let progressCitizenQuestSum_2 = progressCitizenQuestSum_2_5 + progressCitizenQuest_2;
+                let progressKraevedQuest_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_2'));
+                let progressKraevedQuestSum_2_5 = progressKraevedQuest_2_5 + 1;
+                let progressKraevedQuestSum_2 = progressKraevedQuestSum_2_5 + progressKraevedQuest_2;
 
-                localStorage.setItem('progressCitizenQuest_2_5', JSON.stringify(progressCitizenQuestSum_2_5));
-                localStorage.setItem('progressCitizenQuest_2', JSON.stringify(progressCitizenQuestSum_2));
-                if (progressCitizenQuestSum_2_5 === 1) {
+                localStorage.setItem('progressKraevedQuest_2_5', JSON.stringify(progressKraevedQuestSum_2_5));
+                localStorage.setItem('progressKraevedQuest_2', JSON.stringify(progressKraevedQuestSum_2));
+                if (progressKraevedQuestSum_2_5 === 1) {
                     questionStar_2_5.className += 'fill';
                 }
             });
         }
     }
 
-    questCitizenCatLoad.answerBlock(answerWrightNum, 'Ну конечно же!');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Ну конечно же!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext');
@@ -681,8 +667,8 @@ function questionCitizenCat_2_5() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                citizenCategoryDev();
-                lockSubQuestCitizen();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
     });
@@ -700,8 +686,8 @@ function questionCitizenCat_2_5() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                citizenCategoryDev();
-                lockSubQuestCitizen();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
         tl

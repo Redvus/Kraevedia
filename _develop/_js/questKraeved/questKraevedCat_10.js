@@ -1,25 +1,25 @@
 
-if (localStorage.getItem('progressChicheroneQuest_10') === null) {
-    localStorage.setItem('progressChicheroneQuest_10', JSON.stringify(0));
+if (localStorage.getItem('progressKraevedQuest_10') === null) {
+    localStorage.setItem('progressKraevedQuest_10', JSON.stringify(0));
 }
 
-// Chicherone. Quest 10
-function questionChicheroneCat_10_1() {
-    let questChicheroneCatLoad = new Question();
+// Kraeved. Quest 10
+function questionKraevedCat_10_1() {
+    let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 1;
-    let progressChicheroneQuest_10_1 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_1')),
-        progressChicheroneQuest_10_2 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_2')),
-        progressChicheroneQuest_10_3 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_3')),
-        progressChicheroneQuest_10_4 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_4')),
-        progressChicheroneQuest_10_5 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_5'))
+    let answerWrightNum = 0;
+    let progressKraevedQuest_10_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_1')),
+        progressKraevedQuest_10_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_2')),
+        progressKraevedQuest_10_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_3')),
+        progressKraevedQuest_10_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_4')),
+        progressKraevedQuest_10_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_5'))
     ;
 
-    if (localStorage.getItem('progressChicheroneQuest_10_1') === null) {
-        localStorage.setItem('progressChicheroneQuest_10_1', JSON.stringify(progressChicheroneQuest_10_1));
+    if (localStorage.getItem('progressKraevedQuest_10_1') === null) {
+        localStorage.setItem('progressKraevedQuest_10_1', JSON.stringify(progressKraevedQuest_10_1));
     }
 
-    questChicheroneCatLoad.questionBlock('Чичероне', 'Очарованная Самара', '«Особенно соблазняет простота и честность, и наивность, и ум здешнего народа»', 'Илья Репин', 'Лев Толстой', 'Федор Шаляпин');
+    questKraevedCatLoad.questionBlock('Краевед', 'Очарованные странники', '«Самаре не быть!»', 'Нагайский хан Урус', 'Иегудиил Хламида', 'Степан Разин');
 
     let answerVar_10_1_1 = document.getElementById('answerVar_1'),
         answerVar_10_1_2 = document.getElementById('answerVar_2'),
@@ -46,16 +46,16 @@ function questionChicheroneCat_10_1() {
     ;
 
     function starsView_1() {
-        if (progressChicheroneQuest_10_2 === 1) {
+        if (progressKraevedQuest_10_2 === 1) {
             questionStar_10_2.className += 'fill';
         }
-        if (progressChicheroneQuest_10_3 === 1) {
+        if (progressKraevedQuest_10_3 === 1) {
             questionStar_10_3.className += 'fill';
         }
-        if (progressChicheroneQuest_10_4 === 1) {
+        if (progressKraevedQuest_10_4 === 1) {
             questionStar_10_4.className += 'fill';
         }
-        if (progressChicheroneQuest_10_5 === 1) {
+        if (progressKraevedQuest_10_5 === 1) {
             questionStar_10_5.className += 'fill';
         }
     }
@@ -64,13 +64,13 @@ function questionChicheroneCat_10_1() {
     for (let i = 0; i < answerVarRight_10_1.length; i++) {
         if (answerVarRight_10_1[i] === answerVarRight_10_1[answerWrightNum]) {
             answerVarRight_10_1[i].addEventListener('click', () => {
-                let progressChicheroneQuest_10 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10'));
-                let progressChicheroneQuestSum_10_1 = progressChicheroneQuest_10_1 + 1;
-                let progressChicheroneQuestSum_10 = progressChicheroneQuestSum_10_1 + progressChicheroneQuest_10;
+                let progressKraevedQuest_10 = JSON.parse(localStorage.getItem('progressKraevedQuest_10'));
+                let progressKraevedQuestSum_10_1 = progressKraevedQuest_10_1 + 1;
+                let progressKraevedQuestSum_10 = progressKraevedQuestSum_10_1 + progressKraevedQuest_10;
 
-                localStorage.setItem('progressChicheroneQuest_10_1', JSON.stringify(progressChicheroneQuestSum_10_1));
-                localStorage.setItem('progressChicheroneQuest_10', JSON.stringify(progressChicheroneQuestSum_10));
-                if (progressChicheroneQuestSum_10_1 === 1) {
+                localStorage.setItem('progressKraevedQuest_10_1', JSON.stringify(progressKraevedQuestSum_10_1));
+                localStorage.setItem('progressKraevedQuest_10', JSON.stringify(progressKraevedQuestSum_10));
+                if (progressKraevedQuestSum_10_1 === 1) {
                     questionStar_10_1.className += 'fill';
                 }
             });
@@ -78,14 +78,14 @@ function questionChicheroneCat_10_1() {
         }
     }
 
-    questChicheroneCatLoad.answerBlock(answerWrightNum, 'Верно!');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Верно!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
-        questValue_1_2 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_2')),
-        questValue_1_3 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_3')),
-        questValue_1_4 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_4')),
-        questValue_1_5 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_5'))
+        questValue_1_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_2')),
+        questValue_1_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_3')),
+        questValue_1_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_4')),
+        questValue_1_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_5'))
     ;
 
     arrowNextClick.addEventListener('click', () => {
@@ -103,16 +103,16 @@ function questionChicheroneCat_10_1() {
                     questValue_1_4 === 1 &&
                     questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
-                    chicheroneCategoryDev();
-                    lockSubQuestChicherone();
+                    kraevedCategoryDev();
+                    lockSubQuestKraeved();
                 } else if (questValue_1_2 === 0) {
-                    questionChicheroneCat_10_2();
+                    questionKraevedCat_10_2();
                 } else if (questValue_1_2 === 1 && questValue_1_3 === 0) {
-                    questionChicheroneCat_10_3();
+                    questionKraevedCat_10_3();
                 } else if (questValue_1_3 === 1 && questValue_1_4 === 0) {
-                    questionChicheroneCat_10_4();
+                    questionKraevedCat_10_4();
                 } else if (questValue_1_4 === 1 && questValue_1_5 === 0) {
-                    questionChicheroneCat_10_5();
+                    questionKraevedCat_10_5();
                 }
             }
         });
@@ -131,8 +131,8 @@ function questionChicheroneCat_10_1() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                chicheroneCategoryDev();
-                lockSubQuestChicherone();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -151,22 +151,22 @@ function questionChicheroneCat_10_1() {
     });
 }
 
-function questionChicheroneCat_10_2() {
-    let questChicheroneCatLoad = new Question();
+function questionKraevedCat_10_2() {
+    let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 0;
-    let progressChicheroneQuest_10_1 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_1')),
-        progressChicheroneQuest_10_2 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_2')),
-        progressChicheroneQuest_10_3 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_3')),
-        progressChicheroneQuest_10_4 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_4')),
-        progressChicheroneQuest_10_5 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_5'))
+    let answerWrightNum = 1;
+    let progressKraevedQuest_10_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_1')),
+        progressKraevedQuest_10_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_2')),
+        progressKraevedQuest_10_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_3')),
+        progressKraevedQuest_10_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_4')),
+        progressKraevedQuest_10_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_5'))
     ;
 
-    if (localStorage.getItem('progressChicheroneQuest_10_2') === null) {
-        localStorage.setItem('progressChicheroneQuest_10_2', JSON.stringify(progressChicheroneQuest_10_2));
+    if (localStorage.getItem('progressKraevedQuest_10_2') === null) {
+        localStorage.setItem('progressKraevedQuest_10_2', JSON.stringify(progressKraevedQuest_10_2));
     }
 
-    questChicheroneCatLoad.questionBlock('Чичероне', 'Очарованная Самара', '«Кто в Самаре не бывал, тот и грязи не видал»', 'Максим Горький', 'Алексей Толстой', 'Александр Ширяевец');
+    questKraevedCatLoad.questionBlock('Краевед', 'Очарованные странники', '«Мы достаточно долго останавливались в разных попутных городах, чтобы составить себе о них понятие. Больше всего мне понравилась Самара»', 'Федор Шаляпин', 'Петр Чайковский', 'Эдуард Хиль');
 
     let answerVar_10_2_1 = document.getElementById('answerVar_1'),
         answerVar_10_2_2 = document.getElementById('answerVar_2'),
@@ -193,16 +193,16 @@ function questionChicheroneCat_10_2() {
     ;
 
     function starsView_2() {
-        if (progressChicheroneQuest_10_1 === 1) {
+        if (progressKraevedQuest_10_1 === 1) {
             questionStar_10_1.className += 'fill';
         }
-        if (progressChicheroneQuest_10_3 === 1) {
+        if (progressKraevedQuest_10_3 === 1) {
             questionStar_10_3.className += 'fill';
         }
-        if (progressChicheroneQuest_10_4 === 1) {
+        if (progressKraevedQuest_10_4 === 1) {
             questionStar_10_4.className += 'fill';
         }
-        if (progressChicheroneQuest_10_5 === 1) {
+        if (progressKraevedQuest_10_5 === 1) {
             questionStar_10_5.className += 'fill';
         }
     }
@@ -211,28 +211,28 @@ function questionChicheroneCat_10_2() {
     for (let i = 0; i < answerVarRight_10_2.length; i++) {
         if (answerVarRight_10_2[i] === answerVarRight_10_2[answerWrightNum]) {
             answerVarRight_10_2[i].addEventListener('click', () => {
-                let progressChicheroneQuest_10 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10'));
-                let progressChicheroneQuestSum_10_2 = progressChicheroneQuest_10_2 + 1;
-                let progressChicheroneQuestSum_10 = progressChicheroneQuestSum_10_2 + progressChicheroneQuest_10;
+                let progressKraevedQuest_10 = JSON.parse(localStorage.getItem('progressKraevedQuest_10'));
+                let progressKraevedQuestSum_10_2 = progressKraevedQuest_10_2 + 1;
+                let progressKraevedQuestSum_10 = progressKraevedQuestSum_10_2 + progressKraevedQuest_10;
 
-                localStorage.setItem('progressChicheroneQuest_10_2', JSON.stringify(progressChicheroneQuestSum_10_2));
-                localStorage.setItem('progressChicheroneQuest_10', JSON.stringify(progressChicheroneQuestSum_10));
-                if (progressChicheroneQuestSum_10_2 === 1) {
+                localStorage.setItem('progressKraevedQuest_10_2', JSON.stringify(progressKraevedQuestSum_10_2));
+                localStorage.setItem('progressKraevedQuest_10', JSON.stringify(progressKraevedQuestSum_10));
+                if (progressKraevedQuestSum_10_2 === 1) {
                     questionStar_10_2.className += 'fill';
                 }
             });
         }
     }
 
-    questChicheroneCatLoad.answerBlock(answerWrightNum, 'Совершенно верно!');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Совершенно верно!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
-        questValue_1_1 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_1')),
-        questValue_1_2 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_2')),
-        questValue_1_3 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_3')),
-        questValue_1_4 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_4')),
-        questValue_1_5 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_5'))
+        questValue_1_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_1')),
+        questValue_1_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_2')),
+        questValue_1_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_3')),
+        questValue_1_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_4')),
+        questValue_1_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_5'))
     ;
 
     arrowNextClick.addEventListener('click', () => {
@@ -248,21 +248,21 @@ function questionChicheroneCat_10_2() {
                     questValue_1_4 === 1 &&
                     questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
-                    chicheroneCategoryDev();
-                    lockSubQuestChicherone();
+                    kraevedCategoryDev();
+                    lockSubQuestKraeved();
                 } else if (questValue_1_3 === 0) {
-                    questionChicheroneCat_10_3();
+                    questionKraevedCat_10_3();
                 } else if (questValue_1_3 === 1 && questValue_1_4 === 0) {
-                    questionChicheroneCat_10_4();
+                    questionKraevedCat_10_4();
                 } else if (questValue_1_4 === 1 && questValue_1_5 === 0) {
-                    questionChicheroneCat_10_5();
+                    questionKraevedCat_10_5();
                 }
             }
         });
-        // if (progressChicheroneQuest_10_2 === 0 &&
-        //     progressChicheroneQuest_10_3 === 1 &&
-        //     progressChicheroneQuest_10_4 === 1 &&
-        //     progressChicheroneQuest_10_5 === 1) {
+        // if (progressKraevedQuest_10_2 === 0 &&
+        //     progressKraevedQuest_10_3 === 1 &&
+        //     progressKraevedQuest_10_4 === 1 &&
+        //     progressKraevedQuest_10_5 === 1) {
         //     gsap.to(questionStars, {
         //         autoAlpha: 0,
         //         delay: '-0.3',
@@ -286,8 +286,8 @@ function questionChicheroneCat_10_2() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                chicheroneCategoryDev();
-                lockSubQuestChicherone();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -306,22 +306,22 @@ function questionChicheroneCat_10_2() {
     });
 }
 
-function questionChicheroneCat_10_3() {
-    let questChicheroneCatLoad = new Question();
+function questionKraevedCat_10_3() {
+    let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 2;
-    let progressChicheroneQuest_10_1 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_1')),
-        progressChicheroneQuest_10_2 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_2')),
-        progressChicheroneQuest_10_3 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_3')),
-        progressChicheroneQuest_10_4 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_4')),
-        progressChicheroneQuest_10_5 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_5'))
+    let answerWrightNum = 0;
+    let progressKraevedQuest_10_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_1')),
+        progressKraevedQuest_10_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_2')),
+        progressKraevedQuest_10_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_3')),
+        progressKraevedQuest_10_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_4')),
+        progressKraevedQuest_10_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_5'))
     ;
 
-    if (localStorage.getItem('progressChicheroneQuest_10_3') === null) {
-        localStorage.setItem('progressChicheroneQuest_10_3', JSON.stringify(progressChicheroneQuest_10_3));
+    if (localStorage.getItem('progressKraevedQuest_10_3') === null) {
+        localStorage.setItem('progressKraevedQuest_10_3', JSON.stringify(progressKraevedQuest_10_3));
     }
 
-    questChicheroneCatLoad.questionBlock('Чичероне', 'Очарованная Самара','«Новый русский Орлеан»', 'Людмила Петрушевская', 'Борис Пастернак', 'Тарас Шевченко');
+    questKraevedCatLoad.questionBlock('Краевед', 'Очарованные странники','«Самара дышит новизной, молодостью, предприимчивостью, – вся в будущем, а не в прошедшем. Это своего рода Волжская Одесса, точно так, как Нижний Новгород – Волжская Москва»', 'Евгений Марков', 'Михаил Дмитриев', 'Иван Борский');
 
     let answerVar_10_3_1 = document.getElementById('answerVar_1'),
         answerVar_10_3_2 = document.getElementById('answerVar_2'),
@@ -348,16 +348,16 @@ function questionChicheroneCat_10_3() {
     ;
 
     function starsView_3() {
-        if (progressChicheroneQuest_10_1 === 1) {
+        if (progressKraevedQuest_10_1 === 1) {
             questionStar_10_1.className += 'fill';
         }
-        if (progressChicheroneQuest_10_2 === 1) {
+        if (progressKraevedQuest_10_2 === 1) {
             questionStar_10_2.className += 'fill';
         }
-        if (progressChicheroneQuest_10_4 === 1) {
+        if (progressKraevedQuest_10_4 === 1) {
             questionStar_10_4.className += 'fill';
         }
-        if (progressChicheroneQuest_10_5 === 1) {
+        if (progressKraevedQuest_10_5 === 1) {
             questionStar_10_5.className += 'fill';
         }
     }
@@ -366,28 +366,28 @@ function questionChicheroneCat_10_3() {
     for (let i = 0; i < answerVarRight_10_3.length; i++) {
         if (answerVarRight_10_3[i] === answerVarRight_10_3[answerWrightNum]) {
             answerVarRight_10_3[i].addEventListener('click', () => {
-                let progressChicheroneQuest_10 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10'));
-                let progressChicheroneQuestSum_10_3 = progressChicheroneQuest_10_3 + 1;
-                let progressChicheroneQuestSum_10 = progressChicheroneQuestSum_10_3 + progressChicheroneQuest_10;
+                let progressKraevedQuest_10 = JSON.parse(localStorage.getItem('progressKraevedQuest_10'));
+                let progressKraevedQuestSum_10_3 = progressKraevedQuest_10_3 + 1;
+                let progressKraevedQuestSum_10 = progressKraevedQuestSum_10_3 + progressKraevedQuest_10;
 
-                localStorage.setItem('progressChicheroneQuest_10_3', JSON.stringify(progressChicheroneQuestSum_10_3));
-                localStorage.setItem('progressChicheroneQuest_10', JSON.stringify(progressChicheroneQuestSum_10));
-                if (progressChicheroneQuestSum_10_3 === 1) {
+                localStorage.setItem('progressKraevedQuest_10_3', JSON.stringify(progressKraevedQuestSum_10_3));
+                localStorage.setItem('progressKraevedQuest_10', JSON.stringify(progressKraevedQuestSum_10));
+                if (progressKraevedQuestSum_10_3 === 1) {
                     questionStar_10_3.className += 'fill';
                 }
             });
         }
     }
 
-    questChicheroneCatLoad.answerBlock(answerWrightNum, 'Правильно!');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Правильно!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
-        questValue_1_1 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_1')),
-        questValue_1_2 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_2')),
-        questValue_1_3 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_3')),
-        questValue_1_4 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_4')),
-        questValue_1_5 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_5'))
+        questValue_1_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_1')),
+        questValue_1_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_2')),
+        questValue_1_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_3')),
+        questValue_1_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_4')),
+        questValue_1_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_5'))
     ;
     arrowNextClick.addEventListener('click', () => {
         gsap.to(containerWrapperCategory, {
@@ -401,12 +401,12 @@ function questionChicheroneCat_10_3() {
                 if (questValue_1_4 === 1 &&
                     questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
-                    chicheroneCategoryDev();
-                    lockSubQuestChicherone();
+                    kraevedCategoryDev();
+                    lockSubQuestKraeved();
                 } else if (questValue_1_4 === 0) {
-                    questionChicheroneCat_10_4();
+                    questionKraevedCat_10_4();
                 } else if (questValue_1_4 === 1 && questValue_1_5 === 0) {
-                    questionChicheroneCat_10_5();
+                    questionKraevedCat_10_5();
                 }
             }
         });
@@ -425,8 +425,8 @@ function questionChicheroneCat_10_3() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                chicheroneCategoryDev();
-                lockSubQuestChicherone();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -445,22 +445,22 @@ function questionChicheroneCat_10_3() {
     });
 }
 
-function questionChicheroneCat_10_4() {
-    let questChicheroneCatLoad = new Question();
+function questionKraevedCat_10_4() {
+    let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
     let answerWrightNum = 2;
-    let progressChicheroneQuest_10_1 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_1')),
-        progressChicheroneQuest_10_2 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_2')),
-        progressChicheroneQuest_10_3 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_3')),
-        progressChicheroneQuest_10_4 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_4')),
-        progressChicheroneQuest_10_5 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_5'))
+    let progressKraevedQuest_10_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_1')),
+        progressKraevedQuest_10_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_2')),
+        progressKraevedQuest_10_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_3')),
+        progressKraevedQuest_10_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_4')),
+        progressKraevedQuest_10_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_5'))
     ;
 
-    if (localStorage.getItem('progressChicheroneQuest_10_4') === null) {
-        localStorage.setItem('progressChicheroneQuest_10_4', JSON.stringify(progressChicheroneQuest_10_4));
+    if (localStorage.getItem('progressKraevedQuest_10_4') === null) {
+        localStorage.setItem('progressKraevedQuest_10_4', JSON.stringify(progressKraevedQuest_10_4));
     }
 
-    questChicheroneCatLoad.questionBlock('Чичероне', 'Очарованная Самара','«В Самаре два трамвая. На одном надпись «Площадь Революции – Тюрьма», на другом «Площадь Советская – Тюрьма»... Словом все дороги ведут в Рим!»', 'Юрий Олеша', 'Антон Чехов', 'Михаил Зощенко');
+    questKraevedCatLoad.questionBlock('Краевед', 'Очарованные странники','«В Самаре по внешнему виду и говору случайно встретившегося человека нередко долго е можете признать, с кем вы имеете дело»', 'Валерий Ерофеев', 'Владимир Лебедев', 'Александр Завальный');
 
     let answerVar_10_4_1 = document.getElementById('answerVar_1'),
         answerVar_10_4_2 = document.getElementById('answerVar_2'),
@@ -487,16 +487,16 @@ function questionChicheroneCat_10_4() {
     ;
 
     function starsView_4() {
-        if (progressChicheroneQuest_10_1 === 1) {
+        if (progressKraevedQuest_10_1 === 1) {
             questionStar_10_1.className += 'fill';
         }
-        if (progressChicheroneQuest_10_2 === 1) {
+        if (progressKraevedQuest_10_2 === 1) {
             questionStar_10_2.className += 'fill';
         }
-        if (progressChicheroneQuest_10_3 === 1) {
+        if (progressKraevedQuest_10_3 === 1) {
             questionStar_10_3.className += 'fill';
         }
-        if (progressChicheroneQuest_10_5 === 1) {
+        if (progressKraevedQuest_10_5 === 1) {
             questionStar_10_5.className += 'fill';
         }
     }
@@ -505,28 +505,28 @@ function questionChicheroneCat_10_4() {
     for (let i = 0; i < answerVarRight_10_4.length; i++) {
         if (answerVarRight_10_4[i] === answerVarRight_10_4[answerWrightNum]) {
             answerVarRight_10_4[i].addEventListener('click', () => {
-                let progressChicheroneQuest_10 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10'));
-                let progressChicheroneQuestSum_10_4 = progressChicheroneQuest_10_4 + 1;
-                let progressChicheroneQuestSum_10 = progressChicheroneQuestSum_10_4 + progressChicheroneQuest_10;
+                let progressKraevedQuest_10 = JSON.parse(localStorage.getItem('progressKraevedQuest_10'));
+                let progressKraevedQuestSum_10_4 = progressKraevedQuest_10_4 + 1;
+                let progressKraevedQuestSum_10 = progressKraevedQuestSum_10_4 + progressKraevedQuest_10;
 
-                localStorage.setItem('progressChicheroneQuest_10_4', JSON.stringify(progressChicheroneQuestSum_10_4));
-                localStorage.setItem('progressChicheroneQuest_10', JSON.stringify(progressChicheroneQuestSum_10));
-                if (progressChicheroneQuestSum_10_4 === 1) {
+                localStorage.setItem('progressKraevedQuest_10_4', JSON.stringify(progressKraevedQuestSum_10_4));
+                localStorage.setItem('progressKraevedQuest_10', JSON.stringify(progressKraevedQuestSum_10));
+                if (progressKraevedQuestSum_10_4 === 1) {
                     questionStar_10_4.className += 'fill';
                 }
             });
         }
     }
 
-    questChicheroneCatLoad.answerBlock(answerWrightNum, 'Правильно!');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Правильно!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
-        questValue_1_1 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_1')),
-        questValue_1_2 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_2')),
-        questValue_1_3 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_3')),
-        questValue_1_4 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_4')),
-        questValue_1_5 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_5'))
+        questValue_1_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_1')),
+        questValue_1_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_2')),
+        questValue_1_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_3')),
+        questValue_1_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_4')),
+        questValue_1_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_5'))
     ;
     arrowNextClick.addEventListener('click', () => {
         gsap.to(containerWrapperCategory, {
@@ -539,10 +539,10 @@ function questionChicheroneCat_10_4() {
                 wrapper.className = 'wrapper';
                 if (questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
-                    chicheroneCategoryDev();
-                    lockSubQuestChicherone();
+                    kraevedCategoryDev();
+                    lockSubQuestKraeved();
                 } else if (questValue_1_5 === 0) {
-                    questionChicheroneCat_10_5();
+                    questionKraevedCat_10_5();
                 }
             }
         });
@@ -561,8 +561,8 @@ function questionChicheroneCat_10_4() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                chicheroneCategoryDev();
-                lockSubQuestChicherone();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -581,22 +581,22 @@ function questionChicheroneCat_10_4() {
     });
 }
 
-function questionChicheroneCat_10_5() {
-    let questChicheroneCatLoad = new Question();
+function questionKraevedCat_10_5() {
+    let questKraevedCatLoad = new Question();
     let questArrowBack = new ArrowsAll();
-    let answerWrightNum = 0;
-    let progressChicheroneQuest_10_1 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_1')),
-        progressChicheroneQuest_10_2 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_2')),
-        progressChicheroneQuest_10_3 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_3')),
-        progressChicheroneQuest_10_4 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_4')),
-        progressChicheroneQuest_10_5 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10_5'))
+    let answerWrightNum = 1;
+    let progressKraevedQuest_10_1 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_1')),
+        progressKraevedQuest_10_2 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_2')),
+        progressKraevedQuest_10_3 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_3')),
+        progressKraevedQuest_10_4 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_4')),
+        progressKraevedQuest_10_5 = JSON.parse(localStorage.getItem('progressKraevedQuest_10_5'))
     ;
 
-    if (localStorage.getItem('progressChicheroneQuest_10_4') === null) {
-        localStorage.setItem('progressChicheroneQuest_10_4', JSON.stringify(progressChicheroneQuest_10_4));
+    if (localStorage.getItem('progressKraevedQuest_10_4') === null) {
+        localStorage.setItem('progressKraevedQuest_10_4', JSON.stringify(progressKraevedQuest_10_4));
     }
 
-    questChicheroneCatLoad.questionBlock('Чичероне', 'Очарованная Самара','«Самаре не быть!»', 'Нагайский хан Урус', 'Иегудиил Хламида', 'Степан Разин');
+    questKraevedCatLoad.questionBlock('Краевед', 'Очарованные странники','«Однажды над городом пронесся целый ураган, в продолжении которого были минуты, когда из окон гостиницы нельзя было рассмотреть дома на противоположной стороне улицы…»', 'Ярослав Гашек', 'Дональд Уоллес', 'Пьер Ришар');
 
     let answerVar_10_5_1 = document.getElementById('answerVar_1'),
         answerVar_10_5_2 = document.getElementById('answerVar_2'),
@@ -623,16 +623,16 @@ function questionChicheroneCat_10_5() {
     ;
 
     function starsView_5() {
-        if (progressChicheroneQuest_10_1 === 1) {
+        if (progressKraevedQuest_10_1 === 1) {
             questionStar_10_1.className += 'fill';
         }
-        if (progressChicheroneQuest_10_2 === 1) {
+        if (progressKraevedQuest_10_2 === 1) {
             questionStar_10_2.className += 'fill';
         }
-        if (progressChicheroneQuest_10_3 === 1) {
+        if (progressKraevedQuest_10_3 === 1) {
             questionStar_10_3.className += 'fill';
         }
-        if (progressChicheroneQuest_10_4 === 1) {
+        if (progressKraevedQuest_10_4 === 1) {
             questionStar_10_4.className += 'fill';
         }
     }
@@ -641,20 +641,20 @@ function questionChicheroneCat_10_5() {
     for (let i = 0; i < answerVarRight_10_5.length; i++) {
         if (answerVarRight_10_5[i] === answerVarRight_10_5[answerWrightNum]) {
             answerVarRight_10_5[i].addEventListener('click', () => {
-                let progressChicheroneQuest_10 = JSON.parse(localStorage.getItem('progressChicheroneQuest_10'));
-                let progressChicheroneQuestSum_10_5 = progressChicheroneQuest_10_5 + 1;
-                let progressChicheroneQuestSum_10 = progressChicheroneQuestSum_10_5 + progressChicheroneQuest_10;
+                let progressKraevedQuest_10 = JSON.parse(localStorage.getItem('progressKraevedQuest_10'));
+                let progressKraevedQuestSum_10_5 = progressKraevedQuest_10_5 + 1;
+                let progressKraevedQuestSum_10 = progressKraevedQuestSum_10_5 + progressKraevedQuest_10;
 
-                localStorage.setItem('progressChicheroneQuest_10_5', JSON.stringify(progressChicheroneQuestSum_10_5));
-                localStorage.setItem('progressChicheroneQuest_10', JSON.stringify(progressChicheroneQuestSum_10));
-                if (progressChicheroneQuestSum_10_5 === 1) {
+                localStorage.setItem('progressKraevedQuest_10_5', JSON.stringify(progressKraevedQuestSum_10_5));
+                localStorage.setItem('progressKraevedQuest_10', JSON.stringify(progressKraevedQuestSum_10));
+                if (progressKraevedQuestSum_10_5 === 1) {
                     questionStar_10_5.className += 'fill';
                 }
             });
         }
     }
 
-    questChicheroneCatLoad.answerBlock(answerWrightNum, 'Ну конечно же!');
+    questKraevedCatLoad.answerBlock(answerWrightNum, 'Ну конечно же!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext');
@@ -668,8 +668,8 @@ function questionChicheroneCat_10_5() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                chicheroneCategoryDev();
-                lockSubQuestChicherone();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
     });
@@ -687,8 +687,8 @@ function questionChicheroneCat_10_5() {
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
-                chicheroneCategoryDev();
-                lockSubQuestChicherone();
+                kraevedCategoryDev();
+                lockSubQuestKraeved();
             }
         });
         tl
