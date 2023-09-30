@@ -738,7 +738,7 @@ function citizenCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_1();
+                loadCitizenReady_1();
             }
         });
 
@@ -754,7 +754,7 @@ function citizenCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_2();
+                loadCitizenReady_2();
             }
         });
 
@@ -770,7 +770,7 @@ function citizenCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_3();
+                loadCitizenReady_3();
             }
         });
 
@@ -786,7 +786,7 @@ function citizenCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_4();
+                loadCitizenReady_4();
             }
         });
 
@@ -802,7 +802,7 @@ function citizenCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_5();
+                loadCitizenReady_5();
             }
         });
 
@@ -818,7 +818,7 @@ function citizenCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_6();
+                loadCitizenReady_6();
             }
         });
 
@@ -834,7 +834,7 @@ function citizenCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_7();
+                loadCitizenReady_7();
             }
         });
 
@@ -850,7 +850,7 @@ function citizenCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_8();
+                loadCitizenReady_8();
             }
         });
 
@@ -866,7 +866,7 @@ function citizenCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_9();
+                loadCitizenReady_9();
             }
         });
 
@@ -882,7 +882,7 @@ function citizenCategoryDev() {
             onComplete: () => {
                 container.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
-                loadQuestReady_10();
+                loadCitizenReady_10();
             }
         });
 
