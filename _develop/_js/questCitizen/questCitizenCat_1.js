@@ -94,8 +94,8 @@ function questionCitizenCat_1_1() {
             onComplete: () => {
                 // starsRemove();
                 wrapper.removeChild(questionStars);
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 if (questValue_1_2 === 1 &&
@@ -139,8 +139,8 @@ function questionCitizenCat_1_1() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
@@ -237,7 +237,7 @@ function questionCitizenCat_1_2() {
         }
     }
 
-    questCitizenCatLoad.answerBlock(answerWrightNum, '22 июня 1951 года собаки «Дезик и Цыган» стали первыми живыми существами, осуществившими полёт на баллистической ракете З – 1В в верхние слои атмосферы до условной границы с космосом.');
+    questCitizenCatLoad.answerBlock(answerWrightNum, 'Совершенно верно!');
 
     questArrowBack.arrowNext();
     const arrowNextClick = document.getElementById('answerNext'),
@@ -253,8 +253,8 @@ function questionCitizenCat_1_2() {
             autoAlpha: 0,
             onComplete: () => {
                 wrapper.removeChild(questionStars);
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 if (questValue_1_3 === 1 &&
@@ -294,8 +294,8 @@ function questionCitizenCat_1_2() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
@@ -407,8 +407,8 @@ function questionCitizenCat_1_3() {
             autoAlpha: 0,
             onComplete: () => {
                 wrapper.removeChild(questionStars);
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 if (questValue_1_4 === 1 &&
@@ -433,8 +433,8 @@ function questionCitizenCat_1_3() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
@@ -546,8 +546,8 @@ function questionCitizenCat_1_4() {
             autoAlpha: 0,
             onComplete: () => {
                 wrapper.removeChild(questionStars);
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 if (questValue_1_5 === 1) {
@@ -569,8 +569,8 @@ function questionCitizenCat_1_4() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
@@ -676,8 +676,8 @@ function questionCitizenCat_1_5() {
             autoAlpha: 0,
             onComplete: () => {
                 wrapper.removeChild(questionStars);
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
@@ -695,8 +695,8 @@ function questionCitizenCat_1_5() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);

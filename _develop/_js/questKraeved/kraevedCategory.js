@@ -697,7 +697,7 @@ function kraevedCategoryDev() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 wrapper.removeChild(introAboutBack);
                 wrapper.removeChild(wrapperTopTitle);
@@ -737,7 +737,7 @@ function kraevedCategoryDev() {
     categorySubKraeved_1.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadKraevedReady_1();
             }
@@ -753,7 +753,7 @@ function kraevedCategoryDev() {
     categorySubKraeved_2.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadKraevedReady_2();
             }
@@ -769,7 +769,7 @@ function kraevedCategoryDev() {
     categorySubKraeved_3.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadKraevedReady_3();
             }
@@ -785,7 +785,7 @@ function kraevedCategoryDev() {
     categorySubKraeved_4.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadKraevedReady_4();
             }
@@ -801,7 +801,7 @@ function kraevedCategoryDev() {
     categorySubKraeved_5.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadKraevedReady_5();
             }
@@ -817,7 +817,7 @@ function kraevedCategoryDev() {
     categorySubKraeved_6.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadKraevedReady_6();
             }
@@ -833,7 +833,7 @@ function kraevedCategoryDev() {
     categorySubKraeved_7.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadKraevedReady_7();
             }
@@ -849,7 +849,7 @@ function kraevedCategoryDev() {
     categorySubKraeved_8.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadKraevedReady_8();
             }
@@ -865,7 +865,7 @@ function kraevedCategoryDev() {
     categorySubKraeved_9.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadKraevedReady_9();
             }
@@ -881,7 +881,7 @@ function kraevedCategoryDev() {
     categorySubKraeved_10.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadKraevedReady_10();
             }

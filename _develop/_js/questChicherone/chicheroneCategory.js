@@ -697,7 +697,7 @@ function chicheroneCategoryDev() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 wrapper.removeChild(introAboutBack);
                 wrapper.removeChild(wrapperTopTitle);
@@ -737,7 +737,7 @@ function chicheroneCategoryDev() {
     categorySubChicherone_1.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadChicheroneReady_1();
             }
@@ -753,7 +753,7 @@ function chicheroneCategoryDev() {
     categorySubChicherone_2.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadChicheroneReady_2();
             }
@@ -769,7 +769,7 @@ function chicheroneCategoryDev() {
     categorySubChicherone_3.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadChicheroneReady_3();
             }
@@ -785,7 +785,7 @@ function chicheroneCategoryDev() {
     categorySubChicherone_4.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadChicheroneReady_4();
             }
@@ -801,7 +801,7 @@ function chicheroneCategoryDev() {
     categorySubChicherone_5.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadChicheroneReady_5();
             }
@@ -817,7 +817,7 @@ function chicheroneCategoryDev() {
     categorySubChicherone_6.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadChicheroneReady_6();
             }
@@ -833,7 +833,7 @@ function chicheroneCategoryDev() {
     categorySubChicherone_7.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadChicheroneReady_7();
             }
@@ -849,7 +849,7 @@ function chicheroneCategoryDev() {
     categorySubChicherone_8.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadChicheroneReady_8();
             }
@@ -865,7 +865,7 @@ function chicheroneCategoryDev() {
     categorySubChicherone_9.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadChicheroneReady_9();
             }
@@ -881,7 +881,7 @@ function chicheroneCategoryDev() {
     categorySubChicherone_10.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadChicheroneReady_10();
             }

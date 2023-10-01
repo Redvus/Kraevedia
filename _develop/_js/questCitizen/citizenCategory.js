@@ -696,7 +696,7 @@ function citizenCategoryDev() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 wrapper.removeChild(introAboutBack);
                 wrapper.removeChild(wrapperTopTitle);
@@ -736,7 +736,7 @@ function citizenCategoryDev() {
     categorySubCitizen_1.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadCitizenReady_1();
             }
@@ -752,7 +752,7 @@ function citizenCategoryDev() {
     categorySubCitizen_2.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadCitizenReady_2();
             }
@@ -768,7 +768,7 @@ function citizenCategoryDev() {
     categorySubCitizen_3.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadCitizenReady_3();
             }
@@ -784,7 +784,7 @@ function citizenCategoryDev() {
     categorySubCitizen_4.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadCitizenReady_4();
             }
@@ -800,7 +800,7 @@ function citizenCategoryDev() {
     categorySubCitizen_5.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadCitizenReady_5();
             }
@@ -816,7 +816,7 @@ function citizenCategoryDev() {
     categorySubCitizen_6.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadCitizenReady_6();
             }
@@ -832,7 +832,7 @@ function citizenCategoryDev() {
     categorySubCitizen_7.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadCitizenReady_7();
             }
@@ -848,7 +848,7 @@ function citizenCategoryDev() {
     categorySubCitizen_8.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadCitizenReady_8();
             }
@@ -864,7 +864,7 @@ function citizenCategoryDev() {
     categorySubCitizen_9.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadCitizenReady_9();
             }
@@ -880,7 +880,7 @@ function citizenCategoryDev() {
     categorySubCitizen_10.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerWrapper);
                 loadCitizenReady_10();
             }

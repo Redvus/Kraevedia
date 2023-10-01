@@ -94,8 +94,8 @@ function questionCitizenCat_4_1() {
             onComplete: () => {
                 // starsRemove();
                 wrapper.removeChild(questionStars);
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 if (questValue_4_2 === 1 &&
@@ -139,8 +139,8 @@ function questionCitizenCat_4_1() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
@@ -253,8 +253,8 @@ function questionCitizenCat_4_2() {
             autoAlpha: 0,
             onComplete: () => {
                 wrapper.removeChild(questionStars);
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 if (questValue_4_3 === 1 &&
@@ -294,8 +294,8 @@ function questionCitizenCat_4_2() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
@@ -407,8 +407,8 @@ function questionCitizenCat_4_3() {
             autoAlpha: 0,
             onComplete: () => {
                 wrapper.removeChild(questionStars);
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 if (questValue_4_4 === 1 &&
@@ -433,8 +433,8 @@ function questionCitizenCat_4_3() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
@@ -546,8 +546,8 @@ function questionCitizenCat_4_4() {
             autoAlpha: 0,
             onComplete: () => {
                 wrapper.removeChild(questionStars);
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 if (questValue_4_5 === 1) {
@@ -569,8 +569,8 @@ function questionCitizenCat_4_4() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
@@ -676,8 +676,8 @@ function questionCitizenCat_4_5() {
             autoAlpha: 0,
             onComplete: () => {
                 wrapper.removeChild(questionStars);
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
@@ -695,8 +695,8 @@ function questionCitizenCat_4_5() {
         let tl = gsap.timeline( {
             autoAlpha: 0,
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(arrowNextClick);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowNextClick);
                 container.removeChild(containerWrapperCategory);
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);

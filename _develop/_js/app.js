@@ -270,8 +270,8 @@ function categoryDev() {
     arrowBackClick.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(settingButton);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(settingButton);
                 container.removeChild(containerCategory);
                 wrapper.removeChild(introAboutBack);
                 wrapper.removeChild(wrapperTopTitle);
@@ -307,8 +307,8 @@ function categoryDev() {
         soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_categoryLoad.ogg');
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(settingButton);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(settingButton);
                 container.removeChild(containerCategory);
                 wrapper.removeChild(wrapperTopTitle);
                 wrapper.removeChild(introAboutBack);
@@ -346,8 +346,8 @@ function categoryDev() {
         soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_categoryLoad.ogg');
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(settingButton);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(settingButton);
                 container.removeChild(containerCategory);
                 wrapper.removeChild(wrapperTopTitle);
                 wrapper.removeChild(introAboutBack);
@@ -376,8 +376,8 @@ function categoryDev() {
         soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_categoryLoad.ogg');
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
-                container.removeChild(settingButton);
+                wrapper.removeChild(arrowBackClick);
+                wrapper.removeChild(settingButton);
                 container.removeChild(containerCategory);
                 wrapper.removeChild(wrapperTopTitle);
                 wrapper.removeChild(introAboutBack);
@@ -432,7 +432,7 @@ function aboutStart() {
     arrowBackClick.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerAbout);
                 wrapper.removeChild(introAboutBack);
                 wrapper.removeChild(wrapperTopAbout);
@@ -477,7 +477,7 @@ function authorsStart() {
     arrowBackClick.addEventListener('click', () => {
         let tl = gsap.timeline({
             onComplete: () => {
-                container.removeChild(arrowBackClick);
+                wrapper.removeChild(arrowBackClick);
                 container.removeChild(containerAbout);
                 wrapper.removeChild(introAboutBack);
                 wrapper.removeChild(wrapperTopAuthors);
@@ -509,11 +509,11 @@ function authorsStart() {
 }
 
 function init() {
-    introDev();
+    // introDev();
     // categoryDev();
     // citizenCategoryDev();
     // chicheroneCategory();
-    // loadQuestReady_1();
+    authorsStart();
 }
 
 init();

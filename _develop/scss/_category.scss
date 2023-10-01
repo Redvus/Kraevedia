@@ -236,21 +236,19 @@
     @include grid-media($Small) {
 
         &__main {
-            width: calc((100% / 3) - 1rem);
+            width: 100%;
             //height: calc(100vh / 3);
-            margin: 0 0.5rem;
+            //margin: 0 0.5rem;
 
             &_stars {
-                flex-direction: column;
                 align-items: center;
-            }
-
-            &_value {
-                margin-left: 0;
+                bottom: calc(#{$paddingBase} * 5);
             }
 
             &_image {
                 width: 100%;
+                height: 100vmin;
+                background-size: 100% auto;
 
                 &--choice {
                     background-size: 100%;
@@ -293,39 +291,20 @@
         &__element {
 
             &_image {
-                height: 30vmin;
+                height: 80vmin;
             }
 
-            &_1 {
-                transform: translateY(-30vmin);
+            &_title {
+                width: calc(80% - (#{$paddingBase} * 4));
             }
 
-            &_2 {
-                transform: translate(23vmin, -20vmin);
-            }
+            &_stars {
+                margin-bottom: 1rem;
 
-            &_3 {
-                transform: translate(35vmin, 1vmin);
-            }
-
-            &_4 {
-                transform: translate(23vmin, 22vmin);
-            }
-
-            &_5 {
-                transform: translateY(32vmin);
-            }
-
-            &_6 {
-                transform: translate(-23vmin, 22vmin);
-            }
-
-            &_7 {
-                transform: translate(-35vmin, 1vmin);
-            }
-
-            &_8 {
-                transform: translate(-23vmin, -20vmin);
+                li {
+                    width: 6vmin;
+                    height: 6vmin;
+                }
             }
         }
     }

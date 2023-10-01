@@ -7,7 +7,7 @@ class ArrowsAll {
         containerArrowBack.innerHTML = `
             <img src="assets/games/kraevedia/images/kraevedia_arrowBack.png" alt="Стрелка назад">
         `;
-        container.appendChild(containerArrowBack);
+        wrapper.appendChild(containerArrowBack);
     }
 
     clearStorage() {
@@ -17,7 +17,7 @@ class ArrowsAll {
         containerClear.innerHTML = `
             <img src="assets/games/kraevedia/images/kraevedia_settings.png" alt="Настройки">
         `;
-        container.appendChild(containerClear);
+        wrapper.appendChild(containerClear);
     }
 
     arrowNext() {
@@ -27,6 +27,6 @@ class ArrowsAll {
         containerClear.innerHTML = `
             <img src="assets/games/kraevedia/images/kraevedia_arrowNext.png" alt="Следующий вопрос">
         `;
-        container.appendChild(containerClear);
+        wrapper.appendChild(containerClear);
     }
 }
