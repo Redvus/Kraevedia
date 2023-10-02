@@ -511,9 +511,9 @@ function authorsStart() {
 function init() {
     // introDev();
     // categoryDev();
-    // citizenCategoryDev();
+    citizenCategoryDev();
     // chicheroneCategory();
-    authorsStart();
+    // authorsStart();
 }
 
 init();

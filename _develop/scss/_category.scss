@@ -306,6 +306,14 @@
                     height: 6vmin;
                 }
             }
+
+            &--hidden {
+
+                &:after {
+                    width: 13vmin;
+                    height: 13vmin;
+                }
+            }
         }
     }
 }
