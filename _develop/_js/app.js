@@ -24,13 +24,13 @@ function introDev() {
         soundsLoad.rightAnswer('assets/games/kraevedia/sounds/cp_progressClear.ogg');
 
         // Music Background
-        // if (backgroundMusicID === null) {
-        //     soundsLoad.backgroundMusicLoad('assets/games/kraevedia/sounds/cp_ambientSpace.ogg');
-        //     localStorage.setItem('backgroundMusic', JSON.stringify(1));
-        // } else if (backgroundMusicID.paused || localStorage.getItem('backgroundMusic') === '0') {
-        //     backgroundMusicID.pause();
-        //     localStorage.setItem('backgroundMusic', JSON.stringify(0));
-        // }
+        if (backgroundMusicID === null) {
+            soundsLoad.backgroundMusicLoad('assets/games/kraevedia/sounds/k_paperWings.ogg');
+            localStorage.setItem('backgroundMusic', JSON.stringify(1));
+        } else if (backgroundMusicID.paused || localStorage.getItem('backgroundMusic') === '0') {
+            backgroundMusicID.pause();
+            localStorage.setItem('backgroundMusic', JSON.stringify(0));
+        }
 
         let tl = gsap.timeline({
             onComplete: () => {
