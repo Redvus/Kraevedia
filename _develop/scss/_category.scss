@@ -307,7 +307,8 @@
                 }
             }
 
-            &--hidden {
+            &--hidden,
+            &--lock {
 
                 &:after {
                     width: 13vmin;

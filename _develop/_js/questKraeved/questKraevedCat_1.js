@@ -103,7 +103,7 @@ function questionKraevedCat_1_1() {
                     questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
                     kraevedCategoryDev();
-                    lockSubQuestCitizen();
+                    lockSubQuestKraeved();
                 } else if (questValue_1_2 === 0) {
                     questionKraevedCat_1_2();
                 } else if (questValue_1_2 === 1 && questValue_1_3 === 0) {
@@ -144,7 +144,7 @@ function questionKraevedCat_1_1() {
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
                 kraevedCategoryDev();
-                lockSubQuestCitizen();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -261,7 +261,7 @@ function questionKraevedCat_1_2() {
                     questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
                     kraevedCategoryDev();
-                    lockSubQuestCitizen();
+                    lockSubQuestKraeved();
                 } else if (questValue_1_3 === 0) {
                     questionKraevedCat_1_3();
                 } else if (questValue_1_3 === 1 && questValue_1_4 === 0) {
@@ -299,7 +299,7 @@ function questionKraevedCat_1_2() {
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
                 kraevedCategoryDev();
-                lockSubQuestCitizen();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -414,7 +414,7 @@ function questionKraevedCat_1_3() {
                     questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
                     kraevedCategoryDev();
-                    lockSubQuestCitizen();
+                    lockSubQuestKraeved();
                 } else if (questValue_1_4 === 0) {
                     questionKraevedCat_1_4();
                 } else if (questValue_1_4 === 1 && questValue_1_5 === 0) {
@@ -438,7 +438,7 @@ function questionKraevedCat_1_3() {
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
                 kraevedCategoryDev();
-                lockSubQuestCitizen();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -552,7 +552,7 @@ function questionKraevedCat_1_4() {
                 if (questValue_1_5 === 1) {
                     wrapper.removeChild(wrapperTopTitle);
                     kraevedCategoryDev();
-                    lockSubQuestCitizen();
+                    lockSubQuestKraeved();
                 } else if (questValue_1_5 === 0) {
                     questionKraevedCat_1_5();
                 }
@@ -574,7 +574,7 @@ function questionKraevedCat_1_4() {
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
                 kraevedCategoryDev();
-                lockSubQuestCitizen();
+                lockSubQuestKraeved();
             }
         });
         tl
@@ -681,7 +681,7 @@ function questionKraevedCat_1_5() {
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
                 kraevedCategoryDev();
-                lockSubQuestCitizen();
+                lockSubQuestKraeved();
             }
         });
     });
@@ -700,7 +700,7 @@ function questionKraevedCat_1_5() {
                 wrapper.className = 'wrapper';
                 wrapper.removeChild(wrapperTopTitle);
                 kraevedCategoryDev();
-                lockSubQuestCitizen();
+                lockSubQuestKraeved();
             }
         });
         tl
